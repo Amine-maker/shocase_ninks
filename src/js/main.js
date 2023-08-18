@@ -1,8 +1,6 @@
 
 
-
-
-gsap.registerPlugin(ScrollTrigger, gsap_MotionPathPlugin__WEBPACK_IMPORTED_MODULE_2__.MotionPathPlugin, gsap_DrawSVGPlugin__WEBPACK_IMPORTED_MODULE_3__.DrawSVGPlugin, gsap_SplitText__WEBPACK_IMPORTED_MODULE_4__.SplitText, gsap_ScrollSmoother__WEBPACK_IMPORTED_MODULE_5__.ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger,MotionPathPlugin, gsap_SplitText__WEBPACK_IMPORTED_MODULE_4__.SplitText, gsap_ScrollSmoother__WEBPACK_IMPORTED_MODULE_5__.ScrollSmoother);
 window.addEventListener('DOMContentLoaded', function () {
   /*********    Fixed header    *********/
   $(window).scroll(function () {
@@ -31,7 +29,8 @@ window.addEventListener('DOMContentLoaded', function () {
     isDesktop: `(min-width: ${breakPoint + 1}px)`
   }, context => {
     let {
-      isMobile
+      isMobile,
+
     } = context.conditions;
     console.log(context.conditions);
     let smoother = gsap_ScrollSmoother__WEBPACK_IMPORTED_MODULE_5__.ScrollSmoother.create({
