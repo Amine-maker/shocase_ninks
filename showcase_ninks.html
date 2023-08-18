@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="fr" class="" style="scroll-behavior: auto; overscroll-behavior: none;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+
+
+    <title>Ninks | La plateforme link qui vous donne tout</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+
+
+    <link rel="icon" href="">
+
+    <script>
+        window.lang = "fr";
+    </script>
+
+
+    <!-- snippet -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.js"
+        integrity="sha512-QwpsxtdZRih55GaU/Ce2Baqoy2tEv9GltjAG8yuTy2k9lHqK7VHHp3wWWe+yITYKZlsT3AaCj49ZxMYPp46iJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.css"
+        integrity="sha512-EDXaYrpumQKF+Ic8nuEsgJWBwMOhgwWvNINclFu91nx5VR4MeZ5xlUvyRaYQJTMImwbXSeDjtZMtTs8EB65Z0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+   
+
+    <link href="./src/css/main.d14b3190b4d15064c902.css" rel="stylesheet">
+    <style data-ch2inline="true">
+        .ch2-style-light .ch2-btn-primary,
+        .ch2-style-dark .ch2-btn-primary {
+            background: #ff642d;
+            color: #ffffff
+        }
+
+        .ch2-style-light .ch2-btn-primary:hover,
+        .ch2-style-dark .ch2-btn-primary:hover {
+            background: #ff642d;
+            box-shadow: 0px 0px 20px 0 #ff642d66;
+        }
+
+        .ch2-style-light .ch2-switch input:checked+label,
+        .ch2-style-dark .ch2-switch input:checked+label {
+            background: #ff642d
+        }
+
+        .ch2-style-light.ch2-icon a:hover svg {
+            border: 2px solid #ff642d;
+            fill: #ff642d
+        }
+
+        .ch2-style-dark.ch2-icon a:hover svg {
+            border: 2px solid #ff642d;
+            background: #ff642d
+        }
+
+        @media (max-width: 800px) {
+            .ch2-settings-declaration table tbody tr td:not([colspan]):nth-child(1)::before {
+                content: 'Nom: ';
+            }
+
+            .ch2-settings-declaration table tbody tr td:not([colspan]):nth-child(2)::before {
+                content: 'Nom d\'hôte: ';
+            }
+
+            .ch2-settings-declaration table tbody tr td:not([colspan]):nth-child(3)::before {
+                content: 'Chemin: ';
+            }
+
+            .ch2-settings-declaration table tbody tr td:not([colspan]):nth-child(4)::before {
+                content: 'Chemin: ';
+            }
+        }
+    </style>
+</head>
+
+<body class="fr" style="scroll-behavior: auto; height: 4241px; overscroll-behavior: none;">
+    <!-- fixed-header -->
+    <div class="nav header-fixed active">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- logo -->
+                <div class="col-12 col-lg-6 header-logo">
+                    <a href="" target="blank">
+                        <img src="./src/assets/svg/logo-white.6eb781319d6971d7989967fe7ec13c76.svg" class="h-logo"
+                            alt="logo">
+                    </a>
+                </div>
+
+                <!-- logo mob-->
+                <div class="col-2 col-md-4 header-logo__mob">
+                    <a href="https://fr.semrush.com/" target="blank">
+                        <svg class="logo-mob" width="46" height="28" viewBox="0 0 46 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M38.3693 13.8297C38.3693 14.6369 37.9649 14.7613 36.9399 14.7613C35.8528 14.7613 35.6661 14.5747 35.5417 13.7675C35.3239 11.6865 33.9257 9.91499 31.5664 9.72997C30.8214 9.66776 30.6348 9.38778 30.6348 8.45617C30.6348 7.58678 30.7592 7.18237 31.4419 7.18237C35.5417 7.18237 38.3693 10.4749 38.3693 13.8297ZM44.3339 13.8297C44.3339 7.58678 40.1097 1 30.3548 1H10.9645C10.5732 1 10.3309 1.20466 10.3309 1.56159C10.3309 1.75642 10.4766 1.93161 10.6092 2.03476C11.3198 2.59307 12.3545 3.20705 13.7429 3.90126C15.0888 4.57418 16.1285 5.01133 17.1845 5.4403C17.62 5.61713 17.7936 5.81033 17.7936 6.06902C17.7936 6.4063 17.5562 6.62078 17.065 6.62078H1.67456C1.2194 6.62078 1 6.91385 1 7.2102C1 7.46234 1.08841 7.66373 1.3029 7.8864C2.55214 9.18967 4.53816 10.7615 7.44106 12.5772C9.98539 14.1686 13.129 15.8861 15.6225 17.0814C16.0417 17.2827 16.1874 17.5152 16.1776 17.7559C16.1661 18.0343 15.9467 18.27 15.4621 18.27H8.40705C8.00592 18.27 7.78325 18.4812 7.78325 18.8054C7.78325 18.9855 7.92897 19.2147 8.11889 19.3883C9.72342 20.8438 12.289 22.4353 15.7077 23.8908C20.2675 25.8326 24.9092 27 30.1223 27C40.0016 27 44.3339 19.6077 44.3339 13.8297ZM31.4419 22.6825C26.5956 22.6825 22.5581 18.7366 22.5581 13.8297C22.5581 8.98338 26.5956 5.10139 31.4419 5.10139C36.4127 5.10139 40.2947 8.98501 40.2947 13.8297C40.2947 18.7366 36.4127 22.6825 31.4419 22.6825Z"
+                                fill="#FF642D"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- navigation-button -->
+                <div class="col-10 col-md-6 col-lg-6 header-button">
+                    <a href="https://fr.semrush.com/signup/?src=lp-gaby-s-fr&amp;trial=force" target="blank"
+                        class="button cta_line_button">Allez de l'avant</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section id="smooth-wrapper" style="inset: 0px; width: 100%; height: 100%; position: fixed; overflow: hidden;">
+        <section id="smooth-content"
+            style="translate: none; rotate: none; scale: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -2025, 0, 1); box-sizing: border-box; width: 100%; overflow: visible;">
+            <!-- navigation -->
+            <div class="nav">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center justify-content-lg-between">
+                        <!-- logo -->
+                        <div class="col-12 col-lg-6  header-logo">
+                            <a href="https://fr.semrush.com/" target="blank">
+                                <img src="./src/assets/svg/logo-white.6eb781319d6971d7989967fe7ec13c76.svg"
+                                    class="h-logo" alt="logo">
+                            </a>
+                        </div>
+
+                        <!-- logo mob-->
+                        <div class="col-2 col-md-4 header-logo__mob">
+                            <a href="https://fr.semrush.com/" target="blank">
+                                <svg class="logo-mob" width="46" height="28" viewBox="0 0 46 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.3693 13.8297C38.3693 14.6369 37.9649 14.7613 36.9399 14.7613C35.8528 14.7613 35.6661 14.5747 35.5417 13.7675C35.3239 11.6865 33.9257 9.91499 31.5664 9.72997C30.8214 9.66776 30.6348 9.38778 30.6348 8.45617C30.6348 7.58678 30.7592 7.18237 31.4419 7.18237C35.5417 7.18237 38.3693 10.4749 38.3693 13.8297ZM44.3339 13.8297C44.3339 7.58678 40.1097 1 30.3548 1H10.9645C10.5732 1 10.3309 1.20466 10.3309 1.56159C10.3309 1.75642 10.4766 1.93161 10.6092 2.03476C11.3198 2.59307 12.3545 3.20705 13.7429 3.90126C15.0888 4.57418 16.1285 5.01133 17.1845 5.4403C17.62 5.61713 17.7936 5.81033 17.7936 6.06902C17.7936 6.4063 17.5562 6.62078 17.065 6.62078H1.67456C1.2194 6.62078 1 6.91385 1 7.2102C1 7.46234 1.08841 7.66373 1.3029 7.8864C2.55214 9.18967 4.53816 10.7615 7.44106 12.5772C9.98539 14.1686 13.129 15.8861 15.6225 17.0814C16.0417 17.2827 16.1874 17.5152 16.1776 17.7559C16.1661 18.0343 15.9467 18.27 15.4621 18.27H8.40705C8.00592 18.27 7.78325 18.4812 7.78325 18.8054C7.78325 18.9855 7.92897 19.2147 8.11889 19.3883C9.72342 20.8438 12.289 22.4353 15.7077 23.8908C20.2675 25.8326 24.9092 27 30.1223 27C40.0016 27 44.3339 19.6077 44.3339 13.8297ZM31.4419 22.6825C26.5956 22.6825 22.5581 18.7366 22.5581 13.8297C22.5581 8.98338 26.5956 5.10139 31.4419 5.10139C36.4127 5.10139 40.2947 8.98501 40.2947 13.8297C40.2947 18.7366 36.4127 22.6825 31.4419 22.6825Z"
+                                        fill="#FF642D"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- navigation end -->
+
+            <!-- main-screen -->
+            <section class="main-screen">
+                <div class="container">
+                    <div class="row content">
+                        <div class="col-12 col-lg-7">
+                            <div class="main-screen__text" data-lag="0.2" data-speed="1"
+                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); will-change: transform;">
+                                <h1 class="title-1 mainFadeLeft"
+                                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                    <nobr>Vivez la <span>v</span>ie</nobr>
+                                </h1>
+                                <h1 class="title-2 mainFadeRight"
+                                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                    <nobr><span>s</span>elon vos</nobr>
+                                </h1>
+                                <h1 class="title-3 mainFadeLeft"
+                                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                    <nobr>propres <span>r</span>ègles</nobr>
+                                </h1>
+                                <div class="fadeUp">
+                                    <p class="subtitle">Vous vous occupez de vous. Semrush vous soutient avec une
+                                        plateforme marketing complète qui vous aide à atteindre vos objectifs et à
+                                        consacrer plus de temps à vos passions.</p>
+                                    <a href="https://fr.semrush.com/signup/?src=lp-gaby-s-fr&amp;trial=force"
+                                        target="_blank" class="button cta_hero_button">Allez de l'avant</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 d-flex flex-row-reverse">
+                            <div class="main-screen__video" data-lag="0.1" data-speed="1"
+                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); will-change: transform;">
+                                <!-- <video class="main-screen__video-shape" autoplay="" playsinline="" muted="" loop=""
+                                    preload="" poster="../img/main-pic.4ae86bb25e1a34c8680a587828175bc0.webp">
+                                    <source src="../img/video.da5212bfa63b55814cd4fa53cce19f42.mp4">
+                                </video> -->
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0  1193 778" width="1193"
+                                    height="778" preserveAspectRatio="xMidYMid slice">
+                                    <defs>
+                                        <mask id="mask" x="0" y="0" width="1193" height="778">
+                                            <rect x="0" y="0" width="1193" height="778"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1127.67 165.848L1026.14 64.4499C940.089 -21.4833 800.559 -21.4833 714.501 64.4499L663.74 115.144L612.979 64.4499C526.91 -21.4833 387.381 -21.4833 301.322 64.4499L64.5438 300.924C-21.5146 386.868 -21.5146 526.211 64.5438 612.155L166.066 713.542C252.125 799.486 391.664 799.486 477.723 713.542L528.484 662.849L579.245 713.542C665.293 799.486 804.822 799.486 890.891 713.542L1127.67 477.079C1213.73 391.135 1213.73 251.792 1127.67 165.848Z">
+                                            </path>
+                                        </mask>
+                                    </defs>
+                                    <rect width="1193" height="778"></rect>
+                                </svg>
+                                <img class="stamp parallax-1 rotation"
+                                    src="./src/assets/svg/stamp.251be25feaef511a70841fa727129650.svg" alt="stamp-gaby"
+                                    data-speed="1.1" data-lag="0"
+                                    style="translate: none; rotate: none; scale: none; transform: translate(0px, -78.15px); will-change: transform; opacity: 1;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- main-screen ends -->
+
+            <!-- second-screen -->
+            <section class="second-screen">
+                <div class="container">
+                    <div class="row desktop">
+                        <div class="col-12 second-screen__block">
+                            <div class="second-screen__block-pic fadeUp">
+
+                                <img src="./src/assets/img/photo-1_x1.26abc369661fc2d89fb1b20abfcde3d5.png" alt="photo"
+                                    class="second-screen__block-pic__img" data-speed="0.9" data-lag="0"
+                                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 82.65px); will-change: transform;">
+
+                            </div>
+                            <div class="second-screen__block-text">
+                                <h2 class="split-title big-text-1">
+                                    <div style="display: block; text-align: left; position: relative;">Appropriez-vous
+                                    </div>
+                                    <div style="display: block; text-align: left; position: relative;">votre journée
+                                    </div>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="col-12 second-screen__block">
+                            <div class="second-screen__block-text">
+                                <h2 class="split-title big-text-2">
+                                    <div style="display: block; text-align: left; position: relative;">Comme un </div>
+                                    <div style="display: block; text-align: left; position: relative;">spécialiste
+                                        <em><span>m</span>arketing</em>
+                                    </div>
+                                </h2>
+                                <h2 class="split-title big-text-3">
+                                    <div style="display: block; text-align: left; position: relative;">
+                                        <em><span>s</span>ans limite</em>
+                                    </div>
+                                </h2>
+                                <p class="subtitle fadeUp">Semrush travaille 24 heures sur 24 pour que vous n'ayez pas à
+                                    le faire. Que vous soyez spécialiste marketing le jour et DJ la nuit, parent, ou que
+                                    vous souhaitez simplement trouver un équilibre entre vie professionnelle et vie
+                                    privée, nous avons ce qu'il vous faut. Explorez les 24 heures avec Semrush dans
+                                    votre équipe.</p>
+                            </div>
+
+                            <div class="second-screen__block-pic fadeUp">
+
+                                <img src="./src/assets/img/photo-2_x1.4cab79eefe76656d3707f8ffe838fe81.png" alt="photo"
+                                    class="second-screen__block-pic__img" data-speed="0.9" data-lag="0"
+                                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 85.59px); will-change: transform;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- mob -->
+                    <div class="row mob">
+                        <div class="col-12 second-screen__block">
+                            <div class="second-screen__block-text">
+                                <h2 class="split-title ">
+                                    <div style="display: block; text-align: left; position: relative;">appropriez-vous
+                                    </div>
+                                </h2>
+                            </div>
+
+                            <div class="second-screen__block-pic fadeUp">
+
+                                <img src="./src/assets/img/photo-1_x1.26abc369661fc2d89fb1b20abfcde3d5.png" alt="photo"
+                                    class="second-screen__block-pic__img"
+                                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 64.15px); will-change: transform;"
+                                    data-speed="0.9" data-lag="0">
+
+                            </div>
+                        </div>
+                        <div class="col-12 second-screen__block">
+                            <div class="second-screen__block-text">
+                                <h2 class="split-title ">
+                                    <div style="display: block; text-align: left; position: relative;">votre journée
+                                    </div>
+                                </h2>
+                                <h2 class="split-title ">
+                                    <div style="display: block; text-align: left; position: relative;">Comme un</div>
+                                </h2>
+                                <h2 class="split-title ">
+                                    <div style="display: block; text-align: left; position: relative;"><em>spécialiste
+                                            <span>m</span>arketing</em></div>
+                                </h2>
+                                <h2 class="split-title ">
+                                    <div style="display: block; text-align: left; position: relative;">
+                                        <em><span>s</span>ans limite</em>
+                                    </div>
+                                </h2>
+                            </div>
+
+
+                            <div class="second-screen__block-pic fadeUp">
+
+                                <img src="./src/assets/img/photo-2_x1.4cab79eefe76656d3707f8ffe838fe81.png" alt="photo"
+                                    class="second-screen__block-pic__img"
+                                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 64.15px); will-change: transform;"
+                                    data-speed="0.9" data-lag="0">
+                            </div>
+                            <div class="second-screen__block-text">
+
+                                <p class="subtitle fadeUp">Semrush travaille 24 heures sur 24 pour que vous n'ayez pas à
+                                    le faire. Que vous soyez spécialiste marketing le jour et DJ la nuit, parent, ou que
+                                    vous souhaitez simplement trouver un équilibre entre vie professionnelle et vie
+                                    privée, nous avons ce qu'il vous faut. Explorez les 24 heures avec Semrush dans
+                                    votre équipe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- seconds-screen end -->
+
+            <!-- alarm-screen slider -->
+            <section class="alarm-screen rotation-trigger">
+                <!-- desktop -->
+                <div class="container desktop">
+                    <div
+                        class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-2b97a554cc3db5f5" aria-live="polite"
+                            style="transform: translate3d(0px, 0px, 0px);">
+                            <!-- 1 slide -->
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-active" role="group"
+                                aria-label="1 / 6" style="width: 1340px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-1.42fae017694ffaacaa64a60a8b2bbfee.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm fadeUp"><span class="de_time">Um</span> 7
+                                        <span>:</span> 00 am
+                                    </p>
+                                    <div class="line l-1 fadeUp"></div>
+                                    <h2 class="split-title" data-swiper-parallax="50"
+                                        style="transform: translate3d(0px, 0px, 0px);">
+                                        <div style="display: block; text-align: left; position: relative;">Votre matinée
+                                            à </div>
+                                        <div style="display: block; text-align: left; position: relative;">votre rythme
+                                        </div>
+                                    </h2>
+                                    <p class="text fadeUp">Semrush commence la journée du bon pied avec <strong>des
+                                            données claires et exploitables sur tous vos canaux marketing.</strong>
+                                        Savourez votre café ou votre matcha latte, vérifiez <a class="cta_kw_button"
+                                            href="" target="_blank">le classement de vos mots clés</a> ou votre activité
+                                        sur les réseaux sociaux et prenez une longueur d'avance.</p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+                                    <!-- 1 -->
+                                    <div class="alarm-screen__pics-pic pic " data-swiper-parallax="100"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+
+                                        <img src="./src/assets/img/photo-3_x1.8f75dd238ceb5ddeccf0bed08880ccd0.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;"
+                                            data-savepage-loading="lazy">
+
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+                                        <img src="./src/assets/img/photo-4_x1.4e08edabfdfaa1a547c391e42e5c9f42.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;"
+                                            data-savepage-loading="lazy">
+
+                                    </div>
+                                    <!-- shape -->
+
+                                    <!-- 3 -->
+                                    <svg class="shape fadeUp parallax-1" width="318" height="324" viewBox="0 0 318 324"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" data-swiper-parallax="200"
+                                        data-speed="1.1" data-lag="0"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 8.08506px); will-change: transform;">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M286.068 74.9923L288.372 42.2425C288.403 41.4731 288.061 41.1129 287.971 41.0519L234.447 4.94987C234.357 4.88884 233.895 4.70666 233.193 5.02365L203.691 19.4284L202.302 19.1018C145.89 5.83581 84.6642 27.6928 50.5905 78.2091C46.1451 84.7997 42.451 91.4648 39.4977 98.204L38.9084 99.5488L9.29451 114.008L9.26076 114.024C8.9143 114.185 8.83281 114.308 8.82413 114.321L8.82324 114.323C8.81435 114.335 8.7309 114.457 8.71118 114.839L8.70911 114.879L4.09968 179.126C4.06943 179.893 4.41087 180.253 4.50132 180.314L31.7305 198.68L32.1442 200.037C41.5085 230.735 61.0108 258.274 89.3951 277.42C117.771 296.559 151.084 304.242 182.596 301.513L184.005 301.391L211.232 319.756C211.322 319.817 211.784 319.999 212.485 319.683L270.326 291.342L270.363 291.325C270.709 291.164 270.79 291.041 270.799 291.028C270.805 291.019 270.892 290.899 270.912 290.51L270.914 290.473L273.232 257.52L274.351 256.452C279.904 251.145 284.67 245.264 288.92 238.964C323.181 188.17 320.326 123.497 286.891 76.1575L286.068 74.9923ZM231.479 1.40911C233.281 0.570546 235.268 0.678638 236.684 1.63372L290.207 37.7357C291.623 38.6908 292.468 40.4928 292.365 42.4775L290.158 73.8499C324.512 122.489 327.465 188.972 292.236 241.201C287.856 247.694 282.91 253.806 277.114 259.344L274.907 290.716C274.804 292.701 273.852 294.113 272.05 294.951L214.2 323.296C212.398 324.135 210.411 324.027 208.995 323.072L182.941 305.498C150.559 308.302 116.327 300.411 87.1583 280.736C57.9895 261.061 37.9415 232.751 28.3182 201.204L2.26455 183.63C0.848585 182.675 0.00386165 180.873 0.10642 178.888L4.71651 114.632C4.81907 112.648 5.77121 111.236 7.57293 110.397L35.834 96.5986C38.8907 89.6234 42.7041 82.748 47.2744 75.9723C82.3131 24.0253 145.251 1.57637 203.218 15.208L231.479 1.40911Z"
+                                            fill="#FFFF54"></path>
+                                    </svg>
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_1.0a213b1f812d08ef46829bbc78850e21.svg"
+                                            alt="screen">
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-200"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_2.d8bed01c71dd4b86e0c173efa5953bfb.svg"
+                                            alt="screen">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 slide -->
+                            <div class="swiper-slide alarm-2 swiper-slide-next" role="group" aria-label="2 / 6"
+                                style="width: 1340px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-2.3b5bd3f6b4901efd7d49aba00c717ac0.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm fadeUp"><span class="de_time">Um</span> 9
+                                        <span>:</span> 00 am
+                                    </p>
+                                    <div class="line l-2 fadeUp"></div>
+                                    <h2 class="split-title" data-swiper-parallax="50"
+                                        style="transform: translate3d(-50px, 0px, 0px);">
+                                        <div style="display: block; text-align: left; position: relative;">Lancez votre
+                                        </div>
+                                        <div style="display: block; text-align: left; position: relative;">flux de
+                                            travail</div>
+                                    </h2>
+                                    <p class="text fadeUp">On commence par un bilan de santé quotidien de votre site web
+                                        avec un <a class="cta_sa_button" href="" target="_blank">audit de
+                                            site&nbsp;</a>? Ou peut-être préférez-vous vous
+                                        plonger dans une étude de concurrence ? Ou découvrir des sujets d'intérêt pour
+                                        votre audience et élaborer un contenu trimestriel et un calendrier pour les
+                                        réseaux sociaux.</p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+                                    <!-- 1 -->
+                                    <div class="alarm-screen__pics-pic pic " data-swiper-parallax="100"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/img/photo-5_x1.906bcbe4a285af14fe2ffc3882772b4d.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;">
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+                                        <img src="./src/assets/img/photo-6_x1.ce17c15a1f537ad5b4f5b0a4a5b623d7.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;">
+                                    </div>
+                                    <!-- shape -->
+
+                                    <!-- 3 -->
+                                    <svg class="shape fadeUp rotation parallax-1" width="398" height="398"
+                                        viewBox="0 0 398 398" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        data-speed="1.1" data-lag="0"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 16.6651px); will-change: transform;">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M74.1079 135.708L73.0777 136.684C37.6578 170.253 13.5706 214.26 4.44895 262.225L4.41683 262.393L4.39787 262.461L4.45288 262.504L4.57815 262.622C40.1504 296.065 85.504 317.509 133.891 323.848L135.298 324.032L136.275 325.062C169.844 360.482 213.851 384.569 261.815 393.691L261.984 393.723L262.052 393.742L262.104 393.675L262.234 393.54C295.785 358.388 317.227 313.052 323.436 264.264L323.617 262.847L324.653 261.865C360.073 228.296 384.16 184.289 393.282 136.325L393.314 136.156L393.333 136.088L393.278 136.045L393.152 135.927C357.58 102.485 312.226 81.0404 263.84 74.7017L262.432 74.5173L261.456 73.4871C227.887 38.0672 183.88 13.98 135.915 4.8584L135.746 4.82629L135.679 4.80734L135.636 4.86235L135.518 4.9876C102.075 40.5598 80.631 85.9135 74.2922 134.3L74.1079 135.708ZM0.51938 261.477C9.79813 212.687 34.2985 167.926 70.3261 133.781C76.7736 84.5637 98.5849 38.4328 132.603 2.24777C133.557 1.04023 135.181 0.512653 136.663 0.928828C185.453 10.2076 230.214 34.7079 264.359 70.7356C313.576 77.1831 359.707 98.9943 395.892 133.013C397.1 133.967 397.627 135.591 397.211 137.072C387.932 185.863 363.432 230.623 327.404 264.769C321.089 314.392 299.277 360.522 265.127 396.302C264.173 397.509 262.549 398.037 261.068 397.621C212.277 388.342 167.516 363.841 133.371 327.814C84.1543 321.366 38.0234 299.555 1.83831 265.536C0.630782 264.583 0.103205 262.959 0.51938 261.477Z"
+                                            fill="#00F7FF"></path>
+                                    </svg>
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_3.d50a36550ebb9eed46b8fb2c58d3f2af.svg"
+                                            alt="screen">
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-200"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_4.fe45b57ce502c59fce414a0811346a98.svg"
+                                            alt="screen">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 slide -->
+                            <div class="swiper-slide alarm-3" role="group" aria-label="3 / 6" style="width: 1340px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-3.01c412cf02a1eddb916f5860ba1a21f7.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm fadeUp"><span class="de_time">Um</span> 11
+                                        <span>:</span> 15 am
+                                    </p>
+                                    <div class="line l-3 fadeUp"></div>
+                                    <h2 class="split-title" data-swiper-parallax="50"
+                                        style="transform: translate3d(-50px, 0px, 0px);">
+                                        <div style="display: block; text-align: left; position: relative;">Offrez le
+                                            meilleur</div>
+                                    </h2>
+                                    <p class="text fadeUp"><a class="cta_ki_button"
+                                            href="https://fr.semrush.com/signup/?src=lp-gaby-s-fr&amp;trial=force&amp;redirect_to=/my_reports/"
+                                            target="_blank">Informations clés</a> en main, vous êtes prêt(e) à présenter
+                                        <strong>le bilan des performances</strong> à votre équipe. Avec les rapports
+                                        faciles à comprendre et les visualisations de données claires de Semrush, vous
+                                        dominerez la réunion avec brio et professionnalisme.
+                                    </p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+                                    <!-- 1 -->
+                                    <div class="alarm-screen__pics-pic pic " data-swiper-parallax="100"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+                                        <img src="./src/assets/img/photo-7_x1.832cc95ac6a62a78b416297cb8034634.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;">
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+                                        <img src="./src/assets/img/photo-8_x1.21e94a8b0f59bb16682affe1af14985f.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;">
+                                    </div>
+                                    <!-- shape -->
+
+                                    <!-- 3 -->
+                                    <svg class="shape fadeUp rotation parallax-1" width="342" height="321"
+                                        viewBox="0 0 342 321" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        data-speed="1.1" data-lag="0"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 9.40506px); will-change: transform;">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M105.262 316.446L4.79691 59.3644C4.79678 59.3618 4.79673 59.3588 4.79679 59.3554C4.79718 59.337 4.80094 59.3197 4.80573 59.3072C4.80778 59.3018 4.80955 59.2985 4.81069 59.2966C4.8119 59.2945 4.8124 59.2941 4.81174 59.2949L4.81227 59.2943C4.81277 59.2939 4.81357 59.2932 4.81477 59.2923C4.81755 59.2902 4.82586 59.284 4.84259 59.2755L110.517 5.39288C111.749 4.76448 112.325 4.80702 112.884 4.98858L281.398 59.7421C282.456 60.383 283.36 61.1709 283.988 61.9942L337.664 167.416C337.673 167.432 337.676 167.442 337.677 167.446C337.678 167.449 337.678 167.45 337.678 167.45C337.677 167.448 337.678 167.452 337.675 167.463C337.672 167.476 337.665 167.492 337.654 167.507C337.652 167.51 337.65 167.512 337.649 167.515L105.262 316.446ZM339.941 170.796C341.5 169.699 342.207 167.523 341.229 165.601L287.408 59.895C286.311 58.3358 284.734 57.0214 283.04 56.0698L114.12 1.18436C112.307 0.595455 110.621 0.849696 108.7 1.82938L3.02559 55.712C1.10425 56.6917 0.39722 58.8679 1.01329 60.672L101.89 318.807C102.869 320.728 105.044 321.435 106.602 320.338L339.941 170.796Z"
+                                            fill="#9AFA00"></path>
+                                    </svg>
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_5.93c8b887297a8005e34a7498ac298be9.svg"
+                                            alt="screen">
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-200"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_6.e014c281358e2b02c1e4de63b3c0d200.svg"
+                                            alt="screen">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 slide -->
+                            <div class="swiper-slide alarm-4" role="group" aria-label="4 / 6" style="width: 1340px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-4.b518027e6dbd1f04edc7122df67782fa.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm fadeUp"><span class="de_time">Um</span> 3
+                                        <span>:</span> 00 pm
+                                    </p>
+                                    <div class="line l-4 fadeUp"></div>
+                                    <h2 class="split-title" data-swiper-parallax="50"
+                                        style="transform: translate3d(-50px, 0px, 0px);">
+                                        <div style="display: block; text-align: left; position: relative;">Travaillez
+                                            quand et </div>
+                                        <div style="display: block; text-align: left; position: relative;">où vous
+                                            voulez</div>
+                                    </h2>
+                                    <p class="text fadeUp">Semrush vous accompagne partout où vous allez. Que vous
+                                        planifiez votre stratégie de <a class="cta_lb_button" href=""
+                                            target="_blank">link building</a> dans un café ou <strong>que vous écriviez
+                                            un nouvel article optimisé SEO depuis votre bureau</strong>, Semrush est la
+                                        seule plateforme dont vous avez besoin pour travailler à tout moment et de
+                                        n'importe où.</p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+                                    <!-- 1 -->
+                                    <div class="alarm-screen__pics-pic pic " data-swiper-parallax="100"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+                                        <img src="./src/assets/img/photo-9_x1.fd3ce0c62cba5586e8e88f098d5bebb4.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;">
+
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+                                        <img src="./src/assets/img/photo-10_x1.d0d45d44bc8de7ddfddefcaf61a86de7.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;">
+                                    </div>
+                                    <!-- shape -->
+
+                                    <!-- 3 -->
+                                    <svg class="shape fadeUp rotation parallax-1" width="361" height="352"
+                                        viewBox="0 0 361 352" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        data-speed="1.1" data-lag="0"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 10.1751px); will-change: transform;">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M117.357 122.082L5.03501 150.087C4.96308 150.105 4.86698 150.16 4.79063 150.287C4.71425 150.414 4.70963 150.528 4.72876 150.604L21.0894 216.223C43.7576 307.14 134.685 364.691 225.604 343.238C318.109 321.389 374.261 228.36 351.327 136.375L318.606 5.13706C318.586 5.06017 318.529 4.96215 318.402 4.88564C318.275 4.80917 318.164 4.80593 318.092 4.82385L213.942 30.7914C213.87 30.8093 213.774 30.8641 213.698 30.9912C213.622 31.1185 213.617 31.232 213.636 31.3089L221.421 62.5313L109.879 90.3419C109.807 90.3598 109.711 90.4145 109.634 90.5417C109.558 90.6689 109.553 90.7824 109.573 90.8593L117.357 122.082ZM105.691 91.827C105.107 89.4835 106.57 87.0442 108.911 86.4607L216.572 59.6178L209.755 32.2766C209.171 29.933 210.634 27.4938 212.974 26.9102L317.125 0.942667C319.465 0.359125 321.902 1.82584 322.487 4.16937L355.208 135.407C378.678 229.539 321.213 324.766 226.523 347.131C133.392 369.106 40.3858 310.151 17.2082 217.191L0.847573 151.572C0.263265 149.228 1.72687 146.789 4.06733 146.206L112.508 119.168L105.691 91.827Z"
+                                            fill="#FF642D"></path>
+                                    </svg>
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_7.6edf4844fd908b44a7213f73de513e75.svg"
+                                            alt="screen">
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-200"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_8.edcbe67c9e6fee0ee350a637d7708d21.svg"
+                                            alt="screen">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5 slide -->
+                            <div class="swiper-slide alarm-5" role="group" aria-label="5 / 6" style="width: 1340px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-5.e1160610471bfdf887f3a51e7a57b15f.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm fadeUp"><span class="de_time">Um</span> 4
+                                        <span>:</span> 40 pm
+                                    </p>
+                                    <div class="line l-5 fadeUp"></div>
+                                    <h2 class="split-title" data-swiper-parallax="50"
+                                        style="transform: translate3d(-50px, 0px, 0px);">
+                                        <div style="display: block; text-align: left; position: relative;">Du temps pour
+                                        </div>
+                                        <div style="display: block; text-align: left; position: relative;">moi,
+                                            n'importe </div>
+                                        <div style="display: block; text-align: left; position: relative;">quand</div>
+                                    </h2>
+                                    <p class="text fadeUp">La vie ne s'arrête pas et Semrush non plus. Le temps et
+                                        l'énergie que vous gagnerez sur la recherche de mots clés, le suivi des
+                                        positions et <a class="cta_oa_button" href="" target="_blank">publicité en
+                                            ligne</a> pourront être consacrés aux aspects
+                                        de votre vie qui comptent le plus : amis, famille et passions personnelles.</p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+                                    <!-- 1 -->
+                                    <div class="alarm-screen__pics-pic pic " data-swiper-parallax="100"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+                                        <img src="./src/assets/img/photo-11_x1.93f802c7fb093c93e37fd50a63049ebf.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;">
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+                                        <img src="./src/assets/img/photo-12_x1.6eb70205134edb6efee41010dacda1c5.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;">
+                                    </div>
+                                    <!-- shape -->
+
+                                    <!-- 3 -->
+                                    <svg class="shape fadeUp rotation parallax-1" width="392" height="392"
+                                        viewBox="0 0 392 392" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        data-speed="1.1" data-lag="0"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, -5.60994px); will-change: transform;">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M199.753 29.0965L198.158 28.2712C174.684 16.1261 149.217 7.94189 122.857 4.22992L122.852 4.22919C122.411 4.16652 121.949 4.34528 121.666 4.68248L121.665 4.68411C104.564 25.0822 91.1137 48.2058 81.7963 72.938L81.1632 74.6185L52.0998 85.7749C21.3468 97.5798 5.98479 132.082 17.7883 162.84C17.7883 162.84 17.7883 162.84 17.7883 162.84L28.9469 191.909L28.1216 193.504C15.9765 216.977 7.7923 242.445 4.08039 268.804L4.08001 268.806C4.01816 269.244 4.19622 269.707 4.53466 269.991L4.53674 269.993C24.933 287.097 48.0525 300.546 72.786 309.859L74.467 310.492L85.6256 339.561C97.4307 370.315 131.934 385.676 162.687 373.871L164.12 377.606C131.305 390.202 94.4881 373.81 81.8913 340.995L71.3764 313.603C46.2245 304.131 22.7118 290.455 1.96643 273.057C0.568467 271.887 -0.136024 270.051 0.119471 268.246C3.89492 241.436 12.2187 215.535 24.5689 191.666L14.054 164.273C1.45889 131.454 17.8507 94.6373 50.6663 82.0405L78.0531 71.5278C87.5279 46.3777 101.206 22.8613 118.6 2.11426C119.771 0.716298 121.606 0.0118221 123.415 0.269014C150.226 4.04449 176.126 12.3683 199.996 24.7186L227.388 14.2037C260.204 1.60695 297.02 17.9987 309.617 50.8144L320.132 78.2067C345.282 87.6816 368.799 101.36 389.548 118.759C390.946 119.93 391.65 121.765 391.395 123.57C387.619 150.381 379.296 176.281 366.942 200.149L377.455 227.536C390.055 260.353 373.663 297.17 340.842 309.769L313.45 320.284C303.975 345.434 290.297 368.95 272.899 389.695C271.725 391.092 269.893 391.798 268.084 391.541C241.277 387.767 215.381 379.445 191.513 367.091L164.12 377.606L162.687 373.871L191.756 362.713L193.351 363.538C216.823 375.687 242.286 383.869 268.642 387.58L268.647 387.58C269.081 387.642 269.546 387.468 269.838 387.121C286.941 366.726 300.39 343.604 309.707 318.873L310.34 317.193L339.409 306.034C370.168 294.227 385.529 259.724 373.72 228.97L362.564 199.906L363.389 198.311C375.538 174.839 383.722 149.372 387.434 123.013L387.434 123.01C387.496 122.573 387.318 122.109 386.98 121.826L386.978 121.824C366.578 104.717 343.454 91.2673 318.722 81.9499L317.041 81.3168L305.883 52.2478C294.078 21.4946 259.575 6.13296 228.822 17.938L199.753 29.0965Z"
+                                            fill="#FF00D0"></path>
+                                    </svg>
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_9.3b8c6cb93638fc9f5cbc5ab7c80ba6a3.svg"
+                                            alt="screen">
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-200"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_10.6c8fb8388901b24970e5e6f84c261b15.svg"
+                                            alt="screen">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6 slide -->
+                            <div class="swiper-slide alarm-6" role="group" aria-label="6 / 6" style="width: 1340px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-6.9a0f38f19254a9b4e2ddabec9efdc721.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm fadeUp"><span class="de_time">Um</span> 10
+                                        <span>:</span> 00 pm
+                                    </p>
+                                    <div class="line l-6 fadeUp"></div>
+                                    <h2 class="split-title" data-swiper-parallax="50"
+                                        style="transform: translate3d(-50px, 0px, 0px);">
+                                        <div style="display: block; text-align: left; position: relative;"><em
+                                                style="white-space: nowrap;">Hey <span>DJ</span> Mets</em> </div>
+                                        <div style="display: block; text-align: left; position: relative;"><em
+                                                style="white-space: nowrap;">un disque</em></div>
+                                    </h2>
+                                    <p class="text fadeUp">Du temps pour vos passions ! Gaby, notre spécialiste SEO et
+                                        DJ, se rend sur les scènes des boîtes de nuit de New York avec confiance,
+                                        sachant que Semrush la couvre. <a class="cta_sp_button"
+                                            href="https://fr.semrush.com/signup/?src=lp-gaby-s-fr&amp;trial=force&amp;redirect_to=/social-media/"
+                                            target="_blank">Les posts sur les réseaux sociaux sont planifiés</a>, les
+                                        activités des concurrents sont suivies et un nouvel ensemble de données
+                                        l'attendra le lendemain matin. Redécouvrez votre propre temps libre dès
+                                        aujourd'hui.</p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+                                    <!-- 1 -->
+                                    <div class="alarm-screen__pics-pic pic " data-swiper-parallax="100"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+                                        <img src="./src/assets/img/photo-13_x1.064f3c3fb2c18c1324ee0b60ec8c5d18.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;">
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+
+                                        <img src="./src/assets/img/photo-14_x1.550f0e0e583aebc4b4c53fc6cbd63728.png"
+                                            alt="photo" class="alarm-screen__pics-pic__img" data-speed="1" data-lag="0"
+                                            style="translate: none; rotate: none; scale: none;">
+                                    </div>
+                                    <!-- shape -->
+
+                                    <!-- 3 -->
+                                    <svg class="shape fadeUp rotation parallax-1" width="448" height="405"
+                                        viewBox="0 0 448 405" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        data-speed="1.1" data-lag="0"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, -18.8649px); will-change: transform;">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M354.233 86.9988L344.205 45.6721C337.088 16.3396 307.276 -1.53411 277.554 5.86551L46.6736 63.3448C16.9472 70.7455 -1.28404 100.58 5.83351 129.912L61.3198 358.58C68.4373 387.913 98.2449 405.787 127.971 398.386L358.852 340.907C388.574 333.507 406.809 303.672 399.692 274.34L389.663 233.009L443.712 254.671L392.212 42.4296L354.233 86.9988ZM348.087 44.7057C340.439 13.1859 308.436 -5.94479 276.611 1.97836L45.7303 59.4577C13.9009 67.3819 -5.69623 99.3587 1.95205 130.879L57.4383 359.546C65.0866 391.066 97.0851 410.198 128.915 402.274L359.795 344.794C391.62 336.871 411.221 304.894 403.573 273.374L395.383 239.623L443.123 258.757C445.75 259.81 448.502 257.448 447.838 254.71L395.849 40.4582C395.185 37.7205 391.665 36.9156 389.82 39.0863L356.275 78.4525L348.087 44.7057Z"
+                                            fill="#00FFAA"></path>
+                                    </svg>
+                                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <img src="./src/assets/svg/scr_11.083a702315620731971dc2cb8529e686.svg"
+                                            alt="screen">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                        aria-controls="swiper-wrapper-2b97a554cc3db5f5" aria-disabled="false"></div>
+                    <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button"
+                        aria-label="Previous slide" aria-controls="swiper-wrapper-2b97a554cc3db5f5"
+                        aria-disabled="true"></div>
+                </div>
+                <!-- mob -->
+                <div class="container mob">
+                    <div
+                        class="swiper-mob swiper-initialized swiper-horizontal swiper-pointer-events swiper-autoheight swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-b71744877327acb1" aria-live="polite"
+                            style="transition-duration: 0ms; height: 693px; transform: translate3d(0px, 0px, 0px);">
+                            <!-- 1 slide -->
+                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6"
+                                style="margin-right: 16px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-1.42fae017694ffaacaa64a60a8b2bbfee.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm"><span class="de_time">Um</span> 7 <span>:</span>
+                                        00 am</p>
+                                    <div class="line l-1"></div>
+                                    <h2 class="title">Votre matinée à votre rythme</h2>
+                                    <p class="text">Semrush commence la journée du bon pied avec <strong>des données
+                                            claires et exploitables sur tous vos canaux marketing.</strong> Savourez
+                                        votre café ou votre matcha latte, vérifiez <a class="cta_kw_button"
+                                            href="https://fr.semrush.com/signup/?src=lp-gaby-s-fr&amp;trial=force&amp;redirect_to=/analytics/organic/overview?db=fr"
+                                            target="_blank">le classement de vos mots clés</a> ou votre activité sur les
+                                        réseaux sociaux et prenez une longueur d'avance.</p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+
+
+                                    <img src="./src/assets/img/mob-pic-1_x1.e5348c7e0281e8626f9d49d524bfcdff.png"
+                                        alt="photo" class="alarm-screen__pics-pic__img"
+                                        style="translate: none; rotate: none; scale: none;" data-speed="1" data-lag="0"
+                                        data-savepage-loading="lazy">
+                                </div>
+                            </div>
+                            <!-- 2 slide -->
+                            <div class="swiper-slide alarm-2 swiper-slide-next" role="group" aria-label="2 / 6"
+                                style="margin-right: 16px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-2.3b5bd3f6b4901efd7d49aba00c717ac0.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm "><span class="de_time">Um</span> 9
+                                        <span>:</span> 00 am
+                                    </p>
+                                    <div class="line l-2"></div>
+                                    <h2 class="title">Lancez votre flux de travail</h2>
+                                    <p class="text">On commence par un bilan de santé quotidien de votre site web avec
+                                        un <a class="cta_sa_button"
+                                            href="https://fr.semrush.com/signup/?src=lp-gaby-s-fr&amp;trial=force&amp;redirect_to=/siteaudit/"
+                                            target="_blank">audit de site&nbsp;</a>? Ou peut-être préférez-vous vous
+                                        plonger dans une étude de concurrence ? Ou découvrir des sujets d'intérêt pour
+                                        votre audience et élaborer un contenu trimestriel et un calendrier pour les
+                                        réseaux sociaux.</p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+
+
+                                    <img src="./src/assets/img/mob-pic-2_x1.08cee04d2383d6f7cb4fa24527fb55fe.png"
+                                        alt="photo" class="alarm-screen__pics-pic__img"
+                                        style="translate: none; rotate: none; scale: none;" data-speed="1" data-lag="0"
+                                        data-savepage-loading="lazy">
+                                </div>
+                            </div>
+                            <!-- 3 slide -->
+                            <div class="swiper-slide alarm-3" role="group" aria-label="3 / 6"
+                                style="margin-right: 16px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-3.01c412cf02a1eddb916f5860ba1a21f7.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm "><span class="de_time">Um</span> 11
+                                        <span>:</span> 15 am
+                                    </p>
+                                    <div class="line l-3"></div>
+                                    <h2 class="title">Offrez le meilleur</h2>
+                                    <p class="text"><a class="cta_ki_button" href="" target="_blank">Informations
+                                            clés</a> en main, vous êtes prêt(e) à présenter
+                                        <strong>le bilan des performances</strong> à votre équipe. Avec les rapports
+                                        faciles à comprendre et les visualisations de données claires de Semrush, vous
+                                        dominerez la réunion avec brio et professionnalisme.
+                                    </p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+
+
+                                    <img src="./src/assets/img/mob-pic-3_x1.cb895312f5911ec7e397a6bc8c5fa259.png"
+                                        alt="photo" class="alarm-screen__pics-pic__img"
+                                        style="translate: none; rotate: none; scale: none;" data-speed="1" data-lag="0"
+                                        data-savepage-loading="lazy">
+                                </div>
+                            </div>
+                            <!-- 4 slide -->
+                            <div class="swiper-slide alarm-4" role="group" aria-label="4 / 6"
+                                style="margin-right: 16px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-4.b518027e6dbd1f04edc7122df67782fa.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm "><span class="de_time">Um</span> 3
+                                        <span>:</span> 00 pm
+                                    </p>
+                                    <div class="line l-4"></div>
+                                    <h2 class="title">Travaillez quand et où vous voulez</h2>
+                                    <p class="text">Semrush vous accompagne partout où vous allez. Que vous planifiez
+                                        votre stratégie de <a class="cta_lb_button" href="" target="_blank">link
+                                            building</a> dans un café ou <strong>que vous écriviez
+                                            un nouvel article optimisé SEO depuis votre bureau</strong>, Semrush est la
+                                        seule plateforme dont vous avez besoin pour travailler à tout moment et de
+                                        n'importe où.</p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+
+
+                                    <img src="./src/assets/img/mob-pic-4_x1.bee916ca9922dab6c97bdda58eca5bdb.png"
+                                        alt="photo" class="alarm-screen__pics-pic__img"
+                                        style="translate: none; rotate: none; scale: none;" data-speed="1" data-lag="0"
+                                        data-savepage-loading="lazy">
+                                </div>
+                            </div>
+                            <!-- 5 slide -->
+                            <div class="swiper-slide alarm-5" role="group" aria-label="5 / 6"
+                                style="margin-right: 16px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-5.e1160610471bfdf887f3a51e7a57b15f.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm "><span class="de_time">Um</span> 4
+                                        <span>:</span> 40 pm
+                                    </p>
+                                    <div class="line l-5"></div>
+                                    <h2 class="title">Du temps pour moi, n'importe quand</h2>
+                                    <p class="text">La vie ne s'arrête pas et Semrush non plus. Le temps et l'énergie
+                                        que vous gagnerez sur la recherche de mots clés, le suivi des positions et <a
+                                            class="cta_oa_button"
+                                            href="https://fr.semrush.com/signup/?src=lp-gaby-s-fr&amp;trial=force&amp;redirect_to=/ppc/"
+                                            target="_blank">publicité en ligne</a> pourront être consacrés aux aspects
+                                        de votre vie qui comptent le plus : amis, famille et passions personnelles.</p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+
+
+                                    <img src="./src/assets/img/mob-pic-5_x1.40ce01524430f0f39f72a9184bbe5a59.png"
+                                        alt="photo" class="alarm-screen__pics-pic__img"
+                                        style="translate: none; rotate: none; scale: none;" data-speed="1" data-lag="0"
+                                        data-savepage-loading="lazy">
+                                </div>
+                            </div>
+                            <!-- 6 slide -->
+                            <div class="swiper-slide alarm-6" role="group" aria-label="6 / 6"
+                                style="margin-right: 16px;">
+                                <img class="slider-bg"
+                                    src="./src/assets/svg/slider-bg-6.9a0f38f19254a9b4e2ddabec9efdc721.svg" alt=""
+                                    data-savepage-loading="lazy">
+                                <div class="alarm-screen__text">
+                                    <p class="alarm-screen__text-alarm "><span class="de_time">Um</span> 10
+                                        <span>:</span> 00 pm
+                                    </p>
+                                    <div class="line l-6"></div>
+                                    <h2 class="title"><em style="white-space: nowrap;">Hey <span>DJ</span> Mets</em> <em
+                                            style="white-space: nowrap;">un disque</em></h2>
+                                    <p class="text">Du temps pour vos passions ! Gaby, notre spécialiste SEO et DJ, se
+                                        rend sur les scènes des boîtes de nuit de New York avec confiance, sachant que
+                                        Semrush la couvre. <a class="cta_sp_button"
+                                            href="https://fr.semrush.com/signup/?src=lp-gaby-s-fr&amp;trial=force&amp;redirect_to=/social-media/"
+                                            target="_blank">Les posts sur les réseaux sociaux sont planifiés</a>, les
+                                        activités des concurrents sont suivies et un nouvel ensemble de données
+                                        l'attendra le lendemain matin. Redécouvrez votre propre temps libre dès
+                                        aujourd'hui.</p>
+                                </div>
+
+                                <div class="alarm-screen__pics">
+
+
+                                    <img src="./src/assets/img/mob-pic-6_x1.3b38bf1f45e595bd4059e11cdd86ae33.png"
+                                        alt="photo" class="alarm-screen__pics-pic__img"
+                                        style="translate: none; rotate: none; scale: none;" data-speed="1" data-lag="0"
+                                        data-savepage-loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                role="button" aria-label="Go to slide 1" aria-current="true"></span><span
+                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
+                                role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet"
+                                tabindex="0" role="button" aria-label="Go to slide 4"></span><span
+                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0"
+                                role="button" aria-label="Go to slide 6"></span>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </section>
+            <!-- alarm-screen end -->
+
+
+
+            <!-- final-screen -->
+            <section class="final-screen rotation-trigger">
+                <svg class="final-screen-bg" width="1728" height="1153" viewBox="0 0 1728 1153" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.799805" width="1728" height="1428" fill="url(#paint0_linear_1029_175437)"></rect>
+                    <defs>
+                        <lineargradient id="paint0_linear_1029_175437" x1="864" y1="0.799805" x2="864" y2="1428.8"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FF642D" stop-opacity="0"></stop>
+                            <stop offset="0.667983" stop-color="#FF642D"></stop>
+                        </lineargradient>
+                    </defs>
+                </svg>
+                <div class="container">
+                    <div class="row content">
+                        <div class="final-screen__text">
+                            <h2 class="fade">
+                                <nobr>Que dites-vous</nobr>
+                            </h2>
+                            <h2 class="fade">
+                                <nobr>de</nobr>
+                            </h2>
+                            <h2 class="fade">
+                                <nobr>cela ?</nobr>
+                            </h2>
+                            <div class="fadeUp">
+                                <p class="subtitle">Soyez le maître de votre domaine. Obtenez Semrush, une plateforme
+                                    complète conçue pour les spécialistes marketing comme vous.</p>
+                                <a href="" target="_blank" class="button cta_footer_button">Essayez gratuitement</a>
+                            </div>
+                        </div>
+                        <div class="final-screen__pic">
+
+                            <svg class="final-shape rotation" width="1102" height="1099" viewBox="0 0 1102 1099"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M801.378 168.538L801.792 169.232L802.586 169.385L879.797 184.273C971.317 201.921 1031.25 290.202 1013.66 381.448L998.812 458.428L998.659 459.22L999.151 459.861C1042.85 516.747 1076.9 580.831 1099.42 649.428L1099.42 649.429C1100.75 653.47 1099.88 657.979 1097.15 661.236L1097.15 661.237C1050.74 716.535 995.3 763.363 933.581 799.914L932.886 800.326L932.733 801.118L917.893 878.082L919.466 878.386L917.893 878.083C900.304 969.338 811.844 1029.01 720.308 1011.35L643.097 996.466L642.303 996.313L641.66 996.803C584.665 1040.31 520.44 1074.2 451.687 1096.58C447.626 1097.89 443.11 1097.03 439.837 1094.29L439.835 1094.28C384.338 1047.96 337.324 992.627 300.602 931.039L300.188 930.345L299.394 930.191L222.183 915.303C130.663 897.655 70.7302 809.374 88.3246 718.128L103.168 641.149L103.321 640.356L102.828 639.715C59.1249 582.836 25.0768 518.76 2.56008 450.173L2.5597 450.172C1.23002 446.131 2.09954 441.621 4.83646 438.364L4.83724 438.363C51.2417 383.066 106.683 336.238 168.396 299.678L169.091 299.266L169.244 298.473L184.087 221.494C201.691 130.242 290.152 70.5741 381.672 88.2216L458.867 103.107L459.661 103.26L460.304 102.77C517.299 59.2604 581.525 25.372 650.272 2.98528L650.272 2.985C654.323 1.66375 658.846 2.53554 662.121 5.27739L662.123 5.27888C717.626 51.6162 764.647 106.956 801.378 168.538Z"
+                                    stroke="#FFFF00" stroke-width="3.6"></path>
+                            </svg>
+
+                            <img src="./src/assets/img/final-pic_x1.0c4212b2af292d9432d5d465527cd4c3.png" alt="photo"
+                                class="final-screen__pic__img" data-savepage-loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- footer starts -->
+            <section class="footer-line">
+                <div class="container">
+                    <div class="footer">
+                        <div class="footer-line__logo">
+                            <a href="" target="blank">
+                                <img src="./src/assets/svg/logo-semrush_white.73091556f489a0de18fed0f1b33d17ba.svg"
+                                    class="logo-footer" width="143" height="19" alt="logotype"
+                                    data-savepage-loading="lazy">
+                            </a>
+                        </div>
+                        <div class="regulations">
+                            <a class="terms-privacy" href="" target="blank"><span>Mentions légales</span></a>
+                            <a class="terms-privacy" href="" target="blank"><span>Politique de
+                                    confidentialité</span></a>
+                        </div>
+
+                        <div class="footer-year">
+                            <span>© 2008 - <i class="year">2023</i> Semrush.
+                                Tous&nbsp;droits&nbsp;réservés.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- footer ends -->
+            <!-- final-screen ends -->
+        </section>
+    </section>
+
+
+
+    <script src="./src/js/main.6c685e0f908ea8dbb361.js"></script>
+
+
+
+
+
+</body>
+
+</html>

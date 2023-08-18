@@ -1,0 +1,19 @@
+{
+  "name": "showase_ninks",
+  "version": "1.0.0",
+  "description": "shocase website of ninks application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amine-maker/shocase_ninks.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Amine-maker/shocase_ninks/issues"
+  },
+  "homepage": "https://github.com/Amine-maker/shocase_ninks#readme"
+}
