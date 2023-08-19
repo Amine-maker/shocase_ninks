@@ -1,19 +1,28 @@
 {
-  "name": "showase_ninks",
-  "version": "1.0.0",
-  "description": "shocase website of ninks application",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Amine-maker/shocase_ninks.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Amine-maker/shocase_ninks/issues"
-  },
-  "homepage": "https://github.com/Amine-maker/shocase_ninks#readme"
+    "name": "showcaseninks",
+    "version": "1.0.0",
+    "description": "Showcase website for ninks application",
+    "main": "showcase_ninks.html",
+    "scripts": {
+        "start": "parcel showcase_ninks.html --open",
+        "build": "parcel build showcase_ninks.html"
+    },
+    "dependencies": {
+        "parcel-bundler": "^1.6.1"
+    },
+    "devDependencies": {
+        "@babel/core": "7.2.0",
+        "eslint": "^8.29.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.6.0",
+        "eslint-plugin-promise": "^6.1.1"
+    },
+    "resolutions": {
+        "@babel/preset-env": "7.13.8"
+    },
+    "keywords": [
+        "javascript",
+        "starter"
+    ]
 }
