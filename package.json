@@ -1,28 +1,21 @@
 {
-    "name": "showcaseninks",
-    "version": "1.0.0",
-    "description": "Showcase website for ninks application",
-    "main": "showcase_ninks.html",
-    "scripts": {
-        "start": "parcel showcase_ninks.html --open",
-        "build": "parcel build showcase_ninks.html"
-    },
-    "dependencies": {
-        "parcel-bundler": "^1.6.1"
-    },
-    "devDependencies": {
-        "@babel/core": "7.2.0",
-        "eslint": "^8.29.0",
-        "eslint-config-standard": "^17.0.0",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-n": "^15.6.0",
-        "eslint-plugin-promise": "^6.1.1"
-    },
-    "resolutions": {
-        "@babel/preset-env": "7.13.8"
-    },
-    "keywords": [
-        "javascript",
-        "starter"
-    ]
+  "name": "showcaseninks",
+  "version": "1.0.0",
+  "description": "Showcase website for ninks application",
+  "main": "./src/js/main.6c685e0f908ea8dbb361.js",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "keywords": [
+    "javascript",
+    "starter"
+  ],
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "parcel": "^2.9.3",
+    "prettier": "^3.0.2"
+  }
 }
