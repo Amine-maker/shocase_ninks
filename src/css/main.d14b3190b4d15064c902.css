@@ -175,60 +175,7 @@ html {
     justify-content: space-between !important;
   }
 }
-/******** framework *******/
-/*************** FONTS ***************/
-/* @font-face {
-  font-family: "Factor";
-  src: url(../fonts/Semrush-FactorA-Black.woff) format("woff");
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Factor";
-  src: url(../fonts/Semrush-FactorA-Bold.woff) format("woff");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Factor";
-  src: url(../fonts/Semrush-FactorA-Medium.woff) format("woff");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Factor";
-  src: url(../fonts/Semrush-FactorA-Regular.woff) format("woff");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Mplus";
-  src: url(../fonts/MPLUS1-Regular.ttf) format("ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  unicode-range: U+3000-30FF, U+FF00-FFEF, U+4E00-9FAF;
-}
-@font-face {
-  font-family: "Mplus";
-  src: url(../fonts/MPLUS1-Medium.ttf) format("ttf");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  unicode-range: U+3000-30FF, U+FF00-FFEF, U+4E00-9FAF;
-}
-@font-face {
-  font-family: "Mplus";
-  src: url(../fonts/MPLUS1-Bold.ttf) format("ttf");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  unicode-range: U+3000-30FF, U+FF00-FFEF, U+4E00-9FAF;
-} */
+
 .container,
 body {
   position: relative;
@@ -457,17 +404,10 @@ a.button:active {
     padding: 24px 48px 20px;
     font-size: 22px;
   }
-
-  .de .nav .header-button .button,
-  .es .nav .header-button .button,
-  .it .nav .header-button .button,
   .fr .nav .header-button .button {
     padding: 17px 24px 13px;
     font-size: 16px;
   }
-  .de a.button,
-  .es a.button,
-  .it a.button,
   .fr a.button {
     padding: 24px 24px 20px;
     font-size: 18px;
@@ -481,21 +421,7 @@ a.button:active {
     justify-content: center;
   }
 }
-@media screen and (max-width: 320.98px) {
-  .de .nav .header-button .button,
-  .es .nav .header-button .button,
-  .it .nav .header-button .button,
-  .pt .nav .header-button .button {
-    padding: 17px 16px 13px;
-    font-size: 15px;
-  }
-  .de a.button,
-  .es a.button,
-  .it a.button,
-  .pt a.button {
-    padding: 24px 20px 20px;
-  }
-}
+
 /*************** TYPOGRAPHIC ***************/
 h1 {
   font-family: Mplus, Factor, Arial, sans-serif;
@@ -1823,32 +1749,6 @@ li:last-of-type {
   height: auto;
 }
 
-.de .main-screen__text h1 {
-  font-size: 80px;
-}
-.de .second-screen__block-text .split-title {
-  font-size: 93px;
-}
-.de .final-screen__text h2 {
-  font-size: 60px;
-}
-.de .final-screen__text h2:nth-of-type(2) {
-  left: -100px;
-}
-.de .final-screen__text h2:nth-of-type(3) {
-  left: 50px;
-}
-
-.es .final-screen__text h2 {
-  font-size: 70px;
-}
-.es .final-screen__text h2:nth-of-type(2) {
-  left: -50px;
-}
-.es .final-screen__text h2:nth-of-type(3) {
-  left: 0px;
-}
-
 .fr .main-screen__text h1 {
   font-size: 86px;
 }
@@ -1876,85 +1776,6 @@ li:last-of-type {
 }
 .fr .final-screen__text h2:nth-of-type(3) {
   left: 0px;
-}
-
-.it .second-screen__block-text .split-title {
-  text-align: left;
-}
-.it
-  .second-screen__block:nth-of-type(2)
-  .second-screen__block-text
-  .split-title:last-of-type {
-  left: -20px;
-}
-
-.ja .second-screen__block .second-screen__block-text .split-title {
-  line-height: 117%;
-}
-.ja
-  .second-screen__block:nth-of-type(2)
-  .second-screen__block-text
-  .split-title:last-of-type {
-  left: 0px;
-}
-.ja .final-screen__text h2:nth-of-type(1) {
-  left: 0px;
-}
-.ja .final-screen__text h2:nth-of-type(2) {
-  left: -50px;
-}
-.ja .final-screen__text h2:nth-of-type(3) {
-  left: 0px;
-}
-
-.pt .main-screen__text h1 {
-  font-size: 80px;
-}
-.pt .second-screen__block .second-screen__block-text .split-title {
-  text-align: left;
-  font-size: 80px;
-}
-.pt .second-screen__block:nth-of-type(2) .second-screen__block-text {
-  text-align: left;
-}
-.pt
-  .second-screen__block:nth-of-type(2)
-  .second-screen__block-text
-  .split-title:first-of-type
-  em,
-.pt
-  .second-screen__block:nth-of-type(2)
-  .second-screen__block-text
-  .split-title:first-of-type
-  span {
-  color: #fff;
-}
-.pt
-  .second-screen__block:nth-of-type(2)
-  .second-screen__block-text
-  .split-title:last-of-type {
-  left: -24px;
-}
-.pt
-  .second-screen__block:nth-of-type(2)
-  .second-screen__block-text
-  .split-title:last-of-type
-  em,
-.pt
-  .second-screen__block:nth-of-type(2)
-  .second-screen__block-text
-  .split-title:last-of-type
-  span {
-  color: #ff642d;
-}
-.pt .final-screen__text h2 {
-  font-size: 70px;
-}
-.pt .final-screen__text h2:nth-of-type(2) {
-  left: -100px;
-}
-.pt .final-screen__text h2:nth-of-type(3) {
-  left: 40px;
 }
 
 @media (max-width: 1919.98px) {
@@ -2437,41 +2258,6 @@ li:last-of-type {
     width: 64.948vw;
   }
 
-  .de .main-screen__text h1 {
-    font-size: 4.16vw;
-  }
-  .de .second-screen__block-text .split-title {
-    font-size: 4.844vw;
-  }
-  .de
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:last-of-type {
-    left: 4.5vw;
-  }
-  .de .final-screen__text h2 {
-    font-size: 3.125vw;
-  }
-  .de .final-screen__text h2:nth-of-type(2) {
-    left: -5.208vw;
-  }
-  .de .final-screen__text h2:nth-of-type(3) {
-    left: 2.604vw;
-  }
-
-  .es .main-screen__text h1 {
-    font-size: 4.9vw;
-  }
-  .es .final-screen__text h2 {
-    font-size: 3.646vw;
-  }
-  .es .final-screen__text h2:nth-of-type(2) {
-    left: -2.604vw;
-  }
-  .es .final-screen__text h2:nth-of-type(3) {
-    left: 0px;
-  }
-
   .fr .main-screen__text h1 {
     font-size: 4.479vw;
   }
@@ -2492,39 +2278,6 @@ li:last-of-type {
   }
   .fr .final-screen__text h2:nth-of-type(3) {
     left: 0px;
-  }
-
-  .it
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:last-of-type {
-    left: -4.706vw;
-  }
-
-  .ja .final-screen__text h2:nth-of-type(2) {
-    left: -2.604vw;
-  }
-
-  .pt .main-screen__text h1 {
-    font-size: 4vw;
-  }
-  .pt .second-screen__block .second-screen__block-text .split-title {
-    font-size: 4.167vw;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:last-of-type {
-    left: -1.25vw;
-  }
-  .pt .final-screen__text h2 {
-    font-size: 3.6vw;
-  }
-  .pt .final-screen__text h2:nth-of-type(2) {
-    left: -3.125vw;
-  }
-  .pt .final-screen__text h2:nth-of-type(3) {
-    left: 2.083vw;
   }
 }
 @media (max-width: 1439.98px) {
@@ -2944,75 +2697,6 @@ li:last-of-type {
     height: auto;
   }
 
-  .de .main-screen__text h1 {
-    font-size: 64px;
-  }
-  .de .second-screen__block .split-title {
-    font-size: 70px;
-  }
-  .de
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(1),
-  .de
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 102px;
-  }
-  .de .final-screen__text h2 {
-    font-size: 48px;
-  }
-  .de .final-screen__text h2:nth-of-type(1) {
-    left: 0;
-  }
-  .de .final-screen__text h2:nth-of-type(2) {
-    left: 0;
-  }
-  .de .final-screen__text h2:nth-of-type(3) {
-    left: 0;
-  }
-
-  .es .main-screen__text h1 {
-    font-size: 86px;
-    left: 0;
-  }
-  .es .second-screen__block .split-title {
-    font-size: 63px;
-  }
-  .es
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(1),
-  .es
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 48px;
-  }
-  .es
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(2) {
-    left: 68px;
-  }
-  .es .second-screen__block:nth-of-type(2) .second-screen__block-pic {
-    top: -61px;
-    margin-bottom: 32px;
-  }
-  .es .final-screen__text h2 {
-    font-size: 55px;
-  }
-  .es .final-screen__text h2:nth-of-type(1) {
-    left: 0;
-  }
-  .es .final-screen__text h2:nth-of-type(2) {
-    left: 40px;
-  }
-  .es .final-screen__text h2:nth-of-type(3) {
-    left: 20px;
-  }
-
   .fr .main-screen__text h1 {
     font-size: 64px;
   }
@@ -3054,91 +2738,6 @@ li:last-of-type {
   }
   .fr .final-screen__text h2:nth-of-type(3) {
     left: 20px;
-  }
-
-  .it .second-screen__block .split-title {
-    font-size: 7.056vw;
-  }
-  .it .second-screen__block:nth-of-type(2) .second-screen__block-text {
-    top: 0;
-  }
-  .it
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(1),
-  .it
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 0px;
-  }
-  .it
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(2) {
-    left: 28px;
-  }
-  .it .second-screen__block:nth-of-type(2) .second-screen__block-pic {
-    top: -50px;
-    margin-bottom: 40px;
-  }
-
-  .pt .main-screen__text h1 {
-    font-size: 60px;
-  }
-  .pt .second-screen__block .second-screen__block-text .split-title {
-    font-size: 8vw;
-  }
-  .pt .second-screen__block:first-of-type {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .pt .second-screen__block:first-of-type .second-screen__block-pic {
-    display: inline-flex;
-    order: 1;
-    margin: 0 0 0 auto;
-    top: 12px;
-  }
-  .pt .second-screen__block:first-of-type .second-screen__block-text {
-    order: 2;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(1) {
-    left: 30px;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 20px;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(4) {
-    left: 60px;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text:last-of-type {
-    margin-top: 0px;
-  }
-  .pt .second-screen__block:nth-of-type(2) .second-screen__block-pic {
-    top: -50px;
-  }
-  .pt .final-screen__text h2 {
-    font-size: 55px;
-  }
-  .pt .final-screen__text h2:nth-of-type(1) {
-    left: 0px;
-  }
-  .pt .final-screen__text h2:nth-of-type(2) {
-    left: 0px;
-  }
-  .pt .final-screen__text h2:nth-of-type(3) {
-    left: 70px;
   }
 }
 @media (max-width: 767.98px) {
@@ -3209,78 +2808,6 @@ li:last-of-type {
     height: auto;
   }
 
-  .de .main-screen__text h1 {
-    font-size: 46px;
-  }
-  .de .main-screen__text h1:nth-of-type(3) {
-    width: auto;
-  }
-  .de .second-screen__block .split-title {
-    font-size: 9.115vw;
-  }
-  .de
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(1),
-  .de
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 0px;
-  }
-  .de
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(2) {
-    left: 32px;
-  }
-  .de
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:last-of-type {
-    left: 0px;
-  }
-  .de .final-screen__text h2 {
-    font-size: 6.258vw;
-  }
-  .de .final-screen__text h2:nth-of-type(2) {
-    left: -8.734vw;
-  }
-
-  .es .main-screen__text h1 {
-    font-size: 55px;
-    left: 0;
-  }
-  .es .main-screen__text h1:nth-of-type(3) {
-    width: auto;
-  }
-  .es .second-screen__block .split-title {
-    font-size: 8.203vw;
-  }
-  .es
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(1),
-  .es
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 6.25vw;
-  }
-  .es
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(2) {
-    left: 8.854vw;
-  }
-  .es .second-screen__block:nth-of-type(2) .second-screen__block-pic {
-    top: -61px;
-    margin-bottom: 32px;
-  }
-  .es .final-screen__text h2 {
-    font-size: 55px;
-  }
-
   .fr .main-screen__text h1 {
     font-size: 47px;
     left: 0;
@@ -3325,81 +2852,6 @@ li:last-of-type {
   }
   .fr .final-screen__text h2 {
     font-size: 47px;
-  }
-
-  .it .main-screen__text h1 {
-    font-size: 66px;
-    left: 0;
-  }
-  .it .main-screen__text h1:nth-of-type(3) {
-    width: auto;
-  }
-  .it .second-screen .second-screen__block .split-title {
-    font-size: 6vw;
-  }
-  .it .final-screen__text h2 {
-    font-size: 66px;
-  }
-  .it .final-screen__text h2:nth-of-type(1) {
-    left: -10%;
-  }
-  .it .final-screen__text h2:nth-of-type(3) {
-    left: -6%;
-  }
-
-  .ja .second-screen__block-text h2 {
-    font-size: 65px;
-  }
-
-  .pt .main-screen__text h1 {
-    font-size: 50px;
-  }
-  .pt .main-screen__text h1:last-of-type {
-    width: 112%;
-  }
-  .pt .second-screen__block .second-screen__block-text .split-title {
-    font-size: 6vw;
-  }
-  .pt .second-screen__block:nth-of-type(1) {
-    justify-content: space-between;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(1) {
-    left: 30px;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 20px;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(4) {
-    left: 60px;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text:last-of-type {
-    margin-top: 0px;
-  }
-  .pt .second-screen__block:nth-of-type(2) .second-screen__block-pic {
-    top: -50px;
-  }
-  .pt .final-screen__text h2 {
-    font-size: 50px;
-  }
-  .pt .final-screen__text h2:nth-of-type(1) {
-    left: 0px;
-  }
-  .pt .final-screen__text h2:nth-of-type(2) {
-    left: -1%;
-  }
-  .pt .final-screen__text h2:nth-of-type(3) {
-    left: 10%;
   }
 }
 @media (max-width: 575.98px) {
@@ -3575,37 +3027,6 @@ li:last-of-type {
     width: 142.25vw;
   }
 
-  .de .main-screen__text h1 {
-    font-size: 8.4vw;
-  }
-  .de .second-screen__block .split-title {
-    font-size: 9.153vw;
-  }
-  .de
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(1),
-  .de
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 5.313vw;
-  }
-  .de .second-screen__block:nth-of-type(2) .second-screen__block-pic {
-    top: -7.368vw;
-    margin-bottom: 40px;
-  }
-  .de .second-screen__block-text .line-trigger svg {
-    height: 225px;
-  }
-  .de .final-screen__text h2 {
-    font-size: 6.258vw;
-    line-height: 110%;
-  }
-  .de .final-screen__text h2:nth-of-type(2) {
-    left: 0px;
-  }
-
   .fr
     .second-screen
     .second-screen__block
@@ -3632,171 +3053,6 @@ li:last-of-type {
     .second-screen__block-text {
     display: inline-flex;
     order: 2;
-  }
-
-  .es .main-screen__text h1 {
-    font-size: 11vw;
-    left: 0;
-  }
-  .es .second-screen__block .split-title {
-    font-size: 11vw;
-    text-align: left;
-  }
-  .es
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(1),
-  .es
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 5.313vw;
-  }
-  .es .second-screen__block:nth-of-type(2) .second-screen__block-pic {
-    top: -7.368vw;
-    margin-bottom: 40px;
-  }
-  .es .second-screen__block-text .line-trigger svg {
-    height: 225px;
-  }
-  .es .second-screen__block:first-of-type {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .es .second-screen__block:first-of-type .second-screen__block-pic {
-    display: inline-flex;
-    order: 1;
-    margin: 0 0 0 auto;
-    top: 12px;
-  }
-  .es .second-screen__block:first-of-type .second-screen__block-text {
-    order: 2;
-    width: 100%;
-  }
-  .es .final-screen__text h2 {
-    font-size: 10vw;
-    line-height: 110%;
-  }
-  .es .final-screen__text h2:nth-of-type(2) {
-    left: 0px;
-  }
-
-  .it
-    .second-screen
-    .second-screen__block
-    .second-screen__block-text
-    .split-title {
-    font-size: 10vw;
-  }
-  .it .second-screen .second-screen__block:first-of-type {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .it
-    .second-screen
-    .second-screen__block:first-of-type
-    .second-screen__block-pic {
-    display: inline-flex;
-    order: 1;
-    margin: 0 0 0 auto;
-    top: 16px;
-  }
-  .it
-    .second-screen
-    .second-screen__block:first-of-type
-    .second-screen__block-text {
-    order: 2;
-    width: 100%;
-  }
-  .it
-    .second-screen
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(2) {
-    left: 20px;
-  }
-  .it
-    .second-screen
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 60px;
-  }
-  .it
-    .second-screen
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:last-of-type {
-    left: 20px;
-  }
-  .it
-    .second-screen
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .line-trigger
-    svg {
-    height: 200px;
-  }
-  .it
-    .second-screen
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-pic {
-    top: -50px;
-    margin-bottom: 40px;
-  }
-  .it .final-screen__text h2 {
-    font-size: 9.3vw;
-  }
-  .it .final-screen__text h2:nth-of-type(1) {
-    left: -3%;
-  }
-
-  .ja .second-screen__block-text h2 {
-    font-size: 11vw;
-  }
-
-  .pt .main-screen__text h1 {
-    font-size: 8.681vw;
-  }
-  .pt .main-screen__text h1:last-of-type {
-    width: 108%;
-    left: -4%;
-  }
-  .pt .second-screen__block .second-screen__block-text .split-title {
-    font-size: 8vw;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(1) {
-    left: 5.208vw;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(3) {
-    left: 3.472vw;
-  }
-  .pt
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .split-title:nth-of-type(4) {
-    left: 10.417vw;
-  }
-  .pt .second-screen__block:nth-of-type(2) .second-screen__block-pic {
-    top: -8.681vw;
-  }
-  .pt .final-screen__text h2 {
-    font-size: 8.681vw;
-  }
-  .pt .final-screen__text h2:nth-of-type(1) {
-    left: 0px;
-  }
-  .pt .final-screen__text h2:nth-of-type(2) {
-    left: -1%;
-  }
-  .pt .final-screen__text h2:nth-of-type(3) {
-    left: 10%;
   }
 }
 @media (max-width: 480.98px) {
@@ -3871,10 +3127,6 @@ li:last-of-type {
     top: 18.215vw;
   }
 
-  .es .second-screen__block-text .line-trigger svg {
-    height: 260px;
-  }
-
   .fr .main-screen__text h1 {
     font-size: 8.406vw;
   }
@@ -3895,49 +3147,6 @@ li:last-of-type {
   }
   .fr .final-screen__text h2 {
     font-size: 8.406vw;
-  }
-
-  .it .main-screen__text h1 {
-    font-size: 10.406vw;
-  }
-  .it
-    .second-screen
-    .second-screen__block
-    .second-screen__block-text
-    .split-title {
-    line-height: 102%;
-  }
-  .it
-    .second-screen
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-pic {
-    top: -40px;
-  }
-  .it
-    .second-screen
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .line-trigger
-    svg {
-    height: 250px;
-  }
-  .it .final-screen__text h2 {
-    font-size: 10.406vw;
-  }
-
-  .pt
-    .second-screen
-    .second-screen__block:last-of-type
-    .second-screen__block-pic {
-    margin-bottom: 14px;
-  }
-  .pt
-    .second-screen
-    .second-screen__block:last-of-type
-    .second-screen__block-text
-    .line-trigger
-    svg {
-    height: 222px;
   }
 }
 @media (max-width: 375.98px) {
@@ -4076,30 +3285,6 @@ li:last-of-type {
   .final-screen__pic img {
     width: 142.25vw;
   }
-
-  .de .second-screen__block .split-title {
-    line-height: 103%;
-  }
-
-  .es .main-screen__text h1 {
-    left: 0;
-  }
-  .es .second-screen__block-text .line-trigger svg {
-    height: 228px;
-  }
-
-  .it
-    .second-screen
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-pic {
-    top: -30px;
-  }
-  .it
-    .second-screen
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text:last-of-type {
-    margin-top: -20px;
-  }
 }
 @media (max-width: 320.98px) {
   .alarm-screen .swiper-slide {
@@ -4115,37 +3300,12 @@ li:last-of-type {
     width: 263px;
   }
 
-  .de .main-screen__text h1,
-  .es .main-screen__text h1,
-  .fr .main-screen__text h1,
-  .it .main-screen__text h1 {
-    line-height: 120%;
-  }
-  .de .final-screen__text h2,
-  .es .final-screen__text h2,
-  .fr .final-screen__text h2,
-  .it .final-screen__text h2 {
+  .fr .main-screen__text h1 {
     line-height: 120%;
   }
 
-  .it
-    .second-screen
-    .second-screen__block:nth-of-type(2)
-    .second-screen__block-text
-    .line-trigger
-    svg {
-    height: 270px;
-  }
-
-  .pt .main-screen__text h1 {
-    line-height: 110%;
-  }
-  .pt .main-screen__text h1:last-of-type {
-    width: 110%;
-    left: -5%;
-  }
-  .pt .final-screen .final-screen__text h2 {
-    line-height: 110%;
+  .fr .final-screen__text h2 {
+    line-height: 120%;
   }
 }
 .alarm-screen .alarm-screen__text .alarm-screen__text-alarm span.de_time {
@@ -4153,12 +3313,4 @@ li:last-of-type {
   top: 0;
   animation: none;
   display: none;
-}
-
-.de .alarm-screen .alarm-screen__text .alarm-screen__text-alarm span.de_time {
-  position: relative;
-  top: 0;
-  animation: none;
-  display: inline-block;
-  padding-right: 3px;
 }

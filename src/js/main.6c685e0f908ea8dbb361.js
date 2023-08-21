@@ -11527,21 +11527,7 @@
               y = segment[i + 1] += y
             }
           },
-          // feed in an array of quadratic bezier points like [{x: 0, y: 0}, ...] and it'll convert it to cubic bezier
-          // _quadToCubic = points => {
-          // 	let cubic = [],
-          // 		l = points.length - 1,
-          // 		i = 1,
-          // 		a, b, c;
-          // 	for (; i < l; i+=2) {
-          // 		a = points[i-1];
-          // 		b = points[i];
-          // 		c = points[i+1];
-          // 		cubic.push(a, {x: (2 * b.x + a.x) / 3, y: (2 * b.y + a.y) / 3}, {x: (2 * b.x + c.x) / 3, y: (2 * b.y + c.y) / 3});
-          // 	}
-          // 	cubic.push(points[l]);
-          // 	return cubic;
-          // },
+       
           _segmentToRawPath = function _segmentToRawPath(
             plugin,
             segment,
@@ -15878,19 +15864,7 @@ export function pointToScreen(svgElement, point) {
 
           return result
         }
-        /*
-//smaller kb version that only handles the simpler emoji's, which is often perfectly adequate.
-
-let _emoji = "[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D]|[\uD800-\uDBFF][\uDC00-\uDFFF]",
-  _emojiExp = new RegExp(_emoji),
-  _emojiAndCharsExp = new RegExp(_emoji + "|.", "g"),
-  _emojiSafeSplit = (text, delimiter, trim) => {
-    if (trim) {
-      text = text.replace(_trimExp, "");
-    }
-    return ((delimiter === "" || !delimiter) && _emojiExp.test(text)) ? text.match(_emojiAndCharsExp) : text.split(delimiter || "");
-  };
- */
+        
 
         function emojiSafeSplit(text, delimiter, trim, preserveSpaces) {
           text += "" // make sure it's cast as a string. Someone may pass in a number.
@@ -17319,29 +17293,14 @@ let _emoji = "[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u269
     ;(() => {
       "use strict"
       __webpack_require__.r(__webpack_exports__)
-      /* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ =
-        __webpack_require__(1)
-      /* harmony import */ var _analytics__WEBPACK_IMPORTED_MODULE_1__ =
-        __webpack_require__(2)
-      /* harmony import */ var _analytics__WEBPACK_IMPORTED_MODULE_1___default =
-        /*#__PURE__*/ __webpack_require__.n(
-          _analytics__WEBPACK_IMPORTED_MODULE_1__,
-        )
-      /* harmony import */ var gsap_MotionPathPlugin__WEBPACK_IMPORTED_MODULE_2__ =
-        __webpack_require__(4)
+   
         var gsap_SplitText__WEBPACK_IMPORTED_MODULE_4__ =
         __webpack_require__(8)
-      /* harmony import */ var gsap_DrawSVGPlugin__WEBPACK_IMPORTED_MODULE_3__ =
-        __webpack_require__(7)
       /* harmony import */ var gsap_ScrollSmoother__WEBPACK_IMPORTED_MODULE_5__ =
         __webpack_require__(10)
       /* provided dependency */ var $ = __webpack_require__(3)
-
       gsap.registerPlugin(
         ScrollTrigger,
-        gsap_MotionPathPlugin__WEBPACK_IMPORTED_MODULE_2__.MotionPathPlugin,
-        gsap_DrawSVGPlugin__WEBPACK_IMPORTED_MODULE_3__.DrawSVGPlugin,
-        gsap_SplitText__WEBPACK_IMPORTED_MODULE_4__.SplitText,
         gsap_ScrollSmoother__WEBPACK_IMPORTED_MODULE_5__.ScrollSmoother,
       )
       window.addEventListener("DOMContentLoaded", function () {
@@ -17530,7 +17489,7 @@ let _emoji = "[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u269
             }),
         }) // slider
 
-        let swiper = new Swiper(".swiper", {
+        new Swiper(".swiper", {
           speed: 1200,
           parallax: true,
           loop: false,
@@ -17543,7 +17502,7 @@ let _emoji = "[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u269
             prevEl: ".swiper-button-prev",
           },
         })
-        let swiperMob = new Swiper(".swiper-mob", {
+        new Swiper(".swiper-mob", {
           speed: 600,
           autoHeight: true,
           loop: false,
@@ -17557,7 +17516,7 @@ let _emoji = "[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u269
       })
     })()
 
-    /******/ return __webpack_exports__
+    return __webpack_exports__
     /******/
   })()
 })
