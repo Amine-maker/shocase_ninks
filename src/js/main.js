@@ -1,13 +1,12 @@
 import { gsap } from "gsap"
 
 import { ScrollTrigger } from "gsap/all"
-import Swiper, {Navigation, Pagination} from "swiper"
+import Swiper, { Navigation, Pagination, Parallax } from "swiper"
 import "swiper/swiper-bundle.min.css"
 import SplitText from "./core/SplitText"
 import ScrollSmoother from "./core/ScrollSmoother"
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText)
-
 
 window.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", function () {
@@ -193,7 +192,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }) // slider
 
   new Swiper(".swiper", {
-    modules: [Navigation],
+    modules: [Navigation, Parallax],
     speed: 1200,
     parallax: true,
     loop: false,
@@ -206,8 +205,9 @@ window.addEventListener("DOMContentLoaded", () => {
       prevEl: ".swiper-button-prev",
     },
   })
+
   new Swiper(".swiper-mob", {
-    modules : [Pagination],
+    modules: [Pagination, Parallax],
     speed: 600,
     autoHeight: true,
     loop: false,
