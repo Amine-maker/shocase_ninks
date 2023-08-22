@@ -17,5 +17,9 @@
     "eslint-config-prettier": "^9.0.0",
     "parcel": "^2.9.3",
     "prettier": "^3.0.2"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "swiper": "^8.4.7"
   }
 }
