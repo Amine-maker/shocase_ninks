@@ -1,9 +1,8 @@
 const StringUtil = {
-    emojiExp: () => emojiExp,
-    getText: () => getText,
-    splitInnerHTML: () => splitInnerHTML,
-    emojiSafeSplit: () => emojiSafeSplit,
-
+  emojiExp: () => emojiExp,
+  getText: () => getText,
+  splitInnerHTML: () => splitInnerHTML,
+  emojiSafeSplit: () => emojiSafeSplit,
 }
 /* eslint-disable */
 var _trimExp = /(?:^\s+|\s+$)/g
