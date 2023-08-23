@@ -1,13 +1,7 @@
 node_modules
 .vscode/*
-.vscode/settings.json
-.vscode/tasks.json
+
 .cache/*
-.vscode/settings.json
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode
 dist
 .parcel-cache
