@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/******** bootstrap ******/
+@import "./variable.css";
+@import "./boostrap.css";
+
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
@@ -9,295 +11,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 71.354vw;
-  }
-}
-@media (min-width: 1920px) {
-  .container {
-    max-width: 1370px;
-  }
-}
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.col-2,
-.col-10,
-.col-12,
-.col-md-4,
-.col-md-6,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8,
-.col-lg-9 {
-  position: relative;
-  width: 99%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-.col-2 {
-  -ms-flex: 0 0 16.666667%;
-  flex: 0 0 16.666667%;
-  max-width: 16.566667%;
-}
-
-.col-10 {
-  -ms-flex: 0 0 83.333333%;
-  flex: 0 0 83.333333%;
-  max-width: 83.233333%;
-}
-
-.col-12 {
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 99.8%;
-}
-
-@media (min-width: 768px) {
-  .col-md-4 {
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.233333%;
-  }
-
-  .col-md-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 49%;
-  }
-}
-@media (min-width: 992px) {
-  .col-lg-3 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 24%;
-  }
-
-  .col-lg-4 {
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.233333%;
-  }
-
-  .col-lg-5 {
-    -ms-flex: 0 0 41.666667%;
-    flex: 0 0 41.666667%;
-    max-width: 41.566667%;
-  }
-
-  .col-lg-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 49%;
-  }
-
-  .col-lg-7 {
-    -ms-flex: 0 0 58.333333%;
-    flex: 0 0 58.333333%;
-    max-width: 58.233333%;
-  }
-
-  .col-lg-8 {
-    -ms-flex: 0 0 66.666667%;
-    flex: 0 0 66.666667%;
-    max-width: 66.566667%;
-  }
-
-  .col-lg-9 {
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 74%;
-  }
-}
-.d-flex {
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-
-.flex-row-reverse {
-  -ms-flex-direction: row-reverse !important;
-  flex-direction: row-reverse !important;
-}
-
-.justify-content-center {
-  -ms-flex-pack: center !important;
-  justify-content: center !important;
-}
-
-.justify-content-between {
-  -ms-flex-pack: justify !important;
-  justify-content: space-between !important;
-}
-
-.align-items-center {
-  -ms-flex-align: center !important;
-  align-items: center !important;
-}
-
-@media (min-width: 992px) {
-  .justify-content-lg-between {
-    -ms-flex-pack: justify !important;
-    justify-content: space-between !important;
-  }
-}
-
-.container,
-body {
-  position: relative;
-}
-
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-html {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
 }
 
 /*************** STYLES ***************/
@@ -312,7 +25,7 @@ body {
 
 body,
 html {
-  background: #6f00ff;
+  background: var(--green-600);
   min-height: 100vh;
 }
 
@@ -326,7 +39,6 @@ body {
   line-height: 1.5em;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   transition: all 0.1s ease;
 }
 
@@ -715,8 +427,7 @@ li:last-of-type {
   padding: 30px 0;
   width: 100%;
   top: 0;
-  background: rgba(111, 0, 255, 0.7);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(var(--green-600), 0.7);
   backdrop-filter: blur(20px);
   z-index: 100;
 }
@@ -763,6 +474,7 @@ li:last-of-type {
 
 /*************** Footer ***************/
 .footer-line {
+  background-color: black;
   margin: 0px auto;
   position: absolute;
   bottom: 0;
@@ -926,7 +638,8 @@ li:last-of-type {
 }
 /******** main *******/
 .main-screen {
-  padding: 0 0 180px;
+  background-color: var(--green-600);
+  padding: 180px 0 180px;
 }
 .main-screen .content {
   margin-top: 85px;
@@ -985,7 +698,7 @@ li:last-of-type {
   fill: #fff;
 }
 .main-screen__video svg > rect {
-  fill: #6f00ff;
+  fill: var(--green-600);
   -webkit-mask: url(#mask);
   mask: url(#mask);
 }
@@ -999,6 +712,7 @@ li:last-of-type {
 
 /******** second-screen *******/
 .second-screen {
+  background-color: var(--green-800);
   padding: 0 0 48px;
 }
 .second-screen .mob {
@@ -1669,6 +1383,10 @@ li:last-of-type {
     opacity: 0;
   }
 }
+
+.final-screen {
+  background-color: var(--green-800);
+}
 .final-screen .constent {
   display: flex;
 }
@@ -1780,7 +1498,7 @@ li:last-of-type {
 
 @media (max-width: 1919.98px) {
   .main-screen {
-    padding: 0 0 9.375vw;
+    padding: 5vw 0 9.375vw;
   }
   .main-screen .content {
     margin-top: 4.427vw;
@@ -1823,7 +1541,7 @@ li:last-of-type {
   }
 
   .second-screen {
-    padding: 0 0 2.5vw;
+    padding: 2.5vw 0 2.5vw;
   }
   .second-screen__block-text .subtitle {
     font-size: 1.979vw;
@@ -1863,6 +1581,7 @@ li:last-of-type {
   }
 
   .alarm-screen {
+    background-color: var(--green-800);
     padding: 0 0 14.063vw;
   }
   .alarm-screen .swiper {
@@ -2641,6 +2360,7 @@ li:last-of-type {
   }
 
   .final-screen .content {
+    background-color: var(--green-800);
     flex-wrap: wrap;
   }
   .final-screen__text {
