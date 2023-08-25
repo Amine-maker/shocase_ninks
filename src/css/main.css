@@ -111,7 +111,7 @@ a.button:active {
 @media screen and (max-width: 1919.98px) {
   button,
   a.button {
-    padding: 1.142vw 3.125vw 0.833vw;
+    padding: 1.142vw 3.125vw;
     font-size: 1.146vw;
     line-height: 0.99vw;
   }
@@ -119,7 +119,7 @@ a.button:active {
 @media screen and (max-width: 991.98px) {
   button,
   a.button {
-    padding: 20px 60px 16px;
+    padding: 20px 60px;
     border-radius: 12px;
     font-size: 18px;
     line-height: 16px;
@@ -128,7 +128,7 @@ a.button:active {
 @media screen and (max-width: 425.98px) {
   button,
   a.button {
-    padding: 24px 48px 20px;
+    padding: 24px 48px;
     font-size: 22px;
   }
   .fr .nav .header-button .button {
@@ -136,7 +136,7 @@ a.button:active {
     font-size: 16px;
   }
   .fr a.button {
-    padding: 24px 24px 20px;
+    padding: 24px 24px;
     font-size: 18px;
     line-height: 24px;
   }
