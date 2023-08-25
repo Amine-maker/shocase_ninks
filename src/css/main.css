@@ -73,7 +73,7 @@ body {
 
 /*************** BUTTONS, LINKS ***************/
 a {
-  color: #ff642d;
+  color: var(--green-400);
   text-decoration: none;
   position: relative;
   cursor: pointer;
@@ -733,7 +733,7 @@ li:last-of-type {
 }
 .second-screen__block-text .split-title em,
 .second-screen__block-text .split-title span {
-  color: #ff642d;
+  color: var(--green-400);
 }
 .second-screen__block-text .subtitle {
   text-align: left;
@@ -920,12 +920,12 @@ li:last-of-type {
   left: -192px;
 }
 .alarm-screen .alarm-screen__text .l-3 {
-  background: linear-gradient(90deg, #9afa00 27.85%, #ff642d 97.83%);
+  background: linear-gradient(90deg, #9afa00 27.85%, var(--green-400) 97.83%);
   width: 1340px;
   left: -192px;
 }
 .alarm-screen .alarm-screen__text .l-4 {
-  background: linear-gradient(90deg, #ff642d 27.85%, #ff00d0 97.83%);
+  background: linear-gradient(90deg, var(--green-400) 27.85%, #ff00d0 97.83%);
   width: 1340px;
   left: -192px;
 }
@@ -1185,15 +1185,15 @@ li:last-of-type {
 }
 
 .alarm-4 .alarm-screen__text .alarm-screen__text-alarm {
-  background-color: #ff642d;
+  background-color: var(--green-400);
 }
 .alarm-4 .alarm-screen__text h2 {
-  color: #ff642d;
+  color: var(--green-400);
   max-width: 100%;
 }
 .alarm-4 .alarm-screen__text .text a {
-  color: #ff642d;
-  background-image: linear-gradient(#ff642d 50%, #ff642d 50%);
+  color: var(--green-400);
+  background-image: linear-gradient(var(--green-400) 50%, var(--green-400) 50%);
 }
 .alarm-4 .alarm-screen__pics .alarm-screen__pics-pic:nth-of-type(1) {
   z-index: 1;
@@ -1528,7 +1528,7 @@ li:last-of-type {
   }
 
   .second-screen {
-    padding: 2.5vw 0 2.5vw;
+    padding: 3.5vw 0 10.5vw;
   }
   .second-screen__block-text .subtitle {
     font-size: 1.979vw;
@@ -2033,7 +2033,7 @@ li:last-of-type {
   }
 
   .second-screen {
-    padding: 0 0 40px;
+    padding: 30px 0 40px;
   }
   .second-screen .desktop {
     display: none;
@@ -2155,7 +2155,7 @@ li:last-of-type {
     height: 10px;
     display: block;
     border-radius: 10px;
-    background: #062744;
+    background: var(--green-light);
     opacity: 0.2;
     transition: all 0.3s;
   }
@@ -2164,7 +2164,7 @@ li:last-of-type {
     .swiper-pagination
     .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #ff642d;
+    background: var(--green-400);
     width: 70px;
     box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
   }
@@ -2238,12 +2238,12 @@ li:last-of-type {
     left: -37px;
   }
   .alarm-screen .alarm-screen__text .l-3 {
-    background: linear-gradient(90deg, #9afa00 27.85%, #ff642d 97.83%);
+    background: linear-gradient(90deg, #9afa00 27.85%, var(--green-400) 97.83%);
     width: 692px;
     left: -37px;
   }
   .alarm-screen .alarm-screen__text .l-4 {
-    background: linear-gradient(90deg, #ff642d 27.85%, #ff00d0 97.83%);
+    background: linear-gradient(90deg, var(--green-400) 27.85%, #ff00d0 97.83%);
     width: 692px;
     left: -37px;
   }
@@ -2318,14 +2318,14 @@ li:last-of-type {
   }
 
   .alarm-4 .alarm-screen__text .alarm-screen__text-alarm {
-    background-color: #ff642d;
+    background-color: var(--green-400);
   }
   .alarm-4 .alarm-screen__text .title {
-    color: #ff642d;
+    color: var(--green-400);
     max-width: 100%;
   }
   .alarm-4 .alarm-screen__text .text a {
-    color: #ff642d;
+    color: var(--green-400);
   }
 
   .alarm-5 .alarm-screen__text .alarm-screen__text-alarm {
