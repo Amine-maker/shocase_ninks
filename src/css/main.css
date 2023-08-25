@@ -1,6 +1,22 @@
 @charset "UTF-8";
 @import "./variable.css";
 @import "./boostrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "Getai Grotesk";
+  src:
+    url("../assets/font/GetaiGrotesk/DTGetaiGroteskDisplay-Black.otf")
+      format("opentype"),
+    url("../assets/font/GetaiGrotesk/DTGetaiGroteskDisplay-Black.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/font/PlusJakartaSans-2.7.1/variable/PlusJakartaSans[wght].ttf")
+    format("truetype-variations");
+}
 
 html {
   box-sizing: border-box;
@@ -34,7 +50,8 @@ body {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   text-align: center;
-  font-family: Mplus, Factor, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+  font-feature-settings: "ss02" on;
   font-size: 16px;
   line-height: 1.5em;
   font-weight: normal;
@@ -133,8 +150,9 @@ a.button:active {
 }
 
 /*************** TYPOGRAPHIC ***************/
+
 h1 {
-  font-family: Mplus, Factor, Arial, sans-serif;
+  font-family: "Getai Grotesk", Unbounded, Arial, sans-serif;
   font-size: 96px;
   line-height: 103%;
   font-weight: 700;
@@ -153,7 +171,7 @@ h1 span {
 }
 
 h2 {
-  font-family: Mplus, Factor, Arial, sans-serif;
+  font-family: "Getai Grotesk", Unbounded, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -164,12 +182,11 @@ h2 {
   -webkit-font-smoothing: antialiased;
 }
 h2 span {
-  -webkit-font-feature-settings: "ss01" on;
   font-feature-settings: "ss01" on;
 }
 
 h3 {
-  font-family: Mplus, Factor, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", Factor, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -184,7 +201,7 @@ h3 span {
 }
 
 h4 {
-  font-family: Mplus, Factor, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", Factor, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -195,7 +212,7 @@ h4 {
 }
 
 h5 {
-  font-family: Mplus, Factor, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", Factor, Arial, sans-serif;
   text-align: left;
   font-style: normal;
   font-weight: 700;
@@ -207,7 +224,7 @@ h5 {
 }
 
 h6 {
-  font-family: Mplus, Factor, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", Factor, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -220,7 +237,7 @@ h6 {
 
 p,
 td {
-  font-family: Mplus, Factor, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", Factor, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -234,7 +251,7 @@ td strong {
 }
 
 p.subtitle {
-  font-family: Mplus, Factor, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
   font-style: normal;
   font-size: 38px;
   line-height: 150%;
@@ -248,7 +265,7 @@ p.subtitle span {
 li {
   text-align: left;
   position: relative;
-  font-family: Mplus, Factor, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", Factor, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -636,6 +653,7 @@ li:last-of-type {
 }
 /******** main *******/
 .main-screen {
+  position: relative;
   background-color: var(--dark-green);
   padding: 100px 0 200px;
 }
@@ -673,6 +691,19 @@ li:last-of-type {
   text-align: left;
   color: #fff;
   margin-bottom: 28px;
+}
+
+.main-screen__svg .stamp {
+  width: 30vw;
+  height: 30vw;
+}
+
+.main-screen__svg .simple-ellipsis {
+  position: absolute;
+  width: 45vw;
+  height: 45vw;
+  top: 30%;
+  left: -22vw;
 }
 
 /******** second-screen *******/
@@ -826,7 +857,7 @@ li:last-of-type {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2a0083;
+  color: var(--dark-green);
 }
 .alarm-screen .swiper-button-next:after,
 .alarm-screen .swiper-button-prev:after {
@@ -1373,7 +1404,9 @@ li:last-of-type {
   display: inline-block;
 }
 .final-screen__text h2:nth-of-type(1) {
-  background-color: #fff;
+  background-color: transparent;
+  border: 2px solid var(--green-light);
+  color: var(--green-light);
   left: 0px;
 }
 .final-screen__text h2:nth-of-type(2) {
@@ -1489,6 +1522,7 @@ li:last-of-type {
   }
 
   .main-screen__svg .stamp {
+    right: -7.292vw;
     width: 30vw;
     height: 30vw;
   }
@@ -1986,11 +2020,16 @@ li:last-of-type {
     left: 28px;
     margin-bottom: 40px;
   }
+
   .main-screen__text .subtitle {
     font-size: 21px;
     line-height: 150%;
     text-align: center;
     margin-bottom: 28px;
+  }
+
+  .main-screen__svg .stamp {
+    position: absolute;
   }
 
   .second-screen {
@@ -2135,7 +2174,7 @@ li:last-of-type {
     align-content: space-between;
     min-height: 693px;
     padding: 40px 36px;
-    background: #2a0083;
+    background: var(--green-800);
     overflow: hidden;
     border-radius: 20px;
     position: relative;

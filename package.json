@@ -1,24 +1,21 @@
 {
-  "name": "showcaseninks",
-  "version": "1.0.0",
-  "description": "Showcase website for ninks application",
-  "main": "./src/js/main.6c685e0f908ea8dbb361.js",
+  "name": "ninks_showcase",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "javascript",
-    "starter"
-  ],
   "devDependencies": {
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "parcel": "^2.9.3",
     "prettier": "^3.0.2",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.5"
+
   },
   "dependencies": {
     "gsap": "^3.12.2",
