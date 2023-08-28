@@ -930,20 +930,11 @@ li:last-of-type {
   left: -192px;
 }
 .alarm-screen .alarm-screen__text .l-5 {
-  background: linear-gradient(
-    90deg,
-    #ff00d0 27.85%,
-    #ffff54 64.66%,
-    #00ffaa 97.83%
-  );
-  width: 1340px;
+  background: #ff00d0;
+  width: 340px;
   left: -192px;
 }
-.alarm-screen .alarm-screen__text .l-6 {
-  background: #00ffaa;
-  width: 1340px;
-  left: -192px;
-}
+
 .alarm-screen .alarm-screen__text h2 {
   text-align: inherit;
   color: #ff00d0;
@@ -1618,7 +1609,7 @@ li:last-of-type {
   }
   .alarm-screen .alarm-screen__text .alarm-screen__text-alarm {
     font-size: 1.302vw;
-    padding: 0.677vw 2.083vw 0.365vw;
+    padding: 0.677vw 2.083vw;
     border-radius: 2.604vw;
     margin-bottom: 2.083vw;
   }
@@ -1646,10 +1637,7 @@ li:last-of-type {
     width: 69.792vw;
     left: -10vw;
   }
-  .alarm-screen .alarm-screen__text .l-6 {
-    width: 69.792vw;
-    left: -10vw;
-  }
+
   .alarm-screen .alarm-screen__text h2 {
     margin-bottom: 1.667vw;
     font-size: 3.125vw;
@@ -1886,53 +1874,8 @@ li:last-of-type {
     height: auto;
   }
 
-  .alarm-6 {
-    padding: 0 0 12.5vw;
-  }
-  .alarm-6 .alarm-screen__text .l-6 {
+  .alarm-5 .alarm-screen__text .l-5 {
     width: 17.708vw;
-  }
-  .alarm-6 .alarm-screen__pics .alarm-screen__pics-pic:nth-of-type(1) {
-    width: 17.813vw;
-    height: 12.188vw;
-    top: -0.729vw;
-    left: 0.208vw;
-  }
-  .alarm-6 .alarm-screen__pics .alarm-screen__pics-pic:nth-of-type(1) img {
-    top: -22%;
-    left: -3%;
-    width: 113%;
-    height: 16.667vw;
-  }
-  .alarm-6 .alarm-screen__pics .alarm-screen__pics-pic:nth-of-type(2) {
-    top: 21.354vw;
-    right: 0px;
-    width: 12.5vw;
-    height: 10.885vw;
-  }
-  .alarm-6 .alarm-screen__pics .alarm-screen__pics-pic:nth-of-type(2) img {
-    top: -10%;
-    left: 0;
-    width: 100%;
-    height: 14.01vw;
-  }
-  .alarm-6 .alarm-screen__pics .alarm-screen__pics-pic:nth-of-type(3) {
-    z-index: 3;
-    top: 10.885vw;
-    left: -1.25vw;
-    width: 17.031vw;
-    height: 11.458vw;
-  }
-  .alarm-6 .alarm-screen__pics .alarm-screen__pics-pic:nth-of-type(3) img {
-    box-shadow: 0.052vw -1.667vw 1.615vw 0vw rgba(85, 0, 195, 0.81) inset;
-    -webkit-box-shadow: 1px -1.667vw 1.615vw 0vw rgba(85, 0, 195, 0.81) inset;
-    -moz-box-shadow: 1px -1.667vw 1.615vw 0vw rgba(85, 0, 195, 0.81) inset;
-  }
-  .alarm-6 .alarm-screen__pics .shape {
-    top: -0.365vw;
-    right: 2.604vw;
-    width: 14.427vw;
-    height: auto;
   }
 
   .final-screen__text h2 {
@@ -2216,11 +2159,7 @@ li:last-of-type {
     position: relative;
     z-index: 2;
   }
-  .alarm-screen .alarm-screen__text .alarm-screen__text-alarm span {
-    position: relative;
-    top: -3px;
-    animation: clock 1s infinite;
-  }
+
   .alarm-screen .alarm-screen__text .line {
     display: inline-block;
     position: absolute;
@@ -2248,20 +2187,11 @@ li:last-of-type {
     left: -37px;
   }
   .alarm-screen .alarm-screen__text .l-5 {
-    background: linear-gradient(
-      90deg,
-      #ff00d0 27.85%,
-      #ffff54 64.66%,
-      #00ffaa 97.83%
-    );
-    width: 692px;
-    left: -37px;
-  }
-  .alarm-screen .alarm-screen__text .l-6 {
-    background: #00ffaa;
+    background: #ff00d0;
     width: 40px;
     left: -40px;
   }
+
   .alarm-screen .alarm-screen__text .title {
     text-align: inherit;
     color: #ff00d0;
@@ -2492,13 +2422,10 @@ li:last-of-type {
     left: -37px;
   }
   .alarm-screen .alarm-screen__text .l-5 {
-    width: 511px;
-    left: -37px;
-  }
-  .alarm-screen .alarm-screen__text .l-6 {
     width: 40px;
     left: -40px;
   }
+
   .alarm-screen .alarm-screen__text .alarm-screen__text-alarm {
     font-size: 21px;
     padding: 13px 36px 7px;
@@ -2678,13 +2605,10 @@ li:last-of-type {
     left: -37px;
   }
   .alarm-screen .alarm-screen__text .l-5 {
-    width: 493px;
-    left: -37px;
-  }
-  .alarm-screen .alarm-screen__text .l-6 {
     width: 40px;
     left: -40px;
   }
+
   .alarm-screen .alarm-screen__text .alarm-screen__text-alarm {
     font-size: 21px;
     padding: 13px 36px 7px;
@@ -2812,12 +2736,11 @@ li:last-of-type {
   }
   .alarm-screen .alarm-screen__text .l-2,
   .alarm-screen .alarm-screen__text .l-3,
-  .alarm-screen .alarm-screen__text .l-4,
-  .alarm-screen .alarm-screen__text .l-5 {
+  .alarm-screen .alarm-screen__text .l-4 {
     width: 357px;
     left: -25px;
   }
-  .alarm-screen .alarm-screen__text .l-6 {
+  .alarm-screen .alarm-screen__text .l-5 {
     width: 40px;
     left: -40px;
   }
@@ -2956,12 +2879,11 @@ li:last-of-type {
   }
   .alarm-screen .alarm-screen__text .l-2,
   .alarm-screen .alarm-screen__text .l-3,
-  .alarm-screen .alarm-screen__text .l-4,
-  .alarm-screen .alarm-screen__text .l-5 {
+  .alarm-screen .alarm-screen__text .l-4 {
     width: 314px;
     left: -25px;
   }
-  .alarm-screen .alarm-screen__text .l-6 {
+  .alarm-screen .alarm-screen__text .l-5 {
     width: 100px;
   }
 
@@ -3004,8 +2926,7 @@ li:last-of-type {
   }
   .alarm-screen .alarm-screen__text .l-2,
   .alarm-screen .alarm-screen__text .l-3,
-  .alarm-screen .alarm-screen__text .l-4,
-  .alarm-screen .alarm-screen__text .l-5 {
+  .alarm-screen .alarm-screen__text .l-4 {
     width: 263px;
   }
 
