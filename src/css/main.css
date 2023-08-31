@@ -791,11 +791,11 @@ li:last-of-type {
 }
 .alarm-screen .alarm-screen__text .alarm-screen__text-alarm {
   font-size: 25px;
-  font-weight: 500;
-  padding: 13px 40px 7px;
+  font-weight: 900;
+  padding: 8px 40px 8px;
   border-radius: 50px;
   margin-bottom: 40px;
-  background-color: #ff00d0;
+  background-color: #f3865e;
   color: #010101;
   display: inline-block;
   position: relative;
@@ -815,32 +815,32 @@ li:last-of-type {
   z-index: 1;
 }
 .alarm-screen .alarm-screen__text .l-1 {
-  background: linear-gradient(90deg, #ff00d0 27.85%, #00f7ff 97.83%);
+  background: linear-gradient(90deg, #f3865e 27.85%, #a4d9db 97.83%);
 }
 .alarm-screen .alarm-screen__text .l-2 {
-  background: linear-gradient(90deg, #00f7ff 27.85%, #9afa00 97.83%);
+  background: linear-gradient(90deg, #a4d9db 27.85%, #ecf39e 97.83%);
   width: 1340px;
   left: -192px;
 }
 .alarm-screen .alarm-screen__text .l-3 {
-  background: linear-gradient(90deg, #9afa00 27.85%, var(--green-400) 97.83%);
+  background: linear-gradient(90deg, #ecf39e 27.85%, var(--green-400) 97.83%);
   width: 1340px;
   left: -192px;
 }
 .alarm-screen .alarm-screen__text .l-4 {
-  background: linear-gradient(90deg, var(--green-400) 27.85%, #ff00d0 97.83%);
+  background: linear-gradient(90deg, var(--green-400) 27.85%, #f3865e 97.83%);
   width: 1340px;
   left: -192px;
 }
 .alarm-screen .alarm-screen__text .l-5 {
-  background: #ff00d0;
+  background: #f3865e;
   width: 340px;
   left: -192px;
 }
 
 .alarm-screen .alarm-screen__text h2 {
   text-align: inherit;
-  color: #ff00d0;
+  color: #f3865e;
   margin-bottom: 32px;
   font-size: 60px;
 }
@@ -848,7 +848,7 @@ li:last-of-type {
   max-width: 555px;
 }
 .alarm-screen .alarm-screen__text .text a {
-  color: #ff00d0;
+  color: #f3865e;
   font-weight: 700;
   background-size: 100% 10px;
   background-repeat: no-repeat;
@@ -856,8 +856,8 @@ li:last-of-type {
   background-position-x: 100%;
   background-size: 100% 2px;
   background-repeat: no-repeat;
-  background-image: #ff00d0;
-  background-image: linear-gradient(#ff00d0 50%, #ff00d0 50%);
+  background-image: #f3865e;
+  background-image: linear-gradient(#f3865e 50%, #f3865e 50%);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -950,10 +950,10 @@ li:last-of-type {
 }
 
 .alarm-2 .alarm-screen__text .alarm-screen__text-alarm {
-  background-color: #00f7ff;
+  background-color: #a4d9db;
 }
 .alarm-2 .alarm-screen__text h2 {
-  color: #00f7ff;
+  color: #a4d9db;
   max-width: 80%;
 }
 .alarm-2 .alarm-screen__pics .alarm-screen__pics-pic:nth-of-type(1) {
@@ -1005,10 +1005,10 @@ li:last-of-type {
 }
 
 .alarm-3 .alarm-screen__text .alarm-screen__text-alarm {
-  background-color: #9afa00;
+  background-color: #ecf39e;
 }
 .alarm-3 .alarm-screen__text h2 {
-  color: #9afa00;
+  color: #ecf39e;
 }
 .alarm-3 .alarm-screen__pics .alarm-screen__pics-pic:nth-of-type(1) {
   z-index: 1;
@@ -1117,10 +1117,10 @@ li:last-of-type {
 }
 
 .alarm-5 .alarm-screen__text .alarm-screen__text-alarm {
-  background-color: #ff00d0;
+  background-color: #f3865e;
 }
 .alarm-5 .alarm-screen__text h2 {
-  color: #ff00d0;
+  color: #f3865e;
 }
 .alarm-5 .alarm-screen__pics .alarm-screen__pics-pic:nth-of-type(1) {
   z-index: 1;
@@ -1197,6 +1197,16 @@ li:last-of-type {
   gap: 20px;
 }
 
+.pricing-screen__container .pricing-screen__block:nth-of-type(2) h2 {
+  display: flex;
+  align-items: baseline;
+  &::after {
+    content: "/mo";
+    font-size: 1rem;
+    height: 0;
+  }
+}
+
 .pricing-screen__block {
   border-radius: 30px;
   background-color: var(--green-800);
@@ -1207,7 +1217,7 @@ li:last-of-type {
   flex-direction: column;
   gap: 25px;
   min-width: 400px;
-
+  height: fit-content;
   .button {
     justify-content: center;
   }
@@ -1231,8 +1241,8 @@ ul.pricing-screen__block-list {
     background-image: url("../assets/svg/check.svg");
     background-repeat: no-repeat;
     height: 29px;
-    padding-left: 44px;
-    padding-top: 5px;
+    padding-left: 38px;
+    padding-top: 6px;
     color: var(--green-light);
     &::before {
       content: none;
@@ -1240,13 +1250,8 @@ ul.pricing-screen__block-list {
   }
 }
 
-.cta
-
 /****** final screen ******/
 
-.final-screen {
-  background-color: var(--dark-green);
-}
 .final-screen__text {
   text-align: left;
   position: relative;
@@ -1466,7 +1471,7 @@ ul.pricing-screen__block-list {
   }
   .alarm-screen .alarm-screen__text .line {
     top: 1.354vw;
-    width: 50vw;
+    width: 53.2vw;
     height: 0.208vw;
   }
   .alarm-screen .alarm-screen__text .l-2 {
@@ -1723,7 +1728,7 @@ ul.pricing-screen__block-list {
   }
 
   .alarm-5 .alarm-screen__text .l-5 {
-    width: 17.708vw;
+    width: 14.708vw;
   }
 
   .final-screen__text h2 {
@@ -1981,11 +1986,11 @@ ul.pricing-screen__block-list {
   }
   .alarm-screen .alarm-screen__text .alarm-screen__text-alarm {
     font-size: 25px;
-    font-weight: 500;
-    padding: 13px 40px 7px;
+    font-weight: 900;
+    padding: 8px 40px 8px;
     border-radius: 50px;
     margin-bottom: 40px;
-    background-color: #ff00d0;
+    background-color: #f3865e;
     color: #010101;
     display: inline-block;
     position: relative;
@@ -1996,37 +2001,37 @@ ul.pricing-screen__block-list {
     display: inline-block;
     position: absolute;
     top: 26px;
-    width: 470px;
+    width: 540px;
     height: 4px;
     z-index: 1;
   }
   .alarm-screen .alarm-screen__text .l-1 {
-    background: linear-gradient(90deg, #ff00d0 27.85%, #00f7ff 97.83%);
+    background: linear-gradient(90deg, #f3865e 27.85%, #a4d9db 97.83%);
   }
   .alarm-screen .alarm-screen__text .l-2 {
-    background: linear-gradient(90deg, #00f7ff 27.85%, #9afa00 97.83%);
+    background: linear-gradient(90deg, #a4d9db 27.85%, #ecf39e 97.83%);
     width: 692px;
     left: -37px;
   }
   .alarm-screen .alarm-screen__text .l-3 {
-    background: linear-gradient(90deg, #9afa00 27.85%, var(--green-400) 97.83%);
+    background: linear-gradient(90deg, #ecf39e 27.85%, var(--green-400) 97.83%);
     width: 692px;
     left: -37px;
   }
   .alarm-screen .alarm-screen__text .l-4 {
-    background: linear-gradient(90deg, var(--green-400) 27.85%, #ff00d0 97.83%);
+    background: linear-gradient(90deg, var(--green-400) 27.85%, #f3865e 97.83%);
     width: 692px;
     left: -37px;
   }
   .alarm-screen .alarm-screen__text .l-5 {
-    background: #ff00d0;
+    background: #f3865e;
     width: 40px;
     left: -40px;
   }
 
   .alarm-screen .alarm-screen__text .title {
     text-align: inherit;
-    color: #ff00d0;
+    color: #f3865e;
     margin-bottom: 32px;
     width: 100%;
     max-width: 100% !important;
@@ -2037,7 +2042,7 @@ ul.pricing-screen__block-list {
     margin-bottom: 48px;
   }
   .alarm-screen .alarm-screen__text .text a {
-    color: #ff00d0;
+    color: #f3865e;
     font-weight: 700;
   }
   .alarm-screen .alarm-screen__pics {
@@ -2054,17 +2059,17 @@ ul.pricing-screen__block-list {
   }
 
   .alarm-2 .alarm-screen__text .alarm-screen__text-alarm {
-    background-color: #00f7ff;
+    background-color: #a4d9db;
   }
   .alarm-2 .alarm-screen__text .title {
-    color: #00f7ff;
+    color: #a4d9db;
   }
 
   .alarm-3 .alarm-screen__text .alarm-screen__text-alarm {
-    background-color: #9afa00;
+    background-color: #ecf39e;
   }
   .alarm-3 .alarm-screen__text .title {
-    color: #9afa00;
+    color: #ecf39e;
   }
 
   .alarm-4 .alarm-screen__text .alarm-screen__text-alarm {
@@ -2076,10 +2081,14 @@ ul.pricing-screen__block-list {
   }
 
   .alarm-5 .alarm-screen__text .alarm-screen__text-alarm {
-    background-color: #ff00d0;
+    background-color: #f3865e;
   }
   .alarm-5 .alarm-screen__text .title {
-    color: #ff00d0;
+    color: #f3865e;
+  }
+
+  .final-screen {
+    margin: 17vw 0;
   }
 
   .final-screen .content {
@@ -2226,7 +2235,7 @@ ul.pricing-screen__block-list {
 
   .alarm-screen .alarm-screen__text .alarm-screen__text-alarm {
     font-size: 21px;
-    padding: 13px 36px 7px;
+    padding: 8px 36px 8px;
   }
   .alarm-screen .alarm-screen__text .title {
     width: 100%;
@@ -2385,7 +2394,7 @@ ul.pricing-screen__block-list {
 
   .alarm-screen .alarm-screen__text .alarm-screen__text-alarm {
     font-size: 21px;
-    padding: 13px 36px 7px;
+    padding: 8px 36px 8px;
   }
   .alarm-screen .alarm-screen__text .title {
     width: 100%;
@@ -2512,7 +2521,7 @@ ul.pricing-screen__block-list {
   }
   .alarm-screen .alarm-screen__text .alarm-screen__text-alarm {
     font-size: 16px;
-    padding: 10px 16px 7px;
+    padding: 10px 16px 10px;
   }
   .alarm-screen .alarm-screen__text .title {
     font-size: 24px;
