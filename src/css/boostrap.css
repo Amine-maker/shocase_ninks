@@ -286,3 +286,11 @@ section,
 summary {
   display: block;
 }
+
+.text-lg {
+  font-size: large !important;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
