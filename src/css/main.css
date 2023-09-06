@@ -403,7 +403,7 @@ li:last-of-type {
 .nav .header-logo .h-logo {
   display: inline-block;
   margin-top: 8px;
-  width: 50px;
+  width: 40px;
   height: auto;
 }
 .nav .header-logo__mob {
@@ -471,7 +471,7 @@ li:last-of-type {
   }
   .nav .header-logo .h-logo {
     margin-top: 0.417vw;
-    width: 3.24vw;
+    width: 2.8vw;
     height: auto;
   }
 
@@ -499,7 +499,7 @@ li:last-of-type {
     display: block;
   }
   .nav .header-logo .h-logo {
-    width: 50px;
+    width: 40px;
     height: auto;
   }
 
@@ -566,7 +566,7 @@ li:last-of-type {
   .nav .header-logo .h-logo {
     position: relative;
     top: 5px;
-    width: 50px;
+    width: 40px;
     height: auto;
   }
 
