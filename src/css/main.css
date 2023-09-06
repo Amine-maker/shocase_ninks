@@ -403,7 +403,7 @@ li:last-of-type {
 .nav .header-logo .h-logo {
   display: inline-block;
   margin-top: 8px;
-  width: 235px;
+  width: 50px;
   height: auto;
 }
 .nav .header-logo__mob {
@@ -471,7 +471,7 @@ li:last-of-type {
   }
   .nav .header-logo .h-logo {
     margin-top: 0.417vw;
-    width: 12.24vw;
+    width: 3.24vw;
     height: auto;
   }
 
@@ -499,7 +499,7 @@ li:last-of-type {
     display: block;
   }
   .nav .header-logo .h-logo {
-    width: 196px;
+    width: 50px;
     height: auto;
   }
 
@@ -566,7 +566,7 @@ li:last-of-type {
   .nav .header-logo .h-logo {
     position: relative;
     top: 5px;
-    width: 180px;
+    width: 50px;
     height: auto;
   }
 
@@ -1361,7 +1361,7 @@ ul.pricing-screen__block-list {
     margin-top: 4.427vw;
   }
   .main-screen__text h1 {
-    padding: 1.042vw 2.5vw 0;
+    padding: 0.542vw 2.5vw;
     border-radius: 3.646vw;
   }
   .main-screen__text h1:nth-of-type(1) {
@@ -1735,7 +1735,7 @@ ul.pricing-screen__block-list {
   }
 
   .final-screen__text h2 {
-    padding: 1.042vw 2.5vw 0;
+    padding: 0.542vw 2.5vw;
     border-radius: 3.646vw;
     font-size: 4.375vw;
   }
@@ -1803,7 +1803,7 @@ ul.pricing-screen__block-list {
     text-align: center;
   }
   .main-screen__text h1 {
-    padding: 16px 32px 0;
+    padding: 6px 32px;
     border-radius: 70px;
   }
   .main-screen__text h1:nth-of-type(1) {
@@ -2104,7 +2104,7 @@ ul.pricing-screen__block-list {
     margin-bottom: 48px;
   }
   .final-screen__text h2 {
-    padding: 12px 32px 0;
+    padding: 8px 32px;
     border-radius: 70px;
     font-size: 55px;
   }
@@ -2299,7 +2299,7 @@ ul.pricing-screen__block-list {
     text-align: center;
   }
   .main-screen__text h1 {
-    padding: 2.778vw 5.556vw 0;
+    padding: 1.378vw 5.556vw;
     border-radius: 12.153vw;
   }
   .main-screen__text h1:nth-of-type(1) {
@@ -2409,7 +2409,7 @@ ul.pricing-screen__block-list {
     margin-bottom: 0px;
   }
   .final-screen__text h2 {
-    padding: 2.083vw 4.556vw 0;
+    padding: 2.083vw 4.556vw;
     border-radius: 70px;
     font-size: 9.549vw;
   }
@@ -2559,7 +2559,7 @@ ul.pricing-screen__block-list {
     margin-top: 40px;
   }
   .main-screen__text h1 {
-    padding: 8px 20px 0;
+    padding: 8px 20px;
     border-radius: 30px;
   }
   .main-screen__text h1:nth-of-type(1) {
