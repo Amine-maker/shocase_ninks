@@ -653,11 +653,11 @@ li:last-of-type {
   text-transform: uppercase;
   margin-bottom: -12px;
   display: block;
-  padding-top: 12px;
+  padding-top: 12pxm;
 }
 .second-screen__block-text .split-title em,
 .second-screen__block-text .split-title span {
-  color: var(--green-400);
+  color: var(--green-400) !important;
 }
 .second-screen__block-pic {
   position: relative;
@@ -1949,7 +1949,7 @@ ul.pricing-screen__block-list {
     opacity: 1;
     background: var(--green-400);
     width: 70px;
-    box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+    box-shadow: 0px 0px 20px rgb(194 194 194 / 30%);
   }
   .alarm-screen .swiper-slide {
     display: flex;
