@@ -39,7 +39,6 @@ window.addEventListener("DOMContentLoaded", () => {
     },
     (context) => {
       const { isMobile } = context.conditions
-      console.log(context.conditions)
       const smoother = ScrollSmoother.create({
         wrapper: "#smooth-wrapper",
         content: "#smooth-content",
