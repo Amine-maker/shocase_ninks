@@ -5,6 +5,7 @@ import Swiper, { Navigation, Pagination, Parallax } from "swiper"
 import "swiper/swiper-bundle.min.css"
 import SplitText from "./core/SplitText"
 import ScrollSmoother from "./core/ScrollSmoother"
+import * as l from "./lang"
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText)
 

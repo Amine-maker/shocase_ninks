@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
 
     <script>
-      window.lang = "fr";
+      window.lang = localStorage.getItem("lang");
     </script>
 
     <script type="module" src="./src/js/main.js"></script>
@@ -152,21 +152,28 @@
             <div class="row content">
               <div class="col-12 col-lg-7">
                 <div class="main-screen__text" data-lag="0.2" data-speed="1">
-                  <h1 class="nowrap title-1 mainFadeLeft">Unleach</h1>
-                  <h1 class="nowrap title-2 mainFadeLeft">
+                  <h1 data-header-title class="nowrap title-1 mainFadeLeft">
+                    Unleach
+                  </h1>
+                  <h1 data-header-title class="nowrap title-2 mainFadeLeft">
                     your <span>l</span>inks
                   </h1>
-                  <h1 class="nowrap title-3 mainFadeLeft">
+                  <h1 data-header-title class="nowrap title-3 mainFadeLeft">
                     with <span>n</span>inks
                   </h1>
                   <div class="fadeUp">
-                    <p class="subtitle">
+                    <p data-header-subtitleText class="subtitle">
                       Mettez en avant votre identité en ligne grâce à Ninks.
                       Créez une page à votre image qui rassemble toutes vos
                       destinations de contenu de manière visuellement
                       captivante.
                     </p>
-                    <a href="#" class="button cta_hero_button">Commencer</a>
+                    <a
+                      data-header-button
+                      href="#"
+                      class="button cta_hero_button"
+                      >Commencer</a
+                    >
                   </div>
                 </div>
               </div>
@@ -195,12 +202,12 @@
 
         <!-- second-screen -->
         <section class="second-screen">
-          <div class="container">
+          <div data-lag="0.2" class="container">
             <div class="row desktop">
               <div class="col-12 second-screen__block">
                 <div class="second-screen__block-pic fadeUp">
                   <img
-                   src="./src/assets/img/olena-bohovyk-dIMJWLx1YbE-unsplash.jpg"
+                    src="./src/assets/img/olena-bohovyk-dIMJWLx1YbE-unsplash.jpg"
                     alt="photo"
                     class="second-screen__block-pic__img"
                     data-speed="0.9"
@@ -208,7 +215,7 @@
                   />
                 </div>
                 <div class="second-screen__block-text">
-                  <h2 class="split-title">
+                  <h2 data-header-adsLargeText class="split-title">
                     <div>
                       <em>R<small class="accent">é</small>volutionnez</em>
                     </div>
@@ -218,7 +225,7 @@
               </div>
               <div class="col-12 second-screen__block">
                 <div class="second-screen__block-text">
-                  <h2 class="split-title">
+                  <h2 data-header-adsLargeText class="split-title">
                     <div>En ligne avec</div>
                     <div>
                       <em>ninks</em>
@@ -242,7 +249,7 @@
             <div class="row mob">
               <div class="col-12 second-screen__block">
                 <div class="second-screen__block-text">
-                  <h2 class="split-title">
+                  <h2 data-header-adsLargeText class="split-title">
                     <div>
                       <em>R<small class="accent">é</small>volutionnez</em>
                     </div>
@@ -262,11 +269,11 @@
               </div>
               <div class="col-12 second-screen__block">
                 <div class="second-screen__block-text">
-                  <h2 class="split-title">
+                  <h2 data-header-adsLargeText class="split-title">
                     <div>en ligne</div>
                   </h2>
 
-                  <h2 class="split-title">
+                  <h2 data-header-adsLargeText class="split-title">
                     <div>avec <em>Ninks</em></div>
                   </h2>
                 </div>
@@ -289,7 +296,7 @@
         <!-- alarm-screen slider -->
         <section class="alarm-screen">
           <!-- desktop -->
-          <div class="container desktop">
+          <div data-slider class="container desktop">
             <div
               class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden"
             >
@@ -309,13 +316,17 @@
                       <span class="de_time">Um</span> 01.
                     </p>
                     <div class="line l-1 fadeUp"></div>
-                    <h2 class="split-title" data-swiper-parallax="50">
+                    <h2
+                      data-slider-title
+                      class="split-title"
+                      data-swiper-parallax="50"
+                    >
                       <span class="d-inline-block"
                         >Int<small class="accent">é</small>grer une page
                         personnalis<small class="accent">é</small>e</span
                       >
                     </h2>
-                    <p class="text fadeUp">
+                    <p data-slider-description class="text fadeUp">
                       Centralisez votre présence en ligne et offrez une
                       expérience fluide à vos visiteurs grâce à Ninks. Notre
                       plateforme vous permet de créer une page unique,
@@ -408,11 +419,15 @@
                       <span class="de_time">Um</span> 02.
                     </p>
                     <div class="line l-2 fadeUp"></div>
-                    <h2 class="split-title" data-swiper-parallax="50">
+                    <h2
+                      data-slider-title
+                      class="split-title"
+                      data-swiper-parallax="50"
+                    >
                       <span class="d-inline-block">Rediriger votre</span>
                       <span>communaut<small class="accent">é</small></span>
                     </h2>
-                    <p class="text fadeUp">
+                    <p data-slider-description class="text fadeUp">
                       Transformez chaque clic en action grâce aux boutons
                       d'action. Intégrez des liens d'achat, d'inscription, ou de
                       tout autre objectif spécifique sur votre page.
@@ -498,11 +513,15 @@
                       <span class="de_time">Um</span> 03.
                     </p>
                     <div class="line l-3 fadeUp"></div>
-                    <h2 class="split-title" data-swiper-parallax="50">
+                    <h2
+                      data-slider-title
+                      class="split-title"
+                      data-swiper-parallax="50"
+                    >
                       <span class="d-inline-block">Partagez avec</span>
                       <span>Vos amis</span>
                     </h2>
-                    <p class="text fadeUp">
+                    <p data-slider-description class="text fadeUp">
                       Présentez-vous au monde sous votre meilleur jour. Créez
                       une page de liens qui reflète votre identité unique. Nos
                       fonctionnalités d'édition visuelle vous permettent de
@@ -590,10 +609,14 @@
                       <span class="de_time">Um</span> 04.
                     </p>
                     <div class="line l-4 fadeUp"></div>
-                    <h2 class="split-title" data-swiper-parallax="50">
+                    <h2
+                      data-slider-title
+                      class="split-title"
+                      data-swiper-parallax="50"
+                    >
                       <span>Obtenez des statistiques</span>
                     </h2>
-                    <p class="text fadeUp">
+                    <p data-slider-description class="text fadeUp">
                       Prenez des décisions éclairées. Notre plateforme vous
                       offre des outils analytiques puissants pour suivre et
                       interpréter vos performances. Obtenez des statistiques
@@ -683,10 +706,14 @@
                       <span class="de_time">Um</span>05.
                     </p>
                     <div class="line l-5 fadeUp"></div>
-                    <h2 class="split-title" data-swiper-parallax="50">
+                    <h2
+                      data-slider-title
+                      class="split-title"
+                      data-swiper-parallax="50"
+                    >
                       <span>Faites vous payer!</span>
                     </h2>
-                    <p class="text fadeUp">
+                    <p data-slider-description class="text fadeUp">
                       Facilitez les transactions. Intégrez des liens de paiement
                       instantanés directement dans votre page.
                     </p>
@@ -785,7 +812,7 @@
             ></div>
           </div>
           <!-- mob -->
-          <div class="container mob">
+          <div data-slider class="container mob">
             <div
               class="swiper-mob swiper-initialized swiper-horizontal swiper-pointer-events swiper-autoheight swiper-backface-hidden"
             >
@@ -805,11 +832,11 @@
                       <span class="de_time"></span> 01.
                     </p>
                     <div class="line l-1"></div>
-                    <h2 class="title">
+                    <h2 data-slider-title class="title">
                       Int<small class="accent">é</small>grez une page
                       personnalis<small class="accent">é</small>e
                     </h2>
-                    <p class="text">
+                    <p data-slider-description class="text">
                       Centralisez votre présence en ligne et offrez une
                       expérience fluide à vos visiteurs grâce à Ninks. Notre
                       plateforme vous permet de créer une page unique,
@@ -845,10 +872,10 @@
                       <span class="de_time">Um</span> 02.
                     </p>
                     <div class="line l-2"></div>
-                    <h2 class="title">
+                    <h2 data-slider-title class="title">
                       Rediriger votre communaut<small class="accent">é</small>e
                     </h2>
-                    <p class="text">
+                    <p data-slider-description class="text">
                       Transformez chaque clic en action grâce aux boutons
                       d'action. Intégrez des liens d'achat, d'inscription, ou de
                       tout autre objectif spécifique sur votre page.
@@ -877,8 +904,10 @@
                       <span class="de_time">Um</span> 03.
                     </p>
                     <div class="line l-3"></div>
-                    <h2 class="title">Partagez avec vos amis</h2>
-                    <p class="text">
+                    <h2 data-slider-title class="title">
+                      Partagez avec vos amis
+                    </h2>
+                    <p data-slider-description class="text">
                       Présentez-vous au monde sous votre meilleur jour. Créez
                       une page de liens qui reflète votre identité unique. Nos
                       fonctionnalités d'édition visuelle vous permettent de
@@ -909,8 +938,10 @@
                       <span class="de_time">Um</span> 04.
                     </p>
                     <div class="line l-4"></div>
-                    <h2 class="title">Obtenez des statistiques</h2>
-                    <p class="text">
+                    <h2 data-slider-title class="title">
+                      Obtenez des statistiques
+                    </h2>
+                    <p data-slider-description class="text">
                       Prenez des décisions éclairées. Notre plateforme vous
                       offre des outils analytiques puissants pour suivre et
                       interpréter vos performances. Obtenez des statistiques
@@ -943,8 +974,8 @@
                       <span class="de_time">Um</span> 05.
                     </p>
                     <div class="line l-5"></div>
-                    <h2 class="title">Faites vous payer!</h2>
-                    <p class="text">
+                    <h2 data-slider-title class="title">Faites vous payer!</h2>
+                    <p data-slider-description class="text">
                       Facilitez les transactions. Intégrez des liens de paiement
                       instantanés directement dans votre page personnalisée
                     </p>
@@ -1015,32 +1046,53 @@
         <!-- alarm-screen end -->
 
         <!-- princing-screen start -->
-        <section class="pricing-screen" id="pricing">
+        <section data-pricing class="pricing-screen" id="pricing">
           <div class="container desktop pricing-screen__container d-flex">
             <div class="pricing-screen__block">
               <span class="uppertitle">Basic</span>
-              <h2 class="pricing-screen__block-title split-title">Free</h2>
-              <ul class="pricing-screen__block-list">
+              <h2
+                data-pricing-price
+                class="pricing-screen__block-title split-title"
+              >
+                Free
+              </h2>
+              <ul
+                data-pricing-functionnality
+                class="pricing-screen__block-list"
+              >
                 <li class="pricing-screen__block-list__item">10 Links</li>
                 <li class="pricing-screen__block-list__item">No Ads</li>
                 <li class="pricing-screen__block-list__item">Custom url</li>
                 <li class="pricing-screen__block-list__item">test</li>
               </ul>
-              <a href="#" class="button cta_hero_button">Get started</a>
+              <a data-pricing-button href="#" class="button cta_hero_button"
+                >Get started</a
+              >
             </div>
             <div class="pricing-screen__block">
               <span class="uppertitle">Pro</span>
-              <h2 class="pricing-screen__block-title split-title">$3.49</h2>
+              <h2
+                data-pricing-price
+                class="pricing-screen__block-title split-title"
+              >
+                $3.49
+              </h2>
 
-              <ul class="pricing-screen__block-list">
+              <ul
+                data-pricing-functionnality
+                class="pricing-screen__block-list"
+              >
                 <li class="pricing-screen__block-list__item">25 Links</li>
                 <li class="pricing-screen__block-list__item">No Ads</li>
-                <li class="pricing-screen__block-list__item">Analytics</li>
+                <li class="pricing-screen__block-list__item"></li>
+                <li class="pricing-screen__block-list__item"></li>
                 <li class="pricing-screen__block-list__item">
                   Stripe integration
                 </li>
               </ul>
-              <a href="#" class="button cta_hero_button">Upgrade now</a>
+              <a data-pricing-button href="#" class="button cta_hero_button"
+                >Upgrade now</a
+              >
             </div>
           </div>
         </section>
@@ -1048,21 +1100,23 @@
         <!-- pricing-screen end -->
 
         <!-- final-screen -->
-        <section class="final-screen">
+        <section data-lag="0.2" data-speed="1.1" class="final-screen">
           <div class="container">
             <div class="row content">
               <div class="final-screen__text">
-                <h2 class="fade nowrap">Que dites-vous</h2>
-                <h2 class="fade">de</h2>
-                <h2 class="fade">cela ?</h2>
+                <h2 data-final-title class="fade nowrap">Que dites-vous</h2>
+                <h2 data-final-title class="fade">de</h2>
+                <h2 data-final-title class="fade">cela ?</h2>
                 <div class="fadeUp">
-                  <p class="subtitle">
+                  <p data-final-subtitleText class="subtitle">
                     Toutes vos connexions sur les réseaux sociaux réunies sur
                     une seule page étonnante et ajustable. C'est comme si vous
                     aviez entre les mains le pouvoir illimité des reseaux
                     sociaux !
                   </p>
-                  <a href="#" class="button cta_footer_button">C'est parti !</a>
+                  <a href="#" data-final-button class="button cta_footer_button"
+                    >C'est parti !</a
+                  >
                 </div>
               </div>
               <div class="final-screen__pic">
@@ -1101,18 +1155,33 @@
               </div>
               <div class="regulations">
                 <a class="terms-privacy" href="#"
-                  ><span>Mentions légales</span></a
+                  ><span data-footer-legal>Mentions légales</span></a
                 >
                 <a class="terms-privacy" href="#"
-                  ><span>Politique de confidentialité</span></a
+                  ><span data-footer-confidentiality
+                    >Politique de confidentialité</span
+                  ></a
                 >
               </div>
 
               <div class="footer-year">
-                <span
+                <span data-footer-right
                   >©<i class="year">2023</i> Ninks.
                   Tous&nbsp;droits&nbsp;réservés.</span
                 >
+              </div>
+              <div class="footer-select">
+                <select class="footer-select__container" name="lang">
+                  <option class="footer-select__option" value="fr">
+                    Français
+                  </option>
+                  <option class="footer-select__option" value="en">
+                    Anglais
+                  </option>
+                  <option class="footer-select__option" value="es">
+                    Espagnol
+                  </option>
+                </select>
               </div>
             </div>
           </div>

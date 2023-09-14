@@ -428,7 +428,7 @@ li:last-of-type {
 
 /*************** Footer ***************/
 .footer-line {
-  background-color: black;
+  background-color: #171a22;
   margin: 0px auto;
   position: relative;
   bottom: 0;
@@ -546,6 +546,8 @@ li:last-of-type {
     padding: 24px 0 48px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: baseline;
+    gap: 15px;
   }
   .footer-line .footer .footer-line__logo {
     display: none;
@@ -2690,4 +2692,19 @@ ul.pricing-screen__block-list {
   top: 0;
   animation: none;
   display: none;
+}
+
+.footer-select__container {
+  padding: 10px 15px;
+  min-width: 125px;
+  font-weight: 600;
+  border-radius: 10px;
+  font-family: "Plus Jakarta Sans";
+  color: var(--green-800);
+  outline: none;
+  cursor: pointer;
+
+  .footer-select__option {
+    cursor: pointer;
+  }
 }

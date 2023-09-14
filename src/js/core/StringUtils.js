@@ -80,7 +80,7 @@ function emojiSafeSplit(text, delimiter, trim, preserveSpaces) {
         i = 0,
         j,
         character
-
+ 
     for (; i < l; i++) {
         character = text.charAt(i)
 
