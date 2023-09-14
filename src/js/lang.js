@@ -1,9 +1,7 @@
-import gsap from "gsap"
+import gsap from "gsap";
 
-console.log(gsap.matchMedia())
-
-const lang = new Map()
-const selectLang = document.querySelector("[name=lang]")
+const lang = new Map();
+const selectLang = document.querySelector("[name=lang]");
 
 lang.set("fr", {
   lang: "fr",
@@ -42,7 +40,12 @@ lang.set("fr", {
   pricing: [
     {
       price: "Free",
-      functionnality: ["10 Liens", "Sans publicité", "Url personnaliée", "Test"],
+      functionnality: [
+        "10 Liens",
+        "Sans publicité",
+        "Url personnaliée",
+        "Test",
+      ],
       button: "Commencer",
     },
     {
@@ -71,7 +74,7 @@ lang.set("fr", {
     confidentiality: "Politique de confidentialité",
     right: " Ninks. Tous droits réservés.",
   },
-})
+});
 
 lang.set("en", {
   lang: "en",
@@ -125,7 +128,7 @@ lang.set("en", {
     confidentiality: "Privacy Policy",
     right: " Ninks. All rights reserved.",
   },
-})
+});
 lang.set("es", {
   lang: "es",
   header: {
@@ -171,57 +174,69 @@ lang.set("es", {
     confidentiality: "",
     right: "",
   },
-})
+});
 
 const getTextLang = () => {
-  return lang.get(localStorage.getItem("lang"))
-}
+  return lang.get(localStorage.getItem("lang"));
+};
 
 const updateText = () => {
-  const textItem = getTextLang()
+  const textItem = getTextLang();
 
   //header
   document.querySelectorAll("[data-header-title]").forEach((item, key) => {
-    item.innerText = textItem.header.title.entities[key]
-  })
+    item.innerText = textItem.header.title.entities[key];
+  });
 
-  document.querySelector("[data-header-subtitleText]").innerText = textItem.header.subtitleText
-  document.querySelector("[data-header-button]").innerText = textItem.header.button
+  document.querySelector("[data-header-subtitleText]").innerText =
+    textItem.header.subtitleText;
+  document.querySelector("[data-header-button]").innerText =
+    textItem.header.button;
 
   //princing
 
-  document.querySelectorAll("[data-pricing]  .pricing-screen__block").forEach((pricing, key) => {
-    pricing.querySelector("[data-pricing-price]").innerText = textItem.pricing[key].price
+  document
+    .querySelectorAll("[data-pricing]  .pricing-screen__block")
+    .forEach((pricing, key) => {
+      pricing.querySelector("[data-pricing-price]").innerText =
+        textItem.pricing[key].price;
 
-    textItem.pricing[key].functionnality.map((func, keyFunc) => {
-      pricing.querySelector("[data-pricing-functionnality]").children[keyFunc].innerText = func
-    })
+      textItem.pricing[key].functionnality.map((func, keyFunc) => {
+        pricing.querySelector("[data-pricing-functionnality]").children[
+          keyFunc
+        ].innerText = func;
+      });
 
-    pricing.querySelector("[data-pricing-button]").innerText = textItem.pricing[key].button
-  })
+      pricing.querySelector("[data-pricing-button]").innerText =
+        textItem.pricing[key].button;
+    });
 
   //final screen
-  document.querySelector("[data-final-button]").textContent = textItem.finalScreen.button
+  document.querySelector("[data-final-button]").textContent =
+    textItem.finalScreen.button;
 
-  document.querySelector("[data-final-subtitleText]").innerText = textItem.finalScreen.subtitleText
+  document.querySelector("[data-final-subtitleText]").innerText =
+    textItem.finalScreen.subtitleText;
   document.querySelectorAll("[data-final-title]").forEach((item, key) => {
-    item.innerText = textItem.finalScreen.title.entities[key]
-  })
+    item.innerText = textItem.finalScreen.title.entities[key];
+  });
 
   // footer
 
-  document.querySelector("[data-footer-right]").childNodes[2].textContent = textItem.footer.right
+  document.querySelector("[data-footer-right]").childNodes[2].textContent =
+    textItem.footer.right;
   document.querySelector("[data-footer-confidentiality]").innerText =
-    textItem.footer.confidentiality
-  document.querySelector("[data-footer-legal]").innerText = textItem.footer.legal
-}
+    textItem.footer.confidentiality;
+  document.querySelector("[data-footer-legal]").innerText =
+    textItem.footer.legal;
+};
 
-updateText()
+updateText();
 
-selectLang.value = localStorage.getItem("lang")
+selectLang.value = localStorage.getItem("lang");
 
 selectLang.addEventListener("change", () => {
-  localStorage.setItem("lang", selectLang.value)
-  getTextLang()
-  updateText()
-})
+  localStorage.setItem("lang", selectLang.value);
+  getTextLang();
+  updateText();
+});
