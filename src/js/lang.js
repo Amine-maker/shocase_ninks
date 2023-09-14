@@ -4,7 +4,7 @@ const lang = new Map();
 const selectLang = document.querySelector("[name=lang]");
 
 lang.set("fr", {
-  lang: "fr",
+  lang: "Français",
   header: {
     title: { entities: ["LIBÉREZ", "VOS LIENS", "AVEC NINKS"] },
     subtitleText: `
@@ -14,32 +14,36 @@ lang.set("fr", {
     adsLargeText: "",
     button: "Commencer",
   },
-
   slider: [
     {
-      title: "",
-      description: "",
+      title: "Intégrer une page personnalisée",
+      description:
+        "Centralisez votre présence en ligne et offrez une expérience fluide à vos visiteurs grâce à Ninks. Notre plateforme vous permet de créer une page unique, rassemblant tous vos liens vers les réseaux sociaux, vos projets, vos créations et plus encore. Simplifiez votre communication et donnez à votre communautée un accès rapide à tout ce qui vous définit en un seul clic.",
     },
     {
-      title: "",
-      description: "",
+      title: "Rediriger votre communauté",
+      description:
+        "Transformez chaque clic en action grâce aux boutons d'action. Intégrez des liens d'achat, d'inscription, ou de tout autre objectif spécifique sur votre page.",
     },
     {
-      title: "",
-      description: "",
+      title: "Partagez avec vos amis",
+      description:
+        "Présentez-vous au monde sous votre meilleur jour. Créez une page de liens qui reflète votre identité unique. Nos fonctionnalités d'édition visuelle vous permettent de choisir parmi une variété de thèmes, de couleurs et de mises en page pour concevoir une page qui vous ressemble.",
     },
     {
-      title: "",
-      description: "",
+      title: "Obtenez des statistiques",
+      description:
+        "Prenez des décisions éclairées. Notre plateforme vous offre des outils analytiques puissants pour suivre et interpréter vos performances. Obtenez des statistiques détaillées sur les clics, les interactions et l'engagement avec vos liens.Vous avez l'avantage de comprendre ce qui fonctionne et d'adapter votre stratégie pour un impact maximal.",
     },
     {
-      title: "",
-      description: "",
+      title: "Faites vous payer!",
+      description:
+        "Facilitez les transactions. Intégrez des liens de paiement instantanés directement dans votre page.",
     },
   ],
   pricing: [
     {
-      price: "Free",
+      price: "Gratuit",
       functionnality: [
         "10 Liens",
         "Sans publicité",
@@ -51,7 +55,7 @@ lang.set("fr", {
     {
       price: "3.49€",
       functionnality: [
-        "25 Liens",
+        "Liens illimités",
         "Sans publicité",
         "Analytics",
         "Ingétration de Stripe",
@@ -77,7 +81,79 @@ lang.set("fr", {
 });
 
 lang.set("en", {
-  lang: "en",
+  lang: "Anglais",
+  header: {
+    title: { entities: ["UNLEACH", "YOUR LINKS", "WITH NINKS"] },
+    subtitleText: `Promote your identity online with Ninks.
+    Create a page in your image that brings together all your
+    content destinations visually captivating.`,
+    adsLargeText: "",
+    button: "Get started",
+  },
+
+  slider: [
+    {
+      title: "Embed a custom page",
+      description:
+        "Centralize your online presence and provide a seamless experience to your visitors with Ninks. Our platform allows you to create a single page, bringing together all your social media links, projects, creations and more. Simplify your communication and give your community quick access to everything that defines you with just one click.",
+    },
+    {
+      title: "Redirect your community",
+      description:
+        "Turn every click into action with action buttons. Include links to purchase, register, or any other specific purpose on your page.",
+    },
+    {
+      title: "Share with your friends",
+      description:
+        "Present yourself to the world in your best light. Create a links page that reflects your unique identity. Our visual editing features allow you to choose from a variety of themes, colors and layouts to design a page that's unique to you.",
+    },
+    {
+      title: "Get statistics",
+      description:
+        "Make informed decisions. Our platform gives you powerful analytical tools to track and interpret your performance. Get detailed statistics on clicks, interactions and engagement with your links. You have the advantage of understanding what works and adapting your strategy for maximum impact.",
+    },
+    {
+      title: "Get paid!",
+      description:
+        "Make transactions easier. Embed instant payment links directly into your page.",
+    },
+  ],
+  pricing: [
+    {
+      price: "Free",
+      functionnality: ["10 Links", "No Ads", "Custom url", "Test"],
+      button: "Get started",
+    },
+    {
+      price: "$3.49",
+      functionnality: [
+        "Unlimited links",
+        "No ads",
+        "Analitycs",
+        "Stripe integration",
+        "Online payment",
+      ],
+      button: "Upgrade now",
+    },
+  ],
+  finalScreen: {
+    title: { entities: ["WHAT DO YOU SAY", "ABOUT", "THAT ?"] },
+    subtitleText: `
+    All your social media connections together on
+    one stunning, adjustable page.
+    It's as if you
+    had in your hands the unlimited power of networks
+    social!`,
+    button: "Let's go!",
+  },
+  footer: {
+    legal: "Legal Notice",
+    confidentiality: "Privacy Policy",
+    right: " Ninks. All rights reserved.",
+  },
+});
+lang.set("es", {
+  lang: "Anglais",
   header: {
     title: { entities: ["UNLEACH", "YOUR LINKS", "WITH NINKS"] },
     subtitleText: `Promote your identity online with Ninks.
@@ -129,58 +205,13 @@ lang.set("en", {
     right: " Ninks. All rights reserved.",
   },
 });
-lang.set("es", {
-  lang: "es",
-  header: {
-    title: "",
-    subtitleText: "",
-    adsLargeText: "",
-    button: "",
-  },
-
-  slider: [
-    {
-      title: "",
-      description: "",
-    },
-    {
-      title: "",
-      description: "",
-    },
-    {
-      title: "",
-      description: "",
-    },
-    {
-      title: "",
-      description: "",
-    },
-    {
-      title: "",
-      description: "",
-    },
-  ],
-  pricing: [
-    { price: "", functionnality: ["", "", ""], button: "" },
-    { price: "", functionnality: ["", "", ""], button: "" },
-  ],
-  finalScreen: {
-    title: "",
-    subtitleText: "",
-    button: "",
-  },
-  footer: {
-    legal: "",
-    confidentiality: "",
-    right: "",
-  },
-});
 
 const getTextLang = () => {
-  return lang.get(localStorage.getItem("lang"));
+  return lang.get(localStorage.getItem("lang") || "fr");
 };
 
 const updateText = () => {
+  selectLang.value = localStorage.getItem("lang") || "fr";
   const textItem = getTextLang();
 
   //header
@@ -193,10 +224,10 @@ const updateText = () => {
   document.querySelector("[data-header-button]").innerText =
     textItem.header.button;
 
-  //princing
+  //pricing
 
   document
-    .querySelectorAll("[data-pricing]  .pricing-screen__block")
+    .querySelectorAll("[data-pricing] .pricing-screen__block")
     .forEach((pricing, key) => {
       pricing.querySelector("[data-pricing-price]").innerText =
         textItem.pricing[key].price;
@@ -209,6 +240,25 @@ const updateText = () => {
 
       pricing.querySelector("[data-pricing-button]").innerText =
         textItem.pricing[key].button;
+    });
+
+  // slider
+
+  document
+    .querySelectorAll("[data-slider=desktop] .swiper-slide")
+    .forEach((slider, key) => {
+      console.log(slider);
+      if (slider.querySelector("[data-slider-title]").children.length) {
+        console.log("ya");
+        slider.querySelector("[data-slider-title]").children[0].innerText =
+          textItem.slider[key].title;
+      } else {
+        slider.querySelector("[data-slider-title]").innerText =
+          textItem.slider[key].title;
+      }
+
+      slider.querySelector("[data-slider-description]").innerText =
+        textItem.slider[key].description;
     });
 
   //final screen
@@ -233,9 +283,8 @@ const updateText = () => {
 
 updateText();
 
-selectLang.value = localStorage.getItem("lang");
-
 selectLang.addEventListener("change", () => {
+  console.log(selectLang.value);
   localStorage.setItem("lang", selectLang.value);
   getTextLang();
   updateText();
