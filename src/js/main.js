@@ -1,11 +1,11 @@
 import { gsap } from "gsap"
 
-import { ScrollTrigger } from "gsap/all"
+import { ScrollTrigger } from "gsap/ScrollTrigger.js"
 import Swiper, { Navigation, Pagination, Parallax } from "swiper"
 import "swiper/swiper-bundle.min.css"
-import SplitText from "./core/SplitText"
-import ScrollSmoother from "./core/ScrollSmoother"
-import * as l from "./lang"
+import SplitText from "./core/SplitText.js"
+import ScrollSmoother from "./core/ScrollSmoother.js"
+import * as l from "./lang.js"
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText)
 
