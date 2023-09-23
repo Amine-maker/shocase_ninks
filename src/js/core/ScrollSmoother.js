@@ -17,10 +17,7 @@ let gsap,
     return typeof window !== "undefined"
   },
   _getGSAP = function _getGSAP() {
-    return (
-      gsap ||
-      (_windowExists() && (gsap = window.gsap) && gsap.registerPlugin && gsap)
-    )
+    return gsap || (_windowExists() && (gsap = window.gsap) && gsap.registerPlugin && gsap)
   },
   _round = function _round(value) {
     return Math.round(value * 100000) / 100000 || 0
@@ -35,9 +32,7 @@ let gsap,
       b2 = parent.getBoundingClientRect(),
       gapTop = b2.top - b1.top,
       gapBottom = b2.bottom - b1.bottom,
-      change =
-        (Math.abs(gapTop) > Math.abs(gapBottom) ? gapTop : gapBottom) /
-        (1 - progress),
+      change = (Math.abs(gapTop) > Math.abs(gapBottom) ? gapTop : gapBottom) / (1 - progress),
       offset = -change * progress,
       ratio,
       extraChange
@@ -48,9 +43,7 @@ let gsap,
       extraChange =
         ratio === 0.5
           ? b2.height * 2
-          : Math.min(b2.height, Math.abs((-change * ratio) / (2 * ratio - 1))) *
-            2 *
-            (progress || 1)
+          : Math.min(b2.height, Math.abs((-change * ratio) / (2 * ratio - 1))) * 2 * (progress || 1)
       offset += progress ? -extraChange * progress : -extraChange / 2 // whatever the offset, we must double that in the opposite direction to compensate.
 
       change += extraChange
@@ -162,9 +155,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
 
           delta = y - currentY
           currentY = y
-          ScrollTrigger.isUpdating ||
-            ScrollSmoother.isRefreshing ||
-            ScrollTrigger.update() // note: if we allowed an update() when in the middle of a refresh() it could render all the other ScrollTriggers and inside the update(), _refreshing would be true thus scrubs would jump instantly, but then on the very next update they'd continue from there. Basically this allowed update() to be called on OTHER ScrollTriggers during the refresh() of the mainST which could cause some complications. See https://greensock.com/forums/topic/35536-smoothscroller-ignoremobileresize-for-non-touch-devices
+          ScrollTrigger.isUpdating || ScrollSmoother.isRefreshing || ScrollTrigger.update() // note: if we allowed an update() when in the middle of a refresh() it could render all the other ScrollTriggers and inside the update(), _refreshing would be true thus scrubs would jump instantly, but then on the very next update they'd continue from there. Basically this allowed update() to be called on OTHER ScrollTriggers during the refresh() of the mainST which could cause some complications. See https://greensock.com/forums/topic/35536-smoothscroller-ignoremobileresize-for-non-touch-devices
         }
       },
       scrollTop = function scrollTop(value) {
@@ -175,9 +166,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
           isProxyScrolling = true // otherwise, if snapping was applied (or anything that attempted to SET the scroll proxy's scroll position), we'd set the scroll here which would then (on the next tick) update the content tween/ScrollTrigger which would try to smoothly animate to that new value, thus the scrub tween would impede the progress. So we use this flag to respond accordingly in the ScrollTrigger's onUpdate and effectively force the scrub to its end immediately.
 
           paused ? (currentY = -value) : render(-value)
-          ScrollTrigger.isRefreshing
-            ? mainST.update()
-            : scrollFunc(value / speed) // during a refresh, we revert all scrollers to 0 and then put them back. We shouldn't force the window to that value too during the refresh.
+          ScrollTrigger.isRefreshing ? mainST.update() : scrollFunc(value / speed) // during a refresh, we revert all scrollers to 0 and then put them back. We shouldn't force the window to that value too during the refresh.
 
           return this
         }
@@ -244,15 +233,9 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
           distance *= (change - pinOffset / ratio) / change
         }
 
-        return (
-          position + (distance - offset * progressOffset) / ratio - distance
-        )
+        return position + (distance - offset * progressOffset) / ratio - distance
       },
-      adjustEffectRelatedTriggers = function adjustEffectRelatedTriggers(
-        st,
-        triggers,
-        partial,
-      ) {
+      adjustEffectRelatedTriggers = function adjustEffectRelatedTriggers(st, triggers, partial) {
         // if we're using this method to do only a partial Array of triggers, we should NOT reset or rebuild the pin data. For example, we tap into this from the offset() method.
         partial || (st.pins.length = st.pins.offset = 0)
         let pins = st.pins,
@@ -293,9 +276,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
             ) // the last value (pinOffset) is to adjust the pinStart y value inside ScrollTrigger to accommodate for the y offset that gets applied by the parallax effect.
 
             trig.markerStart &&
-              markers.push(
-                gsap.quickSetter([trig.markerStart, trig.markerEnd], "y", "px"),
-              )
+              markers.push(gsap.quickSetter([trig.markerStart, trig.markerEnd], "y", "px"))
 
             if (trig.pin && trig.end > 0 && !partial) {
               dif = trig.end - trig.start
@@ -304,11 +285,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
               if (isClamped) {
                 if (st.start > 0) {
                   // the trigger element on the effect must have been pinned BEFORE its starting position, so in this edge case we must adjust the start position to be 0 and end position to get pushed further by the amount of the overlap
-                  st.setPositions(
-                    0,
-                    st.end + (st._startNative - st.start),
-                    true,
-                  ) // add the overlap amount
+                  st.setPositions(0, st.end + (st._startNative - st.start), true) // add the overlap amount
 
                   adjustEffectRelatedTriggers(st, triggers)
                   return // start over for this trigger element!
@@ -325,11 +302,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
                 distance: dif,
                 trig: trig,
               })
-              st.setPositions(
-                st.start,
-                st.end + (isClamped ? -trig.start : dif),
-                true,
-              )
+              st.setPositions(st.start, st.end + (isClamped ? -trig.start : dif), true)
             }
           }
         }
@@ -339,11 +312,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
         createdAfterEffectWasApplied,
       ) {
         effects.forEach(function (st) {
-          return adjustEffectRelatedTriggers(
-            st,
-            triggers,
-            createdAfterEffectWasApplied,
-          )
+          return adjustEffectRelatedTriggers(st, triggers, createdAfterEffectWasApplied)
         })
       },
       onRefresh = function onRefresh() {
@@ -380,12 +349,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
               start = 0
             } else if (st.ratio < 0 || (st._endClamp && end >= _maxScroll())) {
               end = _maxScroll()
-              start =
-                st.ratio < 0
-                  ? 0
-                  : st.ratio > 1
-                  ? 0
-                  : end - (end - st.start) / st.ratio
+              start = st.ratio < 0 ? 0 : st.ratio > 1 ? 0 : end - (end - st.start) / st.ratio
               offset = (end - start) * st.ratio - (st.end - st.start)
             }
 
@@ -422,9 +386,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
           let v = typeof value === "function" ? value(index, el) : value
           v ||
             v === 0 ||
-            (v =
-              el.getAttribute("data-" + effectsPrefix + name) ||
-              (name === "speed" ? 1 : 0))
+            (v = el.getAttribute("data-" + effectsPrefix + name) || (name === "speed" ? 1 : 0))
           el.setAttribute("data-" + effectsPrefix + name, v)
           let clamp = (v + "").substr(0, 6) === "clamp("
           return {
@@ -433,17 +395,9 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
           }
         }
       },
-      createEffect = function createEffect(
-        el,
-        speed,
-        lag,
-        index,
-        effectsPadding,
-      ) {
+      createEffect = function createEffect(el, speed, lag, index, effectsPadding) {
         effectsPadding =
-          (typeof effectsPadding === "function"
-            ? effectsPadding(index, el)
-            : effectsPadding) || 0
+          (typeof effectsPadding === "function" ? effectsPadding(index, el) : effectsPadding) || 0
 
         let getSpeed = effectValueGetter("speed", speed, index, el),
           getLag = effectValueGetter("lag", lag, index, el),
@@ -462,9 +416,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
             ratio = parseFloat(speed.value) || 1
             autoSpeed = speed.value === "auto"
             progressOffset =
-              autoSpeed ||
-              (st && st._startClamp && st.start <= 0) ||
-              pins.offset
+              autoSpeed || (st && st._startClamp && st.start <= 0) || pins.offset
                 ? 0
                 : st && st._endClamp && st.end === _maxScroll()
                 ? 1
@@ -495,10 +447,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
             if (autoSpeed) {
               revert()
 
-              let auto = _autoDistance(
-                el,
-                _clamp(0, 1, -self.start / (self.end - self.start)),
-              )
+              let auto = _autoDistance(el, _clamp(0, 1, -self.start / (self.end - self.start)))
 
               change = auto.change
               yOffset = auto.offset
@@ -562,14 +511,10 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
                   while (i--) {
                     pin = pins[i]
 
-                    if (
-                      pin.trig.isActive ||
-                      (scrollY >= pin.start && scrollY <= pin.end)
-                    ) {
+                    if (pin.trig.isActive || (scrollY >= pin.start && scrollY <= pin.end)) {
                       // currently pinned so no need to set anything
                       if (scrub) {
-                        pin.trig.progress +=
-                          pin.trig.direction < 0 ? 0.001 : -0.001 // just to make absolutely sure that it renders (if the progress didn't change, it'll skip)
+                        pin.trig.progress += pin.trig.direction < 0 ? 0.001 : -0.001 // just to make absolutely sure that it renders (if the progress didn't change, it'll skip)
 
                         pin.trig.update(0, 0, 1)
                         scrub.resetTo("y", parseFloat(cache.y), -delta, true)
@@ -587,9 +532,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
                     startY +
                     extraY +
                     change *
-                      ((gsap.utils.clamp(self.start, self.end, scrollY) -
-                        self.start -
-                        extraY) /
+                      ((gsap.utils.clamp(self.start, self.end, scrollY) - self.start - extraY) /
                         (end - self.start) -
                         progressOffset)
                 }
@@ -661,9 +604,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
         y
 
       if (effects) {
-        startupPhase
-          ? ScrollTrigger.refresh()
-          : adjustParallaxPosition([st], true) // all the effects need to go through the initial full refresh() so that all the pins and ratios and offsets are set up. That's why we do a full refresh() if it's during the startupPhase.
+        startupPhase ? ScrollTrigger.refresh() : adjustParallaxPosition([st], true) // all the effects need to go through the initial full refresh() so that all the pins and ratios and offsets are set up. That's why we do a full refresh() if it's during the startupPhase.
       }
 
       y = st.start / speed
@@ -676,8 +617,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
     function refreshHeight() {
       height = content.clientHeight
       content.style.overflow = "visible"
-      _body.style.height =
-        _win.innerHeight + (height - _win.innerHeight) / speed + "px"
+      _body.style.height = _win.innerHeight + (height - _win.innerHeight) / speed + "px"
       return height - _win.innerHeight
     }
 
@@ -928,9 +868,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
 
         render(scroll.y)
         startupPhase ||
-          self.animation.progress(
-            gsap.utils.clamp(0, 1, recordedRefreshScroll / speed / -self.end),
-          )
+          self.animation.progress(gsap.utils.clamp(0, 1, recordedRefreshScroll / speed / -self.end))
 
         if (recordedRefreshScrub) {
           // we need to trigger the scrub to happen again
@@ -977,8 +915,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
           effectsPadding: vars.effectsPadding,
         },
       )
-    vars.sections &&
-      this.sections(vars.sections === true ? "[data-section]" : vars.sections)
+    vars.sections && this.sections(vars.sections === true ? "[data-section]" : vars.sections)
     existingScrollTriggers.forEach(function (st) {
       st.vars.scroller = wrapper
       st.revert(false, true)
@@ -1017,8 +954,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
             paused.kill()
             paused = 0
             pausedNormalizer && pausedNormalizer.enable()
-            mainST.progress =
-              (-currentY / speed - mainST.start) / (mainST.end - mainST.start)
+            mainST.progress = (-currentY / speed - mainST.start) / (mainST.end - mainST.start)
             killScrub(mainST)
           }
         }
@@ -1122,10 +1058,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
         if (_body && ScrollTrigger) {
           _onResizeDelayedCall = gsap
             .delayedCall(0.2, function () {
-              return (
-                ScrollTrigger.isRefreshing ||
-                (_mainInstance && _mainInstance.refresh())
-              )
+              return ScrollTrigger.isRefreshing || (_mainInstance && _mainInstance.refresh())
             })
             .pause()
           _getVelocityProp = ScrollTrigger.core._getVelocityProp
@@ -1144,9 +1077,7 @@ let ScrollSmoother = /*#__PURE__*/ (function () {
 ScrollSmoother.version = "3.12.2"
 
 ScrollSmoother.create = function (vars) {
-  return _mainInstance &&
-    vars &&
-    _mainInstance.content() === _toArray(vars.content)[0]
+  return _mainInstance && vars && _mainInstance.content() === _toArray(vars.content)[0]
     ? _mainInstance
     : new ScrollSmoother(vars)
 }

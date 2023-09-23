@@ -12,11 +12,7 @@ var _doc,
   _initCore = function _initCore(core) {
     _doc = document
     _win = window
-    gsap =
-      gsap ||
-      core ||
-      _win.gsap ||
-      console.warn("Please gsap.registerPlugin(SplitText)")
+    gsap = gsap || core || _win.gsap || console.warn("Please gsap.registerPlugin(SplitText)")
 
     if (gsap) {
       _toArray = gsap.utils.toArray
@@ -73,11 +69,7 @@ var _doc,
     var type = element.nodeType
 
     if (type === 1 || type === 9 || type === 11) {
-      for (
-        element = element.firstChild;
-        element;
-        element = element.nextSibling
-      ) {
+      for (element = element.firstChild; element; element = element.nextSibling) {
         _swapText(element, oldText, newText)
       }
     } else if (type === 3 || type === 4) {
@@ -91,11 +83,7 @@ var _doc,
       a.push(merge[i])
     }
   },
-  _isBeforeWordDelimiter = function _isBeforeWordDelimiter(
-    e,
-    root,
-    wordDelimiter,
-  ) {
+  _isBeforeWordDelimiter = function _isBeforeWordDelimiter(e, root, wordDelimiter) {
     var next
 
     while (e && e !== root) {
@@ -120,11 +108,7 @@ var _doc,
       if (child._isSplit) {
         _deWordify(child)
       } else {
-        if (
-          i &&
-          child.previousSibling &&
-          child.previousSibling.nodeType === 3
-        ) {
+        if (i && child.previousSibling && child.previousSibling.nodeType === 3) {
           child.previousSibling.nodeValue +=
             child.nodeType === 3 ? child.nodeValue : child.firstChild.nodeValue
           e.removeChild(child)
@@ -151,19 +135,14 @@ var _doc,
       paddingLeft = _getStyleAsNumber("paddingLeft", cs),
       lineOffsetY = -999,
       borderTopAndBottom =
-        _getStyleAsNumber("borderBottomWidth", cs) +
-        _getStyleAsNumber("borderTopWidth", cs),
+        _getStyleAsNumber("borderBottomWidth", cs) + _getStyleAsNumber("borderTopWidth", cs),
       borderLeftAndRight =
-        _getStyleAsNumber("borderLeftWidth", cs) +
-        _getStyleAsNumber("borderRightWidth", cs),
+        _getStyleAsNumber("borderLeftWidth", cs) + _getStyleAsNumber("borderRightWidth", cs),
       padTopAndBottom =
-        _getStyleAsNumber("paddingTop", cs) +
-        _getStyleAsNumber("paddingBottom", cs),
+        _getStyleAsNumber("paddingTop", cs) + _getStyleAsNumber("paddingBottom", cs),
       padLeftAndRight =
-        _getStyleAsNumber("paddingLeft", cs) +
-        _getStyleAsNumber("paddingRight", cs),
-      lineThreshold =
-        _getStyleAsNumber("fontSize", cs) * (vars.lineThreshold || 0.2),
+        _getStyleAsNumber("paddingLeft", cs) + _getStyleAsNumber("paddingRight", cs),
+      lineThreshold = _getStyleAsNumber("fontSize", cs) * (vars.lineThreshold || 0.2),
       textAlign = cs.textAlign,
       charArray = [],
       wordArray = [],
@@ -237,9 +216,7 @@ var _doc,
               (node._isSplit && isChild) ||
               (!chars && isChild) ||
               (words && isChild) ||
-              (!words &&
-                node.parentNode.parentNode === element &&
-                !node.parentNode._isSplit)
+              (!words && node.parentNode.parentNode === element && !node.parentNode._isSplit)
             ) {
               curLine.push(node)
               node._x -= paddingLeft
@@ -251,8 +228,7 @@ var _doc,
 
             if (
               node.nodeName === "BR" &&
-              ((node.nextSibling && node.nextSibling.nodeName === "BR") ||
-                i === 0)
+              ((node.nextSibling && node.nextSibling.nodeName === "BR") || i === 0)
             ) {
               //two consecutive <br> tags signify a new [empty] line. Also, if the entire block of content STARTS with a <br>, add a line.
               lines.push([])
@@ -324,17 +300,13 @@ var _doc,
             spaceNodesToRemove.push(node.nextSibling)
           }
 
-          node._next =
-            node.nextSibling && node.nextSibling._isFirst
-              ? null
-              : node.nextSibling
+          node._next = node.nextSibling && node.nextSibling._isFirst ? null : node.nextSibling
           node.parentNode.removeChild(node)
           nodes.splice(i--, 1)
           l--
         } else if (!isChild) {
           offset =
-            !node.nextSibling &&
-            _isBeforeWordDelimiter(node.parentNode, element, wordDelimiter) //if this is the last letter in the word (and we're not breaking by lines and not positioning things absolutely), we need to add a space afterwards so that the characters don't just mash together
+            !node.nextSibling && _isBeforeWordDelimiter(node.parentNode, element, wordDelimiter) //if this is the last letter in the word (and we're not breaking by lines and not positioning things absolutely), we need to add a space afterwards so that the characters don't just mash together
 
           node.parentNode._parent && node.parentNode._parent.appendChild(node)
           offset && node.parentNode.appendChild(_doc.createTextNode(" "))
@@ -345,11 +317,7 @@ var _doc,
 
           charArray.push(node)
         }
-      } else if (
-        node.parentNode._isSplit &&
-        !node._isSplit &&
-        node.innerHTML !== ""
-      ) {
+      } else if (node.parentNode._isSplit && !node._isSplit && node.innerHTML !== "") {
         wordArray.push(node)
       } else if (chars && !node._isSplit) {
         if (tag === "span") {
@@ -406,9 +374,7 @@ var _doc,
           if (curLine[j].nodeName !== "BR") {
             node = curLine[j]
             lineNode.appendChild(node)
-            addWordSpaces &&
-              node._wordEnd &&
-              lineNode.appendChild(_doc.createTextNode(" "))
+            addWordSpaces && node._wordEnd && lineNode.appendChild(_doc.createTextNode(" "))
 
             if (absolute) {
               if (j === 0) {
@@ -525,22 +491,13 @@ var _doc,
     for (i = 0; i < l; i++) {
       character = text.charAt(i)
 
-      if (
-        specialChars &&
-        (testResult = specialChars(text.substr(i), vars.specialChars))
-      ) {
+      if (specialChars && (testResult = specialChars(text.substr(i), vars.specialChars))) {
         // look for any specialChars that were declared. Remember, they can be passed in like {specialChars:["मी", "पा", "है"]} or a function could be defined instead. Either way, the function should return the number of characters that should be grouped together for this "character".
         character = text.substr(i, testResult || 1)
         splitText +=
-          chars && character !== " "
-            ? charStart() + character + "</" + tag + ">"
-            : character
+          chars && character !== " " ? charStart() + character + "</" + tag + ">" : character
         i += testResult - 1
-      } else if (
-        character === wordDelimiter &&
-        text.charAt(i - 1) !== wordDelimiter &&
-        i
-      ) {
+      } else if (character === wordDelimiter && text.charAt(i - 1) !== wordDelimiter && i) {
         splitText += wordIsOpen ? wordEnd : ""
         wordIsOpen = 0
 
@@ -557,19 +514,14 @@ var _doc,
           wordIsOpen = 1
         }
       } else if (character === "{" && text.substr(i, 6) === "{{LT}}") {
-        splitText += chars
-          ? charStart() + "{{LT}}" + "</" + tag + ">"
-          : "{{LT}}"
+        splitText += chars ? charStart() + "{{LT}}" + "</" + tag + ">" : "{{LT}}"
         i += 5
       } else if (
-        (character.charCodeAt(0) >= 0xd800 &&
-          character.charCodeAt(0) <= 0xdbff) ||
+        (character.charCodeAt(0) >= 0xd800 && character.charCodeAt(0) <= 0xdbff) ||
         (text.charCodeAt(i + 1) >= 0xfe00 && text.charCodeAt(i + 1) <= 0xfe0f)
       ) {
         //special emoji characters use 2 or 4 unicode characters that we must keep together.
-        j =
-          ((text.substr(i, 12).split(StringUtil.emojiExp) || [])[1] || "")
-            .length || 2
+        j = ((text.substr(i, 12).split(StringUtil.emojiExp) || [])[1] || "").length || 2
         splitText +=
           chars && character !== " "
             ? charStart() + text.substr(i, j) + "</" + tag + ">"
@@ -577,9 +529,7 @@ var _doc,
         i += j - 1
       } else {
         splitText +=
-          chars && character !== " "
-            ? charStart() + character + "</" + tag + ">"
-            : character
+          chars && character !== " " ? charStart() + character + "</" + tag + ">" : character
       }
     }
 
@@ -601,11 +551,7 @@ var _doc,
         child._next = child._isFirst = child._parent = child._wordEnd = null
 
         if (child.nodeType !== 3 || /\S+/.test(child.nodeValue)) {
-          if (
-            absolute &&
-            child.nodeType !== 3 &&
-            _getComputedStyle(child).display === "inline"
-          ) {
+          if (absolute && child.nodeType !== 3 && _getComputedStyle(child).display === "inline") {
             //if there's a child node that's display:inline, switch it to inline-block so that absolute positioning works properly (most browsers don't report offsetTop/offsetLeft properly inside a <span> for example)
             child.style.display = "inline-block"
             child.style.position = "relative"
@@ -645,11 +591,7 @@ var SplitText = /*#__PURE__*/ (function () {
   _proto.split = function split(vars) {
     this.isSplit && this.revert()
     this.vars = vars = vars || this.vars
-    this._originals.length =
-      this.chars.length =
-      this.words.length =
-      this.lines.length =
-        0
+    this._originals.length = this.chars.length = this.words.length = this.lines.length = 0
 
     var i = this.elements.length,
       tag = vars.tag ? vars.tag : vars.span ? "span" : "div",
@@ -667,15 +609,7 @@ var SplitText = /*#__PURE__*/ (function () {
 
       _split(e, vars, wordStart, charStart)
 
-      _setPositionsAfterSplit(
-        e,
-        vars,
-        this.chars,
-        this.words,
-        this.lines,
-        origWidth,
-        origHeight,
-      )
+      _setPositionsAfterSplit(e, vars, this.chars, this.words, this.lines, origWidth, origHeight)
     }
 
     this.chars.reverse()

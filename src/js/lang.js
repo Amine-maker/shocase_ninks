@@ -230,9 +230,7 @@ const updateText = () => {
   // slider
 
   document.querySelectorAll("[data-slider=desktop] .swiper-slide").forEach((slider, key) => {
-    console.log(slider)
     if (slider.querySelector("[data-slider-title]").children.length) {
-      console.log("ya")
       slider.querySelector("[data-slider-title]").children[0].innerText = textItem.slider[key].title
     } else {
       slider.querySelector("[data-slider-title]").innerText = textItem.slider[key].title
@@ -260,7 +258,6 @@ const updateText = () => {
 updateText()
 
 selectLang.addEventListener("change", () => {
-  console.log(selectLang.value)
   localStorage.setItem("lang", selectLang.value)
   getTextLang()
   updateText()
