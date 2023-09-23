@@ -1,7 +1,5 @@
-import gsap from "gsap";
-
-const lang = new Map();
-const selectLang = document.querySelector("[name=lang]");
+const lang = new Map()
+const selectLang = document.querySelector("[name=lang]")
 
 lang.set("fr", {
   lang: "Français",
@@ -44,12 +42,7 @@ lang.set("fr", {
   pricing: [
     {
       price: "Gratuit",
-      functionnality: [
-        "10 Liens",
-        "Sans publicité",
-        "Url personnaliée",
-        "Test",
-      ],
+      functionnality: ["10 Liens", "Sans publicité", "Url personnaliée", "Test"],
       button: "Commencer",
     },
     {
@@ -78,7 +71,7 @@ lang.set("fr", {
     confidentiality: "Politique de confidentialité",
     right: " Ninks. Tous droits réservés.",
   },
-});
+})
 
 lang.set("en", {
   lang: "Anglais",
@@ -114,8 +107,7 @@ lang.set("en", {
     },
     {
       title: "Get paid!",
-      description:
-        "Make transactions easier. Embed instant payment links directly into your page.",
+      description: "Make transactions easier. Embed instant payment links directly into your page.",
     },
   ],
   pricing: [
@@ -151,7 +143,8 @@ lang.set("en", {
     confidentiality: "Privacy Policy",
     right: " Ninks. All rights reserved.",
   },
-});
+})
+
 lang.set("es", {
   lang: "Anglais",
   header: {
@@ -204,88 +197,71 @@ lang.set("es", {
     confidentiality: "Privacy Policy",
     right: " Ninks. All rights reserved.",
   },
-});
+})
 
 const getTextLang = () => {
-  return lang.get(localStorage.getItem("lang") || "fr");
-};
+  return lang.get(localStorage.getItem("lang") || "fr")
+}
 
 const updateText = () => {
-  selectLang.value = localStorage.getItem("lang") || "fr";
-  const textItem = getTextLang();
+  selectLang.value = localStorage.getItem("lang") || "fr"
+  const textItem = getTextLang()
 
   //header
   document.querySelectorAll("[data-header-title]").forEach((item, key) => {
-    item.innerText = textItem.header.title.entities[key];
-  });
+    item.innerText = textItem.header.title.entities[key]
+  })
 
-  document.querySelector("[data-header-subtitleText]").innerText =
-    textItem.header.subtitleText;
-  document.querySelector("[data-header-button]").innerText =
-    textItem.header.button;
+  document.querySelector("[data-header-subtitleText]").innerText = textItem.header.subtitleText
+  document.querySelector("[data-header-button]").innerText = textItem.header.button
 
   //pricing
 
-  document
-    .querySelectorAll("[data-pricing] .pricing-screen__block")
-    .forEach((pricing, key) => {
-      pricing.querySelector("[data-pricing-price]").innerText =
-        textItem.pricing[key].price;
+  document.querySelectorAll("[data-pricing] .pricing-screen__block").forEach((pricing, key) => {
+    pricing.querySelector("[data-pricing-price]").innerText = textItem.pricing[key].price
 
-      textItem.pricing[key].functionnality.map((func, keyFunc) => {
-        pricing.querySelector("[data-pricing-functionnality]").children[
-          keyFunc
-        ].innerText = func;
-      });
+    textItem.pricing[key].functionnality.map((func, keyFunc) => {
+      pricing.querySelector("[data-pricing-functionnality]").children[keyFunc].innerText = func
+    })
 
-      pricing.querySelector("[data-pricing-button]").innerText =
-        textItem.pricing[key].button;
-    });
+    pricing.querySelector("[data-pricing-button]").innerText = textItem.pricing[key].button
+  })
 
   // slider
 
-  document
-    .querySelectorAll("[data-slider=desktop] .swiper-slide")
-    .forEach((slider, key) => {
-      console.log(slider);
-      if (slider.querySelector("[data-slider-title]").children.length) {
-        console.log("ya");
-        slider.querySelector("[data-slider-title]").children[0].innerText =
-          textItem.slider[key].title;
-      } else {
-        slider.querySelector("[data-slider-title]").innerText =
-          textItem.slider[key].title;
-      }
+  document.querySelectorAll("[data-slider=desktop] .swiper-slide").forEach((slider, key) => {
+    console.log(slider)
+    if (slider.querySelector("[data-slider-title]").children.length) {
+      console.log("ya")
+      slider.querySelector("[data-slider-title]").children[0].innerText = textItem.slider[key].title
+    } else {
+      slider.querySelector("[data-slider-title]").innerText = textItem.slider[key].title
+    }
 
-      slider.querySelector("[data-slider-description]").innerText =
-        textItem.slider[key].description;
-    });
+    slider.querySelector("[data-slider-description]").innerText = textItem.slider[key].description
+  })
 
   //final screen
-  document.querySelector("[data-final-button]").textContent =
-    textItem.finalScreen.button;
+  document.querySelector("[data-final-button]").textContent = textItem.finalScreen.button
 
-  document.querySelector("[data-final-subtitleText]").innerText =
-    textItem.finalScreen.subtitleText;
+  document.querySelector("[data-final-subtitleText]").innerText = textItem.finalScreen.subtitleText
   document.querySelectorAll("[data-final-title]").forEach((item, key) => {
-    item.innerText = textItem.finalScreen.title.entities[key];
-  });
+    item.innerText = textItem.finalScreen.title.entities[key]
+  })
 
   // footer
 
-  document.querySelector("[data-footer-right]").childNodes[2].textContent =
-    textItem.footer.right;
+  document.querySelector("[data-footer-right]").childNodes[2].textContent = textItem.footer.right
   document.querySelector("[data-footer-confidentiality]").innerText =
-    textItem.footer.confidentiality;
-  document.querySelector("[data-footer-legal]").innerText =
-    textItem.footer.legal;
-};
+    textItem.footer.confidentiality
+  document.querySelector("[data-footer-legal]").innerText = textItem.footer.legal
+}
 
-updateText();
+updateText()
 
 selectLang.addEventListener("change", () => {
-  console.log(selectLang.value);
-  localStorage.setItem("lang", selectLang.value);
-  getTextLang();
-  updateText();
-});
+  console.log(selectLang.value)
+  localStorage.setItem("lang", selectLang.value)
+  getTextLang()
+  updateText()
+})
