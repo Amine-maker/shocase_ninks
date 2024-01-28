@@ -1,0 +1,59 @@
+{
+  "lang": "Français",
+  "header": {
+    "title": { "entities": ["LIBÉREZ", "VOS LIENS", "AVEC NINKS"] },
+    "subtitleText": "Mettez en avant votre identité en ligne grâce à Ninks. Créez une page à votre image qui rassemble toutes vos destinations de contenu de manière visuellement captivante.",
+    "adsLargeText": "",
+    "button": "Commencer"
+  },
+  "slider": [
+    {
+      "title": "Intégrer une page personnalisée",
+      "description": "Centralisez votre présence en ligne et offrez une expérience fluide à vos visiteurs grâce à Ninks. Notre plateforme vous permet de créer une page unique, rassemblant tous vos liens vers les réseaux sociaux, vos projets, vos créations et plus encore. Simplifiez votre communication et donnez à votre communautée un accès rapide à tout ce qui vous définit en un seul clic."
+    },
+    {
+      "title": "Rediriger votre communauté",
+      "description": "Transformez chaque clic en action grâce aux boutons d'action. Intégrez des liens d'achat, d'inscription, ou de tout autre objectif spécifique sur votre page."
+    },
+    {
+      "title": "Partagez avec vos amis",
+      "description": "Présentez-vous au monde sous votre meilleur jour. Créez une page de liens qui reflète votre identité unique. Nos fonctionnalités d'édition visuelle vous permettent de choisir parmi une variété de thèmes, de couleurs et de mises en page pour concevoir une page qui vous ressemble."
+    },
+    {
+      "title": "Obtenez des statistiques",
+      "description": "Prenez des décisions éclairées. Notre plateforme vous offre des outils analytiques puissants pour suivre et interpréter vos performances. Obtenez des statistiques détaillées sur les clics, les interactions et l'engagement avec vos liens.Vous avez l'avantage de comprendre ce qui fonctionne et d'adapter votre stratégie pour un impact maximal."
+    },
+    {
+      "title": "Faites vous payer!",
+      "description": "Facilitez les transactions. Intégrez des liens de paiement instantanés directement dans votre page."
+    }
+  ],
+  "pricing": [
+    {
+      "price": "Gratuit",
+      "functionnality": ["10 Liens", "Sans publicité", "Url personnaliée", "Test"],
+      "button": "Commencer"
+    },
+    {
+      "price": "3.49€",
+      "functionnality": [
+        "Liens illimités",
+        "Sans publicité",
+        "Analytics",
+        "Ingétration de Stripe",
+        "Paiement en ligne"
+      ],
+      "button": "Mise à jour"
+    }
+  ],
+  "finalScreen": {
+    "title": { "entities": ["QUE DITES-VOUS", "DE", "CELA ?"] },
+    "subtitleText": "Toutes vos connexions sur les réseaux sociaux réunies sur une seule page étonnante et ajustable. C'est comme si vous aviez entre les mains le pouvoir illimité des reseaux sociaux !",
+    "button": "C'est parti!"
+  },
+  "footer": {
+    "legal": "Mentions légales",
+    "confidentiality": "Politique de confidentialité",
+    "right": " Ninks. Tous droits réservés."
+  }
+}

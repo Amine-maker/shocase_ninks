@@ -3,5 +3,6 @@
     "activityBar.background": "#223219",
     "titleBar.activeBackground": "#304623",
     "titleBar.activeForeground": "#F8FBF6"
-  }
+  },
+  "svg.preview.background": "custom"
 }

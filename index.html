@@ -10,21 +10,15 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"
-    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" />
 
     <title>Ninks | La plateforme de test</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
 
     <script>
-      window.lang = localStorage.getItem("lang");
+      window.lang = localStorage.getItem("lang")
     </script>
 
     <script type="module" src="./src/js/main.js"></script>
@@ -32,11 +26,7 @@
     <!-- snippet -->
 
     <link href="./src/css/main.css" rel="stylesheet" />
-    <link
-      rel="shortcut icon"
-      href="./src/assets/svg/logo_dark.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./src/assets/svg/logo-dark.ico" type="image/x-icon" />
   </head>
 
   <body class="fr">
@@ -47,43 +37,19 @@
           <!-- logo -->
           <div class="col-12 col-lg-6 header-logo">
             <a href="#">
-              <img
-                src="./src/assets/svg/logo_test.svg"
-                class="h-logo"
-                alt="logo"
-              />
+              <img src="./src/assets/svg/nink_logo.svg" class="h-logo" alt="logo" />
             </a>
           </div>
 
           <!-- logo mob-->
           <div class="col-2 col-md-4 header-logo__mob">
             <a href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
+              <img
+                src="./src/assets/svg/nink_logo.svg"
+                alt="Logo mobile"
+                srcset="./src/assets/svg/nink_logo.svg"
                 width="50"
-                height="50"
-                fill="none"
-                viewBox="0 0 988 1016"
-              >
-                <path
-                  fill="#EDF39E"
-                  d="M959.698 610.336c15.464 0 28 12.536 28 28V897.62c0 15.464-12.536 28-28 28H700.413c-15.464 0-28-12.536-28-28V638.336c0-15.464 12.536-28 28-28h259.285Z"
-                />
-                <path
-                  fill="#EDF39E"
-                  d="M959.698 33.366c15.464 0 28 12.536 28 28V470.56c0 91.127-73.873 165-165 165H700.413c-15.464 0-28-12.536-28-28V61.366c0-15.464 12.536-28 28-28h259.285Z"
-                />
-                <path
-                  fill="#EDF39E"
-                  d="M299.701 56.086c26.556-26.556 69.612-26.556 96.167 0l451.935 451.932c26.556 26.556 26.556 69.611 0 96.167L696.188 755.799c-26.556 26.556-69.611 26.556-96.167 0L148.086 303.867c-26.556-26.556-26.556-69.611 0-96.167L299.701 56.086Z"
-                />
-                <path
-                  fill="#EDF39E"
-                  fill-rule="evenodd"
-                  d="M115.033 577.757c-15.464 0-28 12.536-28 28V897.62c0 15.464 12.536 28 28 28h408.695c91.403 0 165.5-74.097 165.5-165.5V577.757H115.033ZM162 619c-15.464 0-28 12.536-28 28v209c0 15.464 12.536 28 28 28h209c15.464 0 28-12.536 28-28V647c0-15.464-12.536-28-28-28H162Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+              />
             </a>
           </div>
         </div>
@@ -95,50 +61,22 @@
         <!-- navigation -->
         <div class="nav">
           <div class="container">
-            <div
-              class="row align-items-center justify-content-center justify-content-lg-between"
-            >
+            <div class="row align-items-center justify-content-center justify-content-lg-between">
               <!-- logo -->
               <div class="col-12 col-lg-6 header-logo">
                 <a href="#">
-                  <img
-                    src="./src/assets/svg/logo_test.svg"
-                    class="h-logo"
-                    width="40"
-                    alt="logo"
-                  />
+                  <img src="./src/assets/svg/nink_logo.svg" class="h-logo" width="50" alt="logo" />
                 </a>
               </div>
 
               <!-- logo mob-->
               <div class="col-2 col-md-4 header-logo__mob">
                 <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="50"
-                    height="50"
-                    fill="none"
-                    viewBox="0 0 988 1016"
-                  >
-                    <path
-                      fill="#EDF39E"
-                      d="M959.698 610.336c15.464 0 28 12.536 28 28V897.62c0 15.464-12.536 28-28 28H700.413c-15.464 0-28-12.536-28-28V638.336c0-15.464 12.536-28 28-28h259.285Z"
-                    />
-                    <path
-                      fill="#EDF39E"
-                      d="M959.698 33.366c15.464 0 28 12.536 28 28V470.56c0 91.127-73.873 165-165 165H700.413c-15.464 0-28-12.536-28-28V61.366c0-15.464 12.536-28 28-28h259.285Z"
-                    />
-                    <path
-                      fill="#EDF39E"
-                      d="M299.701 56.086c26.556-26.556 69.612-26.556 96.167 0l451.935 451.932c26.556 26.556 26.556 69.611 0 96.167L696.188 755.799c-26.556 26.556-69.611 26.556-96.167 0L148.086 303.867c-26.556-26.556-26.556-69.611 0-96.167L299.701 56.086Z"
-                    />
-                    <path
-                      fill="#EDF39E"
-                      fill-rule="evenodd"
-                      d="M115.033 577.757c-15.464 0-28 12.536-28 28V897.62c0 15.464 12.536 28 28 28h408.695c91.403 0 165.5-74.097 165.5-165.5V577.757H115.033ZM162 619c-15.464 0-28 12.536-28 28v209c0 15.464 12.536 28 28 28h209c15.464 0 28-12.536 28-28V647c0-15.464-12.536-28-28-28H162Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                  <img
+                    src="./src/assets/svg/nink_logo.svg"
+                    alt="Logo mobile"
+                    srcset="./src/assets/svg/nink_logo.svg"
+                  />
                 </a>
               </div>
             </div>
@@ -152,9 +90,7 @@
             <div class="row content">
               <div class="col-12 col-lg-7">
                 <div class="main-screen__text" data-lag="0.2" data-speed="1">
-                  <h1 data-header-title class="nowrap title-1 mainFadeLeft">
-                    Unleach
-                  </h1>
+                  <h1 data-header-title class="nowrap title-1 mainFadeLeft">Unleach</h1>
                   <h1 data-header-title class="nowrap title-2 mainFadeLeft">
                     your <span>l</span>inks
                   </h1>
@@ -163,23 +99,15 @@
                   </h1>
                   <div class="fadeUp">
                     <p data-header-subtitleText class="subtitle">
-                      Mettez en avant votre identité en ligne grâce à Ninks.
-                      Créez une page à votre image qui rassemble toutes vos
-                      destinations de contenu de manière visuellement
+                      Mettez en avant votre identité en ligne grâce à Ninks. Créez une page à votre
+                      image qui rassemble toutes vos destinations de contenu de manière visuellement
                       captivante.
                     </p>
-                    <a
-                      data-header-button
-                      href="#"
-                      class="button cta_hero_button"
-                      >Commencer</a
-                    >
+                    <a data-header-button href="#" class="button cta_hero_button">Commencer</a>
                   </div>
                 </div>
               </div>
-              <div
-                class="col-12 col-lg-5 d-flex flex-row-reverse align-items-center"
-              >
+              <div class="col-12 col-lg-5 d-flex flex-row-reverse align-items-center">
                 <div class="main-screen__svg" data-lag="0" data-speed="1.1">
                   <img
                     class="stamp parallax-1 rotation"
@@ -300,11 +228,7 @@
             <div
               class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden"
             >
-              <div
-                class="swiper-wrapper"
-                id="swiper-wrapper-2b97a554cc3db5f5"
-                aria-live="polite"
-              >
+              <div class="swiper-wrapper" id="swiper-wrapper-2b97a554cc3db5f5" aria-live="polite">
                 <!-- 1 slide -->
                 <div
                   class="swiper-slide swiper-slide-visible swiper-slide-active"
@@ -316,33 +240,26 @@
                       <span class="de_time">Um</span> 01.
                     </p>
                     <div class="line l-1 fadeUp"></div>
-                    <h2
-                      data-slider-title
-                      class="split-title"
-                      data-swiper-parallax="50"
-                    >
+                    <h2 data-slider-title class="split-title" data-swiper-parallax="50">
                       <span class="d-inline-block"
-                        >Int<small class="accent">é</small>grer une page
-                        personnalis<small class="accent">é</small>e</span
+                        >Int<small class="accent">é</small>grer une page personnalis<small
+                          class="accent"
+                          >é</small
+                        >e</span
                       >
                     </h2>
                     <p data-slider-description class="text fadeUp">
-                      Centralisez votre présence en ligne et offrez une
-                      expérience fluide à vos visiteurs grâce à Ninks. Notre
-                      plateforme vous permet de créer une page unique,
-                      rassemblant tous vos liens vers les réseaux sociaux, vos
-                      projets, vos créations et plus encore. Simplifiez votre
-                      communication et donnez à votre communautée un accès
-                      rapide à tout ce qui vous définit en un seul clic.
+                      Centralisez votre présence en ligne et offrez une expérience fluide à vos
+                      visiteurs grâce à Ninks. Notre plateforme vous permet de créer une page
+                      unique, rassemblant tous vos liens vers les réseaux sociaux, vos projets, vos
+                      créations et plus encore. Simplifiez votre communication et donnez à votre
+                      communautée un accès rapide à tout ce qui vous définit en un seul clic.
                     </p>
                   </div>
 
                   <div class="alarm-screen__pics">
                     <!-- 1 -->
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="100"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="100">
                       <img
                         src="https://placehold.co/800x800"
                         alt="photo"
@@ -353,10 +270,7 @@
                       />
                     </div>
                     <!-- 2 -->
-                    <div
-                      class="alarm-screen__pics-pic pic parallax"
-                      data-swiper-parallax="150"
-                    >
+                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150">
                       <img
                         src="https://placehold.co/800x800"
                         alt="photo"
@@ -387,20 +301,14 @@
                         fill="#FFFF54"
                       ></path>
                     </svg>
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="-250"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250">
                       <img
                         src="./src/assets/svg/scr_1.0a213b1f812d08ef46829bbc78850e21.svg"
                         alt="screen"
                       />
                     </div>
                     <!-- 4 -->
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="-200"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-200">
                       <img
                         src="./src/assets/svg/scr_2.d8bed01c71dd4b86e0c173efa5953bfb.svg"
                         alt="screen"
@@ -409,37 +317,27 @@
                   </div>
                 </div>
                 <!-- 2 slide -->
-                <div
-                  class="swiper-slide alarm-2 swiper-slide-next"
-                  role="group"
-                  aria-label="2 / 6"
-                >
+                <div class="swiper-slide alarm-2 swiper-slide-next" role="group" aria-label="2 / 6">
                   <div class="alarm-screen__text">
                     <p class="alarm-screen__text-alarm fadeUp">
                       <span class="de_time">Um</span> 02.
                     </p>
                     <div class="line l-2 fadeUp"></div>
-                    <h2
-                      data-slider-title
-                      class="split-title"
-                      data-swiper-parallax="50"
-                    >
-                      <span class="d-inline-block">Rediriger votre communaut<small class="accent">é</small></span>
-                     
+                    <h2 data-slider-title class="split-title" data-swiper-parallax="50">
+                      <span class="d-inline-block"
+                        >Rediriger votre communaut<small class="accent">é</small></span
+                      >
                     </h2>
                     <p data-slider-description class="text fadeUp">
-                      Transformez chaque clic en action grâce aux boutons
-                      d'action. Intégrez des liens d'achat, d'inscription, ou de
-                      tout autre objectif spécifique sur votre page.
+                      Transformez chaque clic en action grâce aux boutons d'action. Intégrez des
+                      liens d'achat, d'inscription, ou de tout autre objectif spécifique sur votre
+                      page.
                     </p>
                   </div>
 
                   <div class="alarm-screen__pics">
                     <!-- 1 -->
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="100"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="100">
                       <img
                         src="https://placehold.co/800x800"
                         alt="photo"
@@ -449,10 +347,7 @@
                       />
                     </div>
                     <!-- 2 -->
-                    <div
-                      class="alarm-screen__pics-pic pic parallax"
-                      data-swiper-parallax="150"
-                    >
+                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150">
                       <img
                         src="https://placehold.co/800x800"
                         alt="photo"
@@ -481,20 +376,14 @@
                         fill="#a4d9db"
                       ></path>
                     </svg>
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="-250"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250">
                       <img
                         src="./src/assets/svg/scr_3.d50a36550ebb9eed46b8fb2c58d3f2af.svg"
                         alt="screen"
                       />
                     </div>
                     <!-- 4 -->
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="-200"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-200">
                       <img
                         src="./src/assets/svg/scr_4.fe45b57ce502c59fce414a0811346a98.svg"
                         alt="screen"
@@ -503,38 +392,26 @@
                   </div>
                 </div>
                 <!-- 3 slide -->
-                <div
-                  class="swiper-slide alarm-3"
-                  role="group"
-                  aria-label="3 / 6"
-                >
+                <div class="swiper-slide alarm-3" role="group" aria-label="3 / 6">
                   <div class="alarm-screen__text">
                     <p class="alarm-screen__text-alarm fadeUp">
                       <span class="de_time">Um</span> 03.
                     </p>
                     <div class="line l-3 fadeUp"></div>
-                    <h2
-                      data-slider-title
-                      class="split-title"
-                      data-swiper-parallax="50"
-                    >
+                    <h2 data-slider-title class="split-title" data-swiper-parallax="50">
                       <span class="d-inline-block">Partagez avec vos amis</span>
                     </h2>
                     <p data-slider-description class="text fadeUp">
-                      Présentez-vous au monde sous votre meilleur jour. Créez
-                      une page de liens qui reflète votre identité unique. Nos
-                      fonctionnalités d'édition visuelle vous permettent de
-                      choisir parmi une variété de thèmes, de couleurs et de
-                      mises en page pour concevoir une page qui vous ressemble.
+                      Présentez-vous au monde sous votre meilleur jour. Créez une page de liens qui
+                      reflète votre identité unique. Nos fonctionnalités d'édition visuelle vous
+                      permettent de choisir parmi une variété de thèmes, de couleurs et de mises en
+                      page pour concevoir une page qui vous ressemble.
                     </p>
                   </div>
 
                   <div class="alarm-screen__pics">
                     <!-- 1 -->
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="100"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="100">
                       <img
                         src="https://placehold.co/800x800"
                         alt="photo"
@@ -544,10 +421,7 @@
                       />
                     </div>
                     <!-- 2 -->
-                    <div
-                      class="alarm-screen__pics-pic pic parallax"
-                      data-swiper-parallax="150"
-                    >
+                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150">
                       <img
                         src="https://placehold.co/800x800"
                         alt="photo"
@@ -576,20 +450,14 @@
                         fill="#ecf39e"
                       ></path>
                     </svg>
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="-250"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250">
                       <img
                         src="./src/assets/svg/scr_5.93c8b887297a8005e34a7498ac298be9.svg"
                         alt="screen"
                       />
                     </div>
                     <!-- 4 -->
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="-200"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-200">
                       <img
                         src="./src/assets/svg/scr_6.e014c281358e2b02c1e4de63b3c0d200.svg"
                         alt="screen"
@@ -598,40 +466,27 @@
                   </div>
                 </div>
                 <!-- 4 slide -->
-                <div
-                  class="swiper-slide alarm-4"
-                  role="group"
-                  aria-label="4 / 6"
-                >
+                <div class="swiper-slide alarm-4" role="group" aria-label="4 / 6">
                   <div class="alarm-screen__text">
                     <p class="alarm-screen__text-alarm fadeUp">
                       <span class="de_time">Um</span> 04.
                     </p>
                     <div class="line l-4 fadeUp"></div>
-                    <h2
-                      data-slider-title
-                      class="split-title"
-                      data-swiper-parallax="50"
-                    >
+                    <h2 data-slider-title class="split-title" data-swiper-parallax="50">
                       <span>Obtenez des statistiques</span>
                     </h2>
                     <p data-slider-description class="text fadeUp">
-                      Prenez des décisions éclairées. Notre plateforme vous
-                      offre des outils analytiques puissants pour suivre et
-                      interpréter vos performances. Obtenez des statistiques
-                      détaillées sur les clics, les interactions et l'engagement
-                      avec vos liens.Vous avez l'avantage de comprendre ce qui
-                      fonctionne et d'adapter votre stratégie pour un impact
-                      maximal.
+                      Prenez des décisions éclairées. Notre plateforme vous offre des outils
+                      analytiques puissants pour suivre et interpréter vos performances. Obtenez des
+                      statistiques détaillées sur les clics, les interactions et l'engagement avec
+                      vos liens.Vous avez l'avantage de comprendre ce qui fonctionne et d'adapter
+                      votre stratégie pour un impact maximal.
                     </p>
                   </div>
 
                   <div class="alarm-screen__pics">
                     <!-- 1 -->
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="100"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="100">
                       <img
                         src="https://placehold.co/800x800"
                         alt="photo"
@@ -641,10 +496,7 @@
                       />
                     </div>
                     <!-- 2 -->
-                    <div
-                      class="alarm-screen__pics-pic pic parallax"
-                      data-swiper-parallax="150"
-                    >
+                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150">
                       <img
                         src="https://placehold.co/800x800"
                         alt="photo"
@@ -673,20 +525,14 @@
                         fill="#FF642D"
                       ></path>
                     </svg>
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="-250"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250">
                       <img
                         src="./src/assets/svg/scr_7.6edf4844fd908b44a7213f73de513e75.svg"
                         alt="screen"
                       />
                     </div>
                     <!-- 4 -->
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="-200"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-200">
                       <img
                         src="./src/assets/svg/scr_8.edcbe67c9e6fee0ee350a637d7708d21.svg"
                         alt="screen"
@@ -695,35 +541,24 @@
                   </div>
                 </div>
                 <!-- 5 slide -->
-                <div
-                  class="swiper-slide alarm-5"
-                  role="group"
-                  aria-label="5 / 6"
-                >
+                <div class="swiper-slide alarm-5" role="group" aria-label="5 / 6">
                   <div class="alarm-screen__text">
                     <p class="alarm-screen__text-alarm fadeUp">
                       <span class="de_time">Um</span>05.
                     </p>
                     <div class="line l-5 fadeUp"></div>
-                    <h2
-                      data-slider-title
-                      class="split-title"
-                      data-swiper-parallax="50"
-                    >
+                    <h2 data-slider-title class="split-title" data-swiper-parallax="50">
                       <span>Faites vous payer!</span>
                     </h2>
                     <p data-slider-description class="text fadeUp">
-                      Facilitez les transactions. Intégrez des liens de paiement
-                      instantanés directement dans votre page.
+                      Facilitez les transactions. Intégrez des liens de paiement instantanés
+                      directement dans votre page.
                     </p>
                   </div>
 
                   <div class="alarm-screen__pics">
                     <!-- 1 -->
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="100"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="100">
                       <img
                         src="https://placehold.co/800x800"
                         alt="photo"
@@ -733,10 +568,7 @@
                       />
                     </div>
                     <!-- 2 -->
-                    <div
-                      class="alarm-screen__pics-pic pic parallax"
-                      data-swiper-parallax="150"
-                    >
+                    <div class="alarm-screen__pics-pic pic parallax" data-swiper-parallax="150">
                       <img
                         src="https://placehold.co/800x800"
                         alt="photo"
@@ -765,20 +597,14 @@
                         fill="#f3865e"
                       ></path>
                     </svg>
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="-250"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-250">
                       <img
                         src="./src/assets/svg/scr_9.3b8c6cb93638fc9f5cbc5ab7c80ba6a3.svg"
                         alt="screen"
                       />
                     </div>
                     <!-- 4 -->
-                    <div
-                      class="alarm-screen__pics-pic pic"
-                      data-swiper-parallax="-200"
-                    >
+                    <div class="alarm-screen__pics-pic pic" data-swiper-parallax="-200">
                       <img
                         src="./src/assets/svg/scr_10.6c8fb8388901b24970e5e6f84c261b15.svg"
                         alt="screen"
@@ -787,11 +613,7 @@
                   </div>
                 </div>
               </div>
-              <span
-                class="swiper-notification"
-                aria-live="assertive"
-                aria-atomic="true"
-              ></span>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
             <div
               class="swiper-button-next"
@@ -815,37 +637,25 @@
             <div
               class="swiper-mob swiper-initialized swiper-horizontal swiper-pointer-events swiper-autoheight swiper-backface-hidden"
             >
-              <div
-                class="swiper-wrapper"
-                id="swiper-wrapper-b71744877327acb1"
-                aria-live="polite"
-              >
+              <div class="swiper-wrapper" id="swiper-wrapper-b71744877327acb1" aria-live="polite">
                 <!-- 1 slide -->
-                <div
-                  class="swiper-slide swiper-slide-active"
-                  role="group"
-                  aria-label="1 / 6"
-                >
+                <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6">
                   <div class="alarm-screen__text">
-                    <p class="alarm-screen__text-alarm">
-                      <span class="de_time"></span> 01.
-                    </p>
+                    <p class="alarm-screen__text-alarm"><span class="de_time"></span> 01.</p>
                     <div class="line l-1"></div>
                     <h2 data-slider-title class="title">
-                      Int<small class="accent">é</small>grez une page
-                      personnalis<small class="accent">é</small>e
+                      Int<small class="accent">é</small>grez une page personnalis<small
+                        class="accent"
+                        >é</small
+                      >e
                     </h2>
                     <p data-slider-description class="text">
-                      Centralisez votre présence en ligne et offrez une
-                      expérience fluide à vos visiteurs grâce à Ninks. Notre
-                      plateforme vous permet de créer une page unique,
-                      rassemblant tous vos liens vers les réseaux sociaux, vos
-                      projets, vos créations et plus encore. Simplifiez votre
-                      communication et donnez à votre communautée un accès
-                      rapide à tout ce qui vous définit en un seul clic.
-                      <a class="cta_kw_button" style="display: none" href="#"
-                        >super</a
-                      >
+                      Centralisez votre présence en ligne et offrez une expérience fluide à vos
+                      visiteurs grâce à Ninks. Notre plateforme vous permet de créer une page
+                      unique, rassemblant tous vos liens vers les réseaux sociaux, vos projets, vos
+                      créations et plus encore. Simplifiez votre communication et donnez à votre
+                      communautée un accès rapide à tout ce qui vous définit en un seul clic.
+                      <a class="cta_kw_button" style="display: none" href="#">super</a>
                     </p>
                   </div>
 
@@ -861,23 +671,17 @@
                   </div>
                 </div>
                 <!-- 2 slide -->
-                <div
-                  class="swiper-slide alarm-2 swiper-slide-next"
-                  role="group"
-                  aria-label="2 / 6"
-                >
+                <div class="swiper-slide alarm-2 swiper-slide-next" role="group" aria-label="2 / 6">
                   <div class="alarm-screen__text">
-                    <p class="alarm-screen__text-alarm">
-                      <span class="de_time">Um</span> 02.
-                    </p>
+                    <p class="alarm-screen__text-alarm"><span class="de_time">Um</span> 02.</p>
                     <div class="line l-2"></div>
                     <h2 data-slider-title class="title">
                       Rediriger votre communaut<small class="accent">é</small>e
                     </h2>
                     <p data-slider-description class="text">
-                      Transformez chaque clic en action grâce aux boutons
-                      d'action. Intégrez des liens d'achat, d'inscription, ou de
-                      tout autre objectif spécifique sur votre page.
+                      Transformez chaque clic en action grâce aux boutons d'action. Intégrez des
+                      liens d'achat, d'inscription, ou de tout autre objectif spécifique sur votre
+                      page.
                     </p>
                   </div>
 
@@ -893,25 +697,16 @@
                   </div>
                 </div>
                 <!-- 3 slide -->
-                <div
-                  class="swiper-slide alarm-3"
-                  role="group"
-                  aria-label="3 / 6"
-                >
+                <div class="swiper-slide alarm-3" role="group" aria-label="3 / 6">
                   <div class="alarm-screen__text">
-                    <p class="alarm-screen__text-alarm">
-                      <span class="de_time">Um</span> 03.
-                    </p>
+                    <p class="alarm-screen__text-alarm"><span class="de_time">Um</span> 03.</p>
                     <div class="line l-3"></div>
-                    <h2 data-slider-title class="title">
-                      Partagez avec vos amis
-                    </h2>
+                    <h2 data-slider-title class="title">Partagez avec vos amis</h2>
                     <p data-slider-description class="text">
-                      Présentez-vous au monde sous votre meilleur jour. Créez
-                      une page de liens qui reflète votre identité unique. Nos
-                      fonctionnalités d'édition visuelle vous permettent de
-                      choisir parmi une variété de thèmes, de couleurs et de
-                      mises en page pour concevoir une page qui vous ressemble.
+                      Présentez-vous au monde sous votre meilleur jour. Créez une page de liens qui
+                      reflète votre identité unique. Nos fonctionnalités d'édition visuelle vous
+                      permettent de choisir parmi une variété de thèmes, de couleurs et de mises en
+                      page pour concevoir une page qui vous ressemble.
                     </p>
                   </div>
 
@@ -927,27 +722,17 @@
                   </div>
                 </div>
                 <!-- 4 slide -->
-                <div
-                  class="swiper-slide alarm-4"
-                  role="group"
-                  aria-label="4 / 6"
-                >
+                <div class="swiper-slide alarm-4" role="group" aria-label="4 / 6">
                   <div class="alarm-screen__text">
-                    <p class="alarm-screen__text-alarm">
-                      <span class="de_time">Um</span> 04.
-                    </p>
+                    <p class="alarm-screen__text-alarm"><span class="de_time">Um</span> 04.</p>
                     <div class="line l-4"></div>
-                    <h2 data-slider-title class="title">
-                      Obtenez des statistiques
-                    </h2>
+                    <h2 data-slider-title class="title">Obtenez des statistiques</h2>
                     <p data-slider-description class="text">
-                      Prenez des décisions éclairées. Notre plateforme vous
-                      offre des outils analytiques puissants pour suivre et
-                      interpréter vos performances. Obtenez des statistiques
-                      détaillées sur les clics, les interactions et l'engagement
-                      avec vos liens.Vous avez l'avantage de comprendre ce qui
-                      fonctionne et d'adapter votre stratégie pour un impact
-                      maximal.
+                      Prenez des décisions éclairées. Notre plateforme vous offre des outils
+                      analytiques puissants pour suivre et interpréter vos performances. Obtenez des
+                      statistiques détaillées sur les clics, les interactions et l'engagement avec
+                      vos liens.Vous avez l'avantage de comprendre ce qui fonctionne et d'adapter
+                      votre stratégie pour un impact maximal.
                     </p>
                   </div>
 
@@ -963,20 +748,14 @@
                   </div>
                 </div>
                 <!-- 5 slide -->
-                <div
-                  class="swiper-slide alarm-5"
-                  role="group"
-                  aria-label="5 / 6"
-                >
+                <div class="swiper-slide alarm-5" role="group" aria-label="5 / 6">
                   <div class="alarm-screen__text">
-                    <p class="alarm-screen__text-alarm">
-                      <span class="de_time">Um</span> 05.
-                    </p>
+                    <p class="alarm-screen__text-alarm"><span class="de_time">Um</span> 05.</p>
                     <div class="line l-5"></div>
                     <h2 data-slider-title class="title">Faites vous payer!</h2>
                     <p data-slider-description class="text">
-                      Facilitez les transactions. Intégrez des liens de paiement
-                      instantanés directement dans votre page personnalisée
+                      Facilitez les transactions. Intégrez des liens de paiement instantanés
+                      directement dans votre page personnalisée
                     </p>
                   </div>
 
@@ -1034,11 +813,7 @@
                   aria-label="Go to slide 6"
                 ></span>
               </div>
-              <span
-                class="swiper-notification"
-                aria-live="assertive"
-                aria-atomic="true"
-              ></span>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
           </div>
         </section>
@@ -1049,49 +824,27 @@
           <div class="container desktop pricing-screen__container d-flex">
             <div class="pricing-screen__block">
               <span class="uppertitle">Basic</span>
-              <h2
-                data-pricing-price
-                class="pricing-screen__block-title split-title"
-              >
-                Free
-              </h2>
-              <ul
-                data-pricing-functionnality
-                class="pricing-screen__block-list"
-              >
+              <h2 data-pricing-price class="pricing-screen__block-title split-title">Free</h2>
+              <ul data-pricing-functionnality class="pricing-screen__block-list">
                 <li class="pricing-screen__block-list__item">10 Links</li>
                 <li class="pricing-screen__block-list__item">No Ads</li>
                 <li class="pricing-screen__block-list__item">Custom url</li>
                 <li class="pricing-screen__block-list__item">test</li>
               </ul>
-              <a data-pricing-button href="#" class="button cta_hero_button"
-                >Get started</a
-              >
+              <a data-pricing-button href="#" class="button cta_hero_button">Get started</a>
             </div>
             <div class="pricing-screen__block">
               <span class="uppertitle">Pro</span>
-              <h2
-                data-pricing-price
-                class="pricing-screen__block-title split-title"
-              >
-                $3.49
-              </h2>
+              <h2 data-pricing-price class="pricing-screen__block-title split-title">$3.49</h2>
 
-              <ul
-                data-pricing-functionnality
-                class="pricing-screen__block-list"
-              >
+              <ul data-pricing-functionnality class="pricing-screen__block-list">
                 <li class="pricing-screen__block-list__item">25 Links</li>
                 <li class="pricing-screen__block-list__item">No Ads</li>
                 <li class="pricing-screen__block-list__item"></li>
                 <li class="pricing-screen__block-list__item"></li>
-                <li class="pricing-screen__block-list__item">
-                  Stripe integration
-                </li>
+                <li class="pricing-screen__block-list__item">Stripe integration</li>
               </ul>
-              <a data-pricing-button href="#" class="button cta_hero_button"
-                >Upgrade now</a
-              >
+              <a data-pricing-button href="#" class="button cta_hero_button">Upgrade now</a>
             </div>
           </div>
         </section>
@@ -1108,14 +861,11 @@
                 <h2 data-final-title class="fade">cela ?</h2>
                 <div class="fadeUp">
                   <p data-final-subtitleText class="subtitle">
-                    Toutes vos connexions sur les réseaux sociaux réunies sur
-                    une seule page étonnante et ajustable. C'est comme si vous
-                    aviez entre les mains le pouvoir illimité des reseaux
-                    sociaux !
+                    Toutes vos connexions sur les réseaux sociaux réunies sur une seule page
+                    étonnante et ajustable. C'est comme si vous aviez entre les mains le pouvoir
+                    illimité des reseaux sociaux !
                   </p>
-                  <a href="#" data-final-button class="button cta_footer_button"
-                    >C'est parti !</a
-                  >
+                  <a href="#" data-final-button class="button cta_footer_button">C'est parti !</a>
                 </div>
               </div>
               <div class="final-screen__pic">
@@ -1144,7 +894,7 @@
               <div class="footer-line__logo">
                 <a href="#">
                   <img
-                    src="./src/assets/svg/logo_test_white.svg"
+                    src="./src/assets/svg/logo-white.svg"
                     class="logo-footer"
                     height="40"
                     alt="logotype"
@@ -1157,30 +907,17 @@
                   ><span data-footer-legal>Mentions légales</span></a
                 >
                 <a class="terms-privacy" href="#"
-                  ><span data-footer-confidentiality
-                    >Politique de confidentialité</span
-                  ></a
+                  ><span data-footer-confidentiality>Politique de confidentialité</span></a
                 >
               </div>
 
               <div class="footer-year">
                 <span data-footer-right
-                  >©<i class="year">2023</i> Ninks.
-                  Tous&nbsp;droits&nbsp;réservés.</span
+                  >©<i class="year">2023</i> Ninks. Tous&nbsp;droits&nbsp;réservés.</span
                 >
               </div>
               <div class="footer-select">
-                <select class="footer-select__container" name="lang">
-                  <option class="footer-select__option" value="fr">
-                    Français
-                  </option>
-                  <option class="footer-select__option" value="en">
-                    English
-                  </option>
-                  <option class="footer-select__option" value="es">
-                    Espagnol
-                  </option>
-                </select>
+                <select title="language" class="footer-select__container" name="lang"></select>
               </div>
             </div>
           </div>

@@ -1,0 +1,60 @@
+{
+  "lang": "Anglais",
+  "header": {
+    "title": { "entities": ["UNLEACH", "YOUR LINKS", "WITH NINKS"] },
+    "subtitleText": "Promote your identity online with Ninks. Create a page in your image that brings together all your content destinations visually captivating.",
+    "adsLargeText": "",
+    "button": "Get started"
+  },
+
+  "slider": [
+    {
+      "title": "Embed a custom page",
+      "description": "Centralize your online presence and provide a seamless experience to your visitors with Ninks. Our platform allows you to create a single page, bringing together all your social media links, projects, creations and more. Simplify your communication and give your community quick access to everything that defines you with just one click."
+    },
+    {
+      "title": "Redirect your community",
+      "description": "Turn every click into action with action buttons. Include links to purchase, register, or any other specific purpose on your page."
+    },
+    {
+      "title": "Share with your friends",
+      "description": "Present yourself to the world in your best light. Create a links page that reflects your unique identity. Our visual editing features allow you to choose from a variety of themes, colors and layouts to design a page that's unique to you."
+    },
+    {
+      "title": "Get statistics",
+      "description": "Make informed decisions. Our platform gives you powerful analytical tools to track and interpret your performance. Get detailed statistics on clicks, interactions and engagement with your links. You have the advantage of understanding what works and adapting your strategy for maximum impact."
+    },
+    {
+      "title": "Get paid!",
+      "description": "Make transactions easier. Embed instant payment links directly into your page."
+    }
+  ],
+  "pricing": [
+    {
+      "price": "Free",
+      "functionnality": ["10 Links", "No Ads", "Custom url", "Test"],
+      "button": "Get started"
+    },
+    {
+      "price": "$3.49",
+      "functionnality": [
+        "Unlimited links",
+        "No ads",
+        "Analitycs",
+        "Stripe integration",
+        "Online payment"
+      ],
+      "button": "Upgrade now"
+    }
+  ],
+  "finalScreen": {
+    "title": { "entities": ["WHAT DO YOU SAY", "ABOUT", "THAT ?"] },
+    "subtitleText": "All your social media connections together on one stunning, adjustable page. It's as if you had in your hands the unlimited power of networks social!",
+    "button": "Let's go!"
+  },
+  "footer": {
+    "legal": "Legal Notice",
+    "confidentiality": "Privacy Policy",
+    "right": " Ninks. All rights reserved."
+  }
+}
